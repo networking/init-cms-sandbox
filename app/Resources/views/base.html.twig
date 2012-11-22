@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% block html_tag %}
+<html>
+{% endblock html_tag %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8" />
+
+    {% block head_style %}
+    {# Override this block to add your own files! #}
+    {% stylesheets %}{% endstylesheets %}
+    {% endblock head_style %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head_script %}
+    {# Overwrite this block to add your own js here, to get them generated into final files #}
+    {% endblock head_script %}
+
+    <title>{% block title %}Base{% endblock title %}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+</head>
+{% endblock head %}
+
+{% block body_tag %}
+<body data-spy="scroll">
+{% endblock body_tag %}
+
+{% block body_start %}
+{% endblock body_start %}
+
+{% block body %}
+    {% block navbar %}
+    {% endblock navbar %}
+
+    {% block container %}
+    {% endblock container %}
+
+    {% block foot_script %}
+    {% endblock foot_script %}
+{% endblock body %}
+</body>
+</html>

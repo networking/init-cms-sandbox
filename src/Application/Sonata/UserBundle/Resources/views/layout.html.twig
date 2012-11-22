@@ -1,0 +1,81 @@
+{% extends 'NetworkingInitCmsBundle::base.html.twig' %}
+
+{% block title %}Communication Suite - Layout{% endblock title %}
+{% block container_class %}container{% endblock container_class %}
+
+{% block navbar %}
+    {{ mopa_bootstrap_navbar('cmsNavbar') }}
+{% endblock navbar %}
+{% block subnavbar %}{{ mopa_bootstrap_navbar('subNavbar') }}{% endblock subnavbar %}
+
+{% block content_row %}
+    {% block content %}
+        <div>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <div class="connection">
+                    <form action="{{ path("fos_user_security_check") }}" method="post">
+
+                        {% for key, message in app.session.getFlashes() %}
+                            <div class="{{ key }}">
+                                {{ message|trans({}, 'FOSUserBundle') }}
+                            </div>
+                        {% endfor %}
+
+                        {% if error %}
+                            <div>{{ error|trans({}, 'FOSUserBundle') }}</div>
+                        {% endif %}
+
+                        <div class="control-group">
+                            <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+
+                            <div class="controls">
+                                <input type="text" id="username" name="_username" value="{{ last_username }}"
+                                       class="big sonata-medium"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+
+                            <div class="controls">
+                                <input type="password" id="password" name="_password" class="big sonata-medium"/>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label for="remember_me">
+                                <input type="checkbox" id="remember_me" name="_remember_me" value="on"/>
+                                {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <input type="submit" class="btn btn-primary" id="_submit" name="_submit"
+                                   value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}"/>
+                        </div>
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+
+
+
+
+
+
+    {% endblock content %}
+{% endblock content_row %}
+
+{% block foot_script %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            window.prettyPrint && prettyPrint();
+        });
+    </script>
+{% endblock foot_script %}

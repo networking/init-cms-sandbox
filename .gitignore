@@ -1,13 +1,26 @@
 # Bootstrap
 app/bootstrap*
 
+bin/
+composer.phar
+
 # Symfony directories
 vendor/*
 */logs/*
 */cache/*
 web/uploads/*
 web/bundles/*
+web/css/
+web/js/
+web/uploads/
 
 # Configuration files
 app/config/parameters.ini
 app/config/parameters.yml
+
+
+#ignore php storm project files
+.idea/
+
+#ignore mac filesystem files
+.DS_Store
