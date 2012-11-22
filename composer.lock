@@ -2111,8 +2111,14 @@
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
-                "url": "gitolite@net07.networking.ch:init_cms_bundle",
-                "reference": "b1c484943f52461eec48d9aa4d35e86e15001951"
+                "url": "git@github.com:networking/init-cms-bundle.git",
+                "reference": "3cbe4b1c50bd13a2597a15afca6cc9054278b45a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/networking/init-cms-bundle/archive/3cbe4b1c50bd13a2597a15afca6cc9054278b45a.zip",
+                "reference": "3cbe4b1c50bd13a2597a15afca6cc9054278b45a",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
@@ -2135,7 +2141,7 @@
                 "mopa/remote-update-bundle": "dev-master",
                 "symfony-cmf/routing-extra-bundle": "dev-master"
             },
-            "time": "2012-11-22 13:11:55",
+            "time": "2012-11-22 14:41:10",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2162,7 +2168,11 @@
             "keywords": [
                 "symfony",
                 "cms"
-            ]
+            ],
+            "support": {
+                "source": "https://github.com/networking/init-cms-bundle/tree/master",
+                "issues": "https://github.com/networking/init-cms-bundle/issues"
+            }
         },
         {
             "name": "networking/news-bundle",
@@ -2170,14 +2180,20 @@
             "target-dir": "Networking/NewsBundle",
             "source": {
                 "type": "git",
-                "url": "gitolite@net07.networking.ch:news_bundle",
-                "reference": "0045cdbd31888eb960d8d732b186f728806718c2"
+                "url": "git@github.com:networking/news-bundle.git",
+                "reference": "bec5f0609009a438fe45112b06b9f563b938ebd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/networking/news-bundle/archive/bec5f0609009a438fe45112b06b9f563b938ebd4.zip",
+                "reference": "bec5f0609009a438fe45112b06b9f563b938ebd4",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2012-11-22 10:15:15",
+            "time": "2012-11-22 14:44:10",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2205,7 +2221,11 @@
                 "symfony",
                 "cms",
                 "news"
-            ]
+            ],
+            "support": {
+                "source": "https://github.com/networking/news-bundle/tree/master",
+                "issues": "https://github.com/networking/news-bundle/issues"
+            }
         },
         {
             "name": "phpoption/phpoption",
