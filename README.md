@@ -5,7 +5,8 @@ Welcome to the init CMS Sandbox. This will get you started with a working CMS ba
 on the networking init CMS bundle and Symfony. The project is being developped by the
 small hard working team at [net working AG][1] in Zürich.
 
-This project is very much in an Alpha stage.
+**IMPORTANT NOTICE** This project is very much in an Alpha stage.
+It is not advisable to use this for a production web site.
 
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
