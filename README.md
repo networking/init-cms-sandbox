@@ -11,7 +11,7 @@ It is not advisable to use this for a production web site.
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
 This document contains information on how to download, install, and start
-using Symfony. For a more detailed explanation, see the [Installation][1]
+using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][1]
 chapter of the Symfony Documentation.
 
 1) Installing the networking init CMS sandbox
@@ -31,6 +31,10 @@ Then change into the project directory
 
 	cd path/to/install
 
+Create a parameters.yml file:
+
+	cp app/config/parameters.yml.dist app/config/parameters.yml
+
 ### Use Composer (*recommended*)
 
 As Symfony uses [Composer][3] to manage its dependencies, which is why we also use it.
@@ -49,15 +53,13 @@ file:
 
     php composer.phar install
 
-Create a parameters.yml file:
-
-	cp app/config/parameters.yml.dist app/config/parameters.yml
 
 Now we just need to create some folders for our media in the web root directory and make it RW+
 
 	cd web
 	mkdir uploads uploads/media uploads/images
 	chmod -R 777 uploads
+	cd ../
 
 
 2) Checking your System Configuration
@@ -72,7 +74,7 @@ Execute the `check.php` script from the command line:
 
 Access the `config.php` script from a browser:
 
-    http://localhost/path/to/symfony/app/web/config.php
+    http://localhost/config.php
 
 If you get any warnings or recommendations, fix them before moving on.
 
@@ -92,6 +94,17 @@ be prompted to enter a username, email address and password, these will get you 
 	php app/console networking:cms:install
 
 Now you should be up and running.
+
+4) Login to the admin area
+--------------------------
+
+It should now be possible to login to the backend admin interface of the project. Just
+navigate to:
+
+	http://localhost/app_dev.php/admin
+
+Enter your username and password as entered in step 3 and you should be directed to the
+admin dashboard.
 
 What's inside?
 ---------------

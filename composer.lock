@@ -1,5 +1,5 @@
 {
-    "hash": "94f1a4ba744b4ac71a073d59faf95b93",
+    "hash": "3fa039455588198bd7279091b1ce0623",
     "packages": [
         {
             "name": "a2lix/translation-form-bundle",
@@ -646,12 +646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
-                "reference": "89cdcced645ba672bbfedb420957f1409a560a56"
+                "reference": "de622286fe59ef8ad4ed00649ed6968794af30fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/89cdcced645ba672bbfedb420957f1409a560a56.zip",
-                "reference": "89cdcced645ba672bbfedb420957f1409a560a56",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/de622286fe59ef8ad4ed00649ed6968794af30fa.zip",
+                "reference": "de622286fe59ef8ad4ed00649ed6968794af30fa",
                 "shasum": ""
             },
             "require": {
@@ -672,7 +672,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "2012-11-21 02:20:42",
+            "time": "2012-11-23 08:33:48",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2059,19 +2059,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:networking/gallery-bundle.git",
-                "reference": "465dd01c3f9f2f9b6e6029fbf026e2887b4e9d04"
+                "reference": "5d9c538f822b4db8ffc81e4ef87429937b8f4c51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/networking/gallery-bundle/archive/465dd01c3f9f2f9b6e6029fbf026e2887b4e9d04.zip",
-                "reference": "465dd01c3f9f2f9b6e6029fbf026e2887b4e9d04",
+                "url": "https://github.com/networking/gallery-bundle/archive/5d9c538f822b4db8ffc81e4ef87429937b8f4c51.zip",
+                "reference": "5d9c538f822b4db8ffc81e4ef87429937b8f4c51",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2012-11-22 14:47:36",
+            "time": "2012-11-22 16:27:45",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2112,12 +2112,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:networking/init-cms-bundle.git",
-                "reference": "3cbe4b1c50bd13a2597a15afca6cc9054278b45a"
+                "reference": "39f970f70c0ef06c531e5cd0f47b80770db6442b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/networking/init-cms-bundle/archive/3cbe4b1c50bd13a2597a15afca6cc9054278b45a.zip",
-                "reference": "3cbe4b1c50bd13a2597a15afca6cc9054278b45a",
+                "url": "https://github.com/networking/init-cms-bundle/archive/39f970f70c0ef06c531e5cd0f47b80770db6442b.zip",
+                "reference": "39f970f70c0ef06c531e5cd0f47b80770db6442b",
                 "shasum": ""
             },
             "require": {
@@ -2141,7 +2141,7 @@
                 "mopa/remote-update-bundle": "dev-master",
                 "symfony-cmf/routing-extra-bundle": "dev-master"
             },
-            "time": "2012-11-22 14:41:10",
+            "time": "2012-11-22 16:52:18",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2181,19 +2181,19 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:networking/news-bundle.git",
-                "reference": "bec5f0609009a438fe45112b06b9f563b938ebd4"
+                "reference": "16c7a38e74480b22d90fc5348cda9137714efd61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/networking/news-bundle/archive/bec5f0609009a438fe45112b06b9f563b938ebd4.zip",
-                "reference": "bec5f0609009a438fe45112b06b9f563b938ebd4",
+                "url": "https://github.com/networking/news-bundle/archive/16c7a38e74480b22d90fc5348cda9137714efd61.zip",
+                "reference": "16c7a38e74480b22d90fc5348cda9137714efd61",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2012-11-22 14:44:10",
+            "time": "2012-11-22 16:52:53",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2996,12 +2996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle",
-                "reference": "05ab9de4d6aa6cf69c637caf42331d7b71657a5e"
+                "reference": "eb64c3a2998d3ca6ac12e7f9a69c4ccb9b6ce1d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataMediaBundle/archive/05ab9de4d6aa6cf69c637caf42331d7b71657a5e.zip",
-                "reference": "05ab9de4d6aa6cf69c637caf42331d7b71657a5e",
+                "url": "https://github.com/sonata-project/SonataMediaBundle/archive/eb64c3a2998d3ca6ac12e7f9a69c4ccb9b6ce1d0.zip",
+                "reference": "eb64c3a2998d3ca6ac12e7f9a69c4ccb9b6ce1d0",
                 "shasum": ""
             },
             "require": {
@@ -3023,7 +3023,7 @@
                 "liip/imagine-bundle": "dev-master",
                 "amazonwebservices/aws-sdk-for-php": "1.5.*"
             },
-            "time": "2012-11-18 15:55:47",
+            "time": "2012-11-23 09:34:08",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -3123,12 +3123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle",
-                "reference": "d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e"
+                "reference": "823f08fd943bc798ed7278ad2660f864c92c9f4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataUserBundle/archive/d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e.zip",
-                "reference": "d4b0f9d2e01f4c7dc27df34cd97142c1d36b6a5e",
+                "url": "https://github.com/sonata-project/SonataUserBundle/archive/823f08fd943bc798ed7278ad2660f864c92c9f4a.zip",
+                "reference": "823f08fd943bc798ed7278ad2660f864c92c9f4a",
                 "shasum": ""
             },
             "require": {
@@ -3145,7 +3145,7 @@
             "suggest": {
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master"
             },
-            "time": "2012-11-17 14:34:37",
+            "time": "2012-11-22 17:37:35",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
