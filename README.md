@@ -54,11 +54,9 @@ Create a parameters.yml file:
 
 Now we just need to create some folders for our media in the web root directory and make it RW+
 
-	```
 	cd web
 	mkdir uploads uploads/media uploads/images
 	chmod -R 777 uploads
-	```
 
 
 2) Checking your System Configuration

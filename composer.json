@@ -1,6 +1,6 @@
 {
 	"name":"networking/init-cms-sandbox",
-	"description":"the \"Symfony Standard Edition\" distribution with a base CMS added",
+	"description":"the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
 	"autoload":{
 		"psr-0":{ "":"src/" }
 	},
@@ -18,9 +18,9 @@
         "sensio/generator-bundle": "2.1.*",
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
-		"networking/init-cms-bundle":"dev-master",
-		"networking/news-bundle":"dev-master",
-		"networking/gallery-bundle":"dev-master"
+        "networking/init-cms-bundle":"dev-master",
+        "networking/news-bundle":"dev-master",
+        "networking/gallery-bundle":"dev-master"
 
 	},
 	"scripts":{
