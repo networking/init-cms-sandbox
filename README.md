@@ -11,7 +11,7 @@ It is not advisable to use this for a production web site.
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
 This document contains information on how to download, install, and start
-using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][2]
+using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][17]
 chapter of the Symfony Documentation.
 
 1) Installing the networking init CMS sandbox
@@ -188,3 +188,4 @@ It comes pre-configured with the following bundles:
 [14]: http://jmsyst.com/bundles/JMSSecurityExtraBundle/1.1
 [15]: http://jmsyst.com/bundles/JMSDiExtraBundle/1.0
 [16]: http://symfony.com/doc/2.1/bundles/SensioGeneratorBundle/index.html
+[17]: https://github.com/symfony/symfony#installation
