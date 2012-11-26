@@ -11,7 +11,7 @@ It is not advisable to use this for a production web site.
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
 This document contains information on how to download, install, and start
-using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][1]
+using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][2]
 chapter of the Symfony Documentation.
 
 1) Installing the networking init CMS sandbox
