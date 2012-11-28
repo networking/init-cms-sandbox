@@ -56,9 +56,8 @@ file:
 
 Now we just need to create some folders for our media in the web root directory and make it RW+
 
-	cd web
-	mkdir uploads uploads/media uploads/images
-	chmod -R 777 uploads
+	mkdir web/uploads web/uploads/media web/uploads/images
+	chmod -R 777 web/uploads
 	cd ../
 
 
