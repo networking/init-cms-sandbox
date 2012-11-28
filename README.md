@@ -1,8 +1,8 @@
-Networking init CMS sandbox based on the networking init CMS and the Symfony Standard Edition,
-========================
+Networking init CMS sandbox based on the networking init CMS and the Symfony Standard Edition
+=============================================================================================
 
 Welcome to the init CMS Sandbox. This will get you started with a working CMS based
-on the networking init CMS bundle and Symfony. The project is being developped by the
+on the networking init CMS bundle and Symfony. The project is being developed by the
 small hard working team at [net working AG][1] in Zürich.
 
 **IMPORTANT NOTICE** This project is very much in an Alpha stage.
@@ -11,7 +11,7 @@ It is not advisable to use this for a production web site.
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
 This document contains information on how to download, install, and start
-using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][1]
+using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][17]
 chapter of the Symfony Documentation.
 
 1) Installing the networking init CMS sandbox
@@ -188,3 +188,4 @@ It comes pre-configured with the following bundles:
 [14]: http://jmsyst.com/bundles/JMSSecurityExtraBundle/1.1
 [15]: http://jmsyst.com/bundles/JMSDiExtraBundle/1.0
 [16]: http://symfony.com/doc/2.1/bundles/SensioGeneratorBundle/index.html
+[17]: https://github.com/symfony/symfony#installation
