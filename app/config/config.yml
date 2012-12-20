@@ -1,6 +1,14 @@
 imports:
     - { resource: parameters.yml }
     - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
+jms_serializer:
+  metadata:
+    directories:
+      ApplicationSonataMediaBundle:
+        namespace_prefix: "Sonata\\MediaBundle"
+        path: "@ApplicationSonataMediaBundle/Resources/config/serializer"
+
+
 
 framework:
     #esi:             ~
@@ -100,7 +108,6 @@ doctrine:
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Sortable/Entity"
                         alias: GedmoSortable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
-
                     FOSUserBundle: ~
                     ApplicationSonataMediaBundle: ~
                     ApplicationSonataUserBundle: ~
