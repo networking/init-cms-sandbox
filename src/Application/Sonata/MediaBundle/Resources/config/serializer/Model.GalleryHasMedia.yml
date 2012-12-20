@@ -1,0 +1,12 @@
+Sonata\MediaBundle\Model\GalleryHasMedia:
+    properties:
+        media:
+            type: Application\Sonata\MediaBundle\Entity\Media
+        position:
+            type: integer
+        updatedAt:
+            type: DateTime
+        createdAt:
+            type: DateTime
+        enabled:
+            type: boolean
