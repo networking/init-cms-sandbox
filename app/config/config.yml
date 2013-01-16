@@ -2,11 +2,11 @@ imports:
     - { resource: parameters.yml }
     - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
 jms_serializer:
-  metadata:
-    directories:
-      ApplicationSonataMediaBundle:
-        namespace_prefix: "Sonata\\MediaBundle"
-        path: "@ApplicationSonataMediaBundle/Resources/config/serializer"
+    metadata:
+        directories:
+          NetworkingSonataMediaBundle:
+            namespace_prefix: "Sonata\\MediaBundle"
+            path: "@NetworkingMediaBundle/Resources/config/serializer"
 
 
 
@@ -71,7 +71,7 @@ doctrine:
         default_entity_manager:   default
         entity_managers:
             default:
-                auto_mapping: true
+                auto_mapping:     true
                 connection:       default
                 filters:
                     softdeleteable:
@@ -109,8 +109,8 @@ doctrine:
                         alias: GedmoSortable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     FOSUserBundle: ~
-                    ApplicationSonataMediaBundle: ~
-                    ApplicationSonataUserBundle: ~
+                    NetworkingMediaBundle: ~
+                    NetworkingUserBundle: ~
 
 
 # Swiftmailer Configuration

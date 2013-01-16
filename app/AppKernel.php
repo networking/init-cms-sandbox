@@ -38,16 +38,14 @@ class AppKernel extends Kernel
 			new Sonata\BlockBundle\SonataBlockBundle(),
 			new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 			new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-			new Sonata\FormatterBundle\SonataFormatterBundle(),
+//			new Sonata\FormatterBundle\SonataFormatterBundle(),
 			new Sonata\MediaBundle\SonataMediaBundle(),
-			new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
-			new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
 			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 			new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
-//			new A2lix\TranslationFormBundle\A2lixTranslationFormBundle(),
 			new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
+            new Networking\UserBundle\NetworkingUserBundle(),
+			new Networking\MediaBundle\NetworkingMediaBundle(),
 			new Networking\GalleryBundle\NetworkingGalleryBundle(),
-			new Networking\NewsBundle\NetworkingNewsBundle(),
 		);
 
 		if (in_array($this->getEnvironment(), array('dev', 'test')))

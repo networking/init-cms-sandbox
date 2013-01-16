@@ -1,6 +1,3 @@
 NetworkingInitCmsBundle:
     resource: "@NetworkingInitCmsBundle/Resources/config/routing.yml"
     prefix:   /
-NetworkingNewsBundle:
-    resource: "@NetworkingNewsBundle/Resources/config/routing/default.xml"
-    prefix:   /

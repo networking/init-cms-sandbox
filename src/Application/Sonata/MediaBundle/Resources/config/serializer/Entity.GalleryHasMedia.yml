@@ -1,4 +1,0 @@
-Application\Sonata\MediaBundle\Entity\GalleryHasMedia:
-    properties:
-          id:
-            type: integer
