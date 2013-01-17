@@ -38,7 +38,6 @@ class AppKernel extends Kernel
 			new Sonata\BlockBundle\SonataBlockBundle(),
 			new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 			new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-//			new Sonata\FormatterBundle\SonataFormatterBundle(),
 			new Sonata\MediaBundle\SonataMediaBundle(),
 			new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 			new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),

@@ -2098,18 +2098,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaWSSEAuthenticationBundle",
-                "reference": "eb9e1f12861fa9dfd009ab927f4ba798e660e899"
+                "reference": "9d30362b456b92ef8817d79b31219b61b1997d6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/phiamo/MopaWSSEAuthenticationBundle/archive/eb9e1f12861fa9dfd009ab927f4ba798e660e899.zip",
-                "reference": "eb9e1f12861fa9dfd009ab927f4ba798e660e899",
+                "url": "https://github.com/phiamo/MopaWSSEAuthenticationBundle/archive/9d30362b456b92ef8817d79b31219b61b1997d6a.zip",
+                "reference": "9d30362b456b92ef8817d79b31219b61b1997d6a",
                 "shasum": ""
             },
             "require": {
                 "symfony/symfony": "2.1.*"
             },
-            "time": "2012-05-31 19:38:22",
+            "time": "2013-01-16 21:34:56",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2125,7 +2125,7 @@
                 },
                 {
                     "name": "David Joos",
-                    "homepage": "http://www.mopastudios.co.uk/"
+                    "homepage": "http://www.escapestudios.com/"
                 },
                 {
                     "name": "Community contributions",
@@ -2145,39 +2145,35 @@
             "target-dir": "Networking/GalleryBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:networking/gallery-bundle.git",
-                "reference": "5d9c538f822b4db8ffc81e4ef87429937b8f4c51"
+                "url": "https://github.com/networking/gallery-bundle.git",
+                "reference": "9061daab8d84e40d4da338a8f7691fac8d08b7c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/gallery-bundle/zipball/5d9c538f822b4db8ffc81e4ef87429937b8f4c51",
-                "reference": "5d9c538f822b4db8ffc81e4ef87429937b8f4c51",
+                "url": "https://github.com/networking/gallery-bundle/archive/9061daab8d84e40d4da338a8f7691fac8d08b7c7.zip",
+                "reference": "9061daab8d84e40d4da338a8f7691fac8d08b7c7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2012-11-22 16:27:45",
+            "time": "2013-01-17 10:13:17",
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Networking\\GalleryBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Yorkie Chadwick",
-                    "homepage": "http://web.networking.ch",
-                    "email": "y.chadwick@networking.ch"
+                    "email": "y.chadwick@networking.ch",
+                    "homepage": "http://web.networking.ch"
                 }
             ],
             "description": "This Bundle is a gallery bundle for the networking init cms",
@@ -2185,11 +2181,7 @@
                 "symfony",
                 "cms",
                 "news"
-            ],
-            "support": {
-                "source": "https://github.com/networking/gallery-bundle/tree/master",
-                "issues": "https://github.com/networking/gallery-bundle/issues"
-            }
+            ]
         },
         {
             "name": "networking/init-cms-bundle",
@@ -2197,13 +2189,13 @@
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:networking/init-cms-bundle.git",
-                "reference": "ee3a17bf16a23f8efe1c4c1f1cf7fef01632c07c"
+                "url": "https://github.com/networking/init-cms-bundle.git",
+                "reference": "64b66bc5011539d15ad821d751e182999a63f033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/ee3a17bf16a23f8efe1c4c1f1cf7fef01632c07c",
-                "reference": "ee3a17bf16a23f8efe1c4c1f1cf7fef01632c07c",
+                "url": "https://github.com/networking/init-cms-bundle/archive/64b66bc5011539d15ad821d751e182999a63f033.zip",
+                "reference": "64b66bc5011539d15ad821d751e182999a63f033",
                 "shasum": ""
             },
             "require": {
@@ -2231,37 +2223,29 @@
                 "networking/gallery-bundle": "dev-master",
                 "networking/user-bundle": "dev-master"
             },
-            "time": "2013-01-16 11:14:40",
+            "time": "2013-01-17 12:35:35",
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Networking\\InitCmsBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Yorkie Chadwick",
-                    "homepage": "http://web.networking.ch",
-                    "email": "y.chadwick@networking.ch"
+                    "email": "y.chadwick@networking.ch",
+                    "homepage": "http://web.networking.ch"
                 }
             ],
             "description": "This Bundle is a basic cms based on symfony",
             "keywords": [
                 "symfony",
                 "cms"
-            ],
-            "support": {
-                "source": "https://github.com/networking/init-cms-bundle/tree/master",
-                "issues": "https://github.com/networking/init-cms-bundle/issues"
-            }
+            ]
         },
         {
             "name": "networking/media-bundle",
@@ -2269,39 +2253,35 @@
             "target-dir": "Networking/MediaBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:networking/media-bundle.git",
-                "reference": "5fb1fb9e8d1908770b74832cd99080d5e6ecb6c1"
+                "url": "https://github.com/networking/media-bundle.git",
+                "reference": "5a14b3433f3f29cd828d386dcc038b6a68e5f8fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/media-bundle/zipball/5fb1fb9e8d1908770b74832cd99080d5e6ecb6c1",
-                "reference": "5fb1fb9e8d1908770b74832cd99080d5e6ecb6c1",
+                "url": "https://github.com/networking/media-bundle/archive/5a14b3433f3f29cd828d386dcc038b6a68e5f8fe.zip",
+                "reference": "5a14b3433f3f29cd828d386dcc038b6a68e5f8fe",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2013-01-16 11:11:59",
+            "time": "2013-01-17 12:28:37",
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Networking\\MediaBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Yorkie Chadwick",
-                    "homepage": "http://web.networking.ch",
-                    "email": "y.chadwick@networking.ch"
+                    "email": "y.chadwick@networking.ch",
+                    "homepage": "http://web.networking.ch"
                 }
             ],
             "description": "This Bundle is an extension of the sonata media bundle for the networking init cms",
@@ -2309,11 +2289,7 @@
                 "symfony",
                 "cms",
                 "news"
-            ],
-            "support": {
-                "source": "https://github.com/networking/media-bundle/tree/master",
-                "issues": "https://github.com/networking/media-bundle/issues"
-            }
+            ]
         },
         {
             "name": "networking/user-bundle",
@@ -2321,39 +2297,35 @@
             "target-dir": "Networking/UserBundle",
             "source": {
                 "type": "git",
-                "url": "git@github.com:networking/user-bundle.git",
-                "reference": "a46ecccdd7b412bf358f226c537755d6a0fb0c12"
+                "url": "https://github.com/networking/user-bundle.git",
+                "reference": "0e21b6220e905e45a7fa5f228b8c8c77e070f906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/user-bundle/zipball/a46ecccdd7b412bf358f226c537755d6a0fb0c12",
-                "reference": "a46ecccdd7b412bf358f226c537755d6a0fb0c12",
+                "url": "https://github.com/networking/user-bundle/archive/0e21b6220e905e45a7fa5f228b8c8c77e070f906.zip",
+                "reference": "0e21b6220e905e45a7fa5f228b8c8c77e070f906",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "networking/init-cms-bundle": "dev-master"
             },
-            "time": "2013-01-16 10:57:34",
+            "time": "2013-01-17 12:27:27",
             "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                }
-            },
             "autoload": {
                 "psr-0": {
                     "Networking\\UserBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Yorkie Chadwick",
-                    "homepage": "http://web.networking.ch",
-                    "email": "y.chadwick@networking.ch"
+                    "email": "y.chadwick@networking.ch",
+                    "homepage": "http://web.networking.ch"
                 }
             ],
             "description": "This Bundle is an extension of the sonata user bundle for the networking init cms",
@@ -2361,11 +2333,7 @@
                 "symfony",
                 "cms",
                 "news"
-            ],
-            "support": {
-                "source": "https://github.com/networking/user-bundle/tree/master",
-                "issues": "https://github.com/networking/user-bundle/issues"
-            }
+            ]
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3914,18 +3882,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "2a7d317cf95cfcd2a9106ad14e4864bbf8bd78a4"
+                "reference": "3225226e0be466395414da4b362013531eedb580"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/2a7d317cf95cfcd2a9106ad14e4864bbf8bd78a4.zip",
-                "reference": "2a7d317cf95cfcd2a9106ad14e4864bbf8bd78a4",
+                "url": "https://github.com/fabpot/Twig/archive/3225226e0be466395414da4b362013531eedb580.zip",
+                "reference": "3225226e0be466395414da4b362013531eedb580",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-15 20:09:30",
+            "time": "2013-01-16 13:37:25",
             "type": "library",
             "extra": {
                 "branch-alias": {
