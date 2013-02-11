@@ -1,0 +1,35 @@
+{#
+
+This file is part of the Networking package.
+
+(c) net working AG <info@networking.ch>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+{% if text is defined %}
+<div class="{% if gallery is defined %}span5{% else %}span12{% endif %}">
+	{{ text | raw }}
+</div>
+{% endif %}
+{% if gallery is defined %}
+<div class="span7">
+	<div id="heroCarousel" class="carousel slide">
+		<!-- Carousel items -->
+		<div class="carousel-inner">
+			{% for mediaItem in gallery.galleryHasMedias %}
+			<div class="item">
+				<img src="{% path mediaItem.media, 'big' %}" alt="" />
+				<div class="carousel-caption">
+					<p>{{ mediaItem.media.getDescription }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<!-- Carousel nav -->
+		<a class="carousel-control left" href="#heroCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="carousel-control right" href="#heroCarousel" data-slide="next">&rsaquo;</a>
+	</div>
+</div>
+{% endif %}

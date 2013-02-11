@@ -1,0 +1,36 @@
+{#
+
+This file is part of the Networking package.
+
+(c) net working AG <info@networking.ch>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+{% if text is defined %}
+{{ text | raw }}
+{% endif %}
+
+{% if gallery is defined %}
+
+<ul class="thumbnails">
+	{% for mediaItem in gallery.galleryHasMedias %}
+
+  <li>
+    <div class="thumbnail">
+	    <a href="{% path mediaItem.media, 'big' %}" rel="prettyPhoto[{{ gallery.name }}]">
+		    {% thumbnail mediaItem.media, 'small'%}
+	    </a>
+      {% if  mediaItem.media.name is defined %}
+      <h5>{{ mediaItem.media.name }}</h5>
+      {% endif %}
+        {% if  mediaItem.media.description is defined %}
+      <p>{{ mediaItem.media.description }}</p>
+       {% endif %}
+    </div>
+  </li>
+	{% endfor %}
+</ul>
+
+{% endif %}
