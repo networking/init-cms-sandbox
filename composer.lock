@@ -2254,12 +2254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "6e7e97a281e6fed0adadcb63c22606451147a02f"
+                "reference": "4f2d49bed1d9831b224a083678a72032ac59e079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/6e7e97a281e6fed0adadcb63c22606451147a02f",
-                "reference": "6e7e97a281e6fed0adadcb63c22606451147a02f",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/4f2d49bed1d9831b224a083678a72032ac59e079",
+                "reference": "4f2d49bed1d9831b224a083678a72032ac59e079",
                 "shasum": ""
             },
             "require": {
@@ -2288,7 +2288,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-11 08:25:49",
+            "time": "2013-02-11 09:54:54",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2690,18 +2690,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "dc77e3b3b6fa4603e10e7c391a4641d72d352977"
+                "reference": "0be144ea0344a9c683ea249988b9574e50c61e31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/dc77e3b3b6fa4603e10e7c391a4641d72d352977",
-                "reference": "dc77e3b3b6fa4603e10e7c391a4641d72d352977",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/0be144ea0344a9c683ea249988b9574e50c61e31",
+                "reference": "0be144ea0344a9c683ea249988b9574e50c61e31",
                 "shasum": ""
             },
             "require": {
                 "knplabs/knp-menu-bundle": ">=1.1.0,<2.0.x-dev",
                 "sonata-project/block-bundle": "dev-master",
-                "sonata-project/exporter": "dev-master",
+                "sonata-project/exporter": "1.1.*",
                 "sonata-project/jquery-bundle": "dev-master",
                 "symfony/config": ">=2.1,<2.3-dev",
                 "symfony/console": ">=2.1,<2.3-dev",
@@ -2720,7 +2720,7 @@
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
                 "sonata-project/intl-bundle": "dev-master"
             },
-            "time": "2013-02-06 15:33:51",
+            "time": "2013-02-11 09:18:22",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3019,7 +3019,7 @@
         },
         {
             "name": "sonata-project/exporter",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter",
