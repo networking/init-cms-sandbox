@@ -24,3 +24,4 @@ app/config/parameters.yml
 
 #ignore mac filesystem files
 .DS_Store
+/web/img/
