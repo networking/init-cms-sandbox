@@ -10,13 +10,27 @@ file that was distributed with this source code.
 #}
 {% extends 'SandboxInitCmsBundle::base.html.twig' %}
 {% set _form         = block('form') %}
-{% block title %}Communication Suite - Layout{% endblock title %}
-{% block container_class %}container{% endblock container_class %}
+
+{% block title %}{% endblock title %}
+{% block container_class %}container-narrow{% endblock container_class %}
 
 {% block navbar %}
-{{ mopa_bootstrap_navbar('cmsNavbar' ) }}
+    {{ mopa_bootstrap_navbar('cmsNavbar' ) }}
 {% endblock navbar %}
-{% block subnavbar %}{{ mopa_bootstrap_navbar('subNavbar') }}{% endblock subnavbar %}
+{% block subnavbar %}
+    {{ mopa_bootstrap_navbar('subNavbar') }}
+{% endblock subnavbar %}
+{% block footer %}
+    <hr />
+    <div class="footer">
+        {{ knp_menu_render('footerMenu', {
+                    'currentClass': 'active',
+                    'ancestorClass': 'active',
+                    'allow_safe_labels': true})
+            }}
+        {#{{ mopa_bootstrap_navbar('footerNavbar') }}#}
+    </div>
+{% endblock footer %}
 
 {% block content_row %}
 {{ parent() }}

@@ -14,7 +14,7 @@ file that was distributed with this source code.
 {% block head_style %}
 {# Override this block to add your own files! #}
 {% stylesheets filter='less,?yui_css'
-   '@SandboxInitCmsBundle/Resources/public/less/networkingcmspagebundle.less'
+   '@SandboxInitCmsBundle/Resources/public/less/sandboxbundle.less'
    '@SandboxInitCmsBundle/Resources/public/css/prettyPhoto.css'
 %}
 <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
@@ -35,11 +35,14 @@ file that was distributed with this source code.
 {% block body %}
 
     {{ block('admin_navbar') }}
-    {% block navbar %}
-    {% endblock navbar %}
+
 
     {% block container %}
     <div class="{% block container_class %}container-fluid{% endblock container_class %}">
+
+        {% block navbar %}{% endblock navbar %}
+        {% block subnavbar %}{% endblock subnavbar %}
+
         {% block header %}
         {% endblock header %}
 
@@ -63,7 +66,7 @@ file that was distributed with this source code.
 
             {% block content_row %}
             <div class="row-fluid">
-	           	{% block subnavbar %}{% endblock subnavbar %}
+
                 {% block content %}
                 <div class="span7">
                     <strong>Hier könnte Ihre Werbung stehen ... </strong>
@@ -91,18 +94,18 @@ file that was distributed with this source code.
     {% javascripts
         'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-transition.js'
+        '@SandboxInitCmsBundle/Resources/public/js/bootstrap-alert.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-modal.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-dropdown.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-scrollspy.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-tab.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-tooltip.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-popover.js'
-        '@SandboxInitCmsBundle/Resources/public/js/bootstrap-alert.js'
-        '@SandboxInitCmsBundle/Resources/public/js/bootstrap-affix.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-button.js'
+
+        '@SandboxInitCmsBundle/Resources/public/js/bootstrap-affix.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-collapse.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-carousel.js'
-        '@SandboxInitCmsBundle/Resources/public/js/bootstrap-typeahead.js'
         '@SandboxInitCmsBundle/Resources/public/js/jQuery.prettyPhoto.js'
     %}
 <script type="text/javascript" src="{{ asset_url }}"></script>
