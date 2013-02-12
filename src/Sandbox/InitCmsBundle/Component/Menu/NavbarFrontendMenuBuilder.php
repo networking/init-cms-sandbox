@@ -36,7 +36,7 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
         parent::__construct($factory, $securityContext, $serviceContainer);
     }
 
-    public function createFooterMenu(Request $request, $path, $classes='')
+    public function createFooterMenu(Request $request, $path, $classes = '')
     {
         $repository = $this->serviceContainer->get('doctrine')->getRepository('NetworkingInitCmsBundle:MenuItem');
         $menu = $this->createNavbarMenuItem();
@@ -62,6 +62,7 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
                 $menu->addChild($this->createFromNode($childNode));
             }
         }
+
         return $menu;
     }
 
@@ -72,7 +73,7 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
      * @param string $classes
      * @return \Knp\Menu\ItemInterface
      */
-    public function createMainMenu(Request $request, $path, $classes= '')
+    public function createMainMenu(Request $request, $path, $classes = '')
     {
 
         /** @var $repository MenuItemRepository */
@@ -108,6 +109,68 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
         return $menu;
     }
 
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param string $path
+     * @param string $classes
+     * @return bool|\Knp\Menu\ItemInterface
+     */
+    public function createNavbarsSubnavMenu(Request $request, $path, $classes = "")
+    {
+        $root = null;
+        /** @var $repository MenuItemRepository */
+        $repository = $this->serviceContainer->get('doctrine')
+            ->getRepository('NetworkingInitCmsBundle:MenuItem');
+
+        $menu = $this->factory->createItem('sub_nav');
+        $menu->setCurrentUri($request->getRequestUri());
+
+        /** @var $mainMenu Menu */
+        $mainMenu = $repository->findOneBy(
+            array('name' => $path, 'locale' => $this->serviceContainer->get('request')->getLocale())
+        );
+
+
+        if (!$mainMenu) {
+            return $menu;
+        }
+
+        /** @var $menuIterator \ArrayIterator */
+        $menuIterator = new \RecursiveIteratorIterator(
+            new RecursiveItemIterator($mainMenu->getChildren()),
+            \RecursiveIteratorIterator::SELF_FIRST
+        );
+
+        $iterator = new MenuSubItemFilterIterator($menuIterator, $request->getPathInfo());
+
+        foreach ($iterator as $item) {
+            $root = $item->getParentByLevel(1);
+        }
+
+        if (!$root) {
+            return false;
+        }
+
+        $menuIterator = new \RecursiveIteratorIterator(
+            new RecursiveItemIterator($root->getChildren()),
+            \RecursiveIteratorIterator::SELF_FIRST
+        );
+
+        $menu->setChildrenAttribute('class', $classes);
+
+        foreach ($menuIterator as $childNode) {
+            if ($menuIterator->getDepth() > 0) {
+                $parentMenu = $this->getMenuParentItem($menu, $childNode, $menuIterator->getDepth());
+                $parentMenu->addChild($this->createFromNode($childNode));
+                $parentMenu->setChildrenAttribute('class', 'nav nav-list');
+            } else {
+                $menu->addChild($this->createFromNode($childNode));
+            }
+        }
+
+        return $menu;
+    }
+
 
     /**
      * Used to create nodes for the language navigation in the front- and backend
@@ -123,13 +186,12 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
         $currentLanguage,
         $route = 'networking_init_change_language'
     ) {
-      foreach($languages as $language)
-        {
+        foreach ($languages as $language) {
             $node = $menu->addChild(
                 $language['label'],
                 array('uri' => $this->router->generate($route, array('locale' => $language['locale'])))
             );
-            if($language['locale'] == $currentLanguage){
+            if ($language['locale'] == $currentLanguage) {
                 $node->setCurrent(true);
             }
         }

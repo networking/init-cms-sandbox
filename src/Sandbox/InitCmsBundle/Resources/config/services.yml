@@ -47,7 +47,7 @@ services:
         class: Knp\Menu\MenuItem
         factory_service: sandbox_init_cms.menu.navbar_menu_builder
         factory_method: createNavbarsSubnavMenu
-        arguments: [ '@request', path: "The main menu"]
+        arguments: [ '@request', "The main menu", 'nav nav-pills']
         scope: request
         tags:
             - { name: knp_menu.menu, alias: subMenu }
@@ -60,7 +60,7 @@ services:
             - { menu: @sandbox_init_cms.menu.frontend_sub_menu= }
             - {}
             # third argument: a named array of options
-            - { template: NetworkingInitCmsBundle:Navbar:subnavbar.html.twig }
+            - { template: SandboxInitCmsBundle:Navbar:subnavbar.html.twig }
         tags:
             # The alias is used to retrieve the navbar in templates
             - { name: mopa_bootstrap.navbar, alias: subNavbar }

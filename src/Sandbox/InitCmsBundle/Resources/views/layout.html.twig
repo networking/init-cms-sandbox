@@ -23,12 +23,7 @@ file that was distributed with this source code.
 {% block footer %}
     <hr />
     <div class="footer">
-        {{ knp_menu_render('footerMenu', {
-                    'currentClass': 'active',
-                    'ancestorClass': 'active',
-                    'allow_safe_labels': true})
-            }}
-        {#{{ mopa_bootstrap_navbar('footerNavbar') }}#}
+        {{ mopa_bootstrap_navbar('footerNavbar') }}
     </div>
 {% endblock footer %}
 
