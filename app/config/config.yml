@@ -138,6 +138,7 @@ networking_init_cms:
             name: "Two Column"
             icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
             zones:
+                - { name: header , span:12}
                 - { name: left-top , span:6}
                 - { name: right-top , span:6}
                 - { name: left-middle , span:6}

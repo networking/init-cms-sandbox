@@ -10,7 +10,6 @@ file that was distributed with this source code.
 #}
 {% block navbar %}
     <div class="header {{ (navbar.hasOption('fixedTop') and  navbar.getOption('fixedTop')) ? 'navbar-fixed-top' : '' }}">
-
         {{ navbar.hasMenu('langMenu') ? knp_menu_render(navbar.getMenu('langMenu'), {'currentClass': 'active', 'ancestorClass': '', 'allow_safe_labels': 'true'}) : '' }}
         {{ navbar.hasMenu('loginMenu') ? knp_menu_render(navbar.getMenu('loginMenu'), {'currentClass': 'active', 'allow_safe_labels': 'true'}) : '' }}
 
@@ -26,38 +25,8 @@ file that was distributed with this source code.
     </div>
     <div class="row-fluid nav-main-container">
     {{ navbar.hasMenu('pageMenu') ? knp_menu_render(navbar.getMenu('pageMenu'), {'depth':1, 'currentClass': 'active', 'ancestorClass': 'active', 'allow_safe_labels': 'true'}) : '' }}
+        {{ mopa_bootstrap_navbar('subNavbar') }}
     </div>
-    {# example for main nav #}
-    {#<div class="row-fluid nav-main-container">#}
-        {#<!-- first level (main nav)-->#}
-        {#<ul class="nav nav-tabs nav-main">#}
-            {#<li>#}
-                {#<a href="#">Events (Home)</a>#}
-            {#</li>#}
-            {#<li class="active"><a href="#">Boats</a>#}
-            {#</li><li><a href="#">Clubhouse</a></li>#}
-        {#</ul>#}
-
-        {#<!-- second level (main nav)-->#}
-        {#<ul class="nav nav-pills">#}
-            {#<li><a href="#">J24</a></li>#}
-            {#<li class="active"><a href="#">Lacustre</a> </li>#}
-        {#</ul>#}
-    {#</div>#}
-
-
-    {# example for searchform #}
-            {#{% if navbar.hasFormView('searchform') %}#}
-                {#{%- set form_view = navbar.getFormView('searchform') -%}#}
-                {#{%- set form_type = navbar.getFormType('searchform') -%}#}
-                {#{%- set form_attrs = form_view.vars.attr -%}#}
-                {#{% form_theme form_view _self %}#}
-                {#<form class="navbar-search pull-{{ form_attrs.pull|default('left') }}"#}
-                      {#method="{{ form_attrs.method|default('post') }}"#}
-                      {#action="{{ path(navbar.getFormRoute('searchform')) }}">#}
-                    {#{{ form_widget(form_view) }}#}
-                {#</form>#}
-            {#{% endif %}#}
 {% endblock navbar %}
 
 

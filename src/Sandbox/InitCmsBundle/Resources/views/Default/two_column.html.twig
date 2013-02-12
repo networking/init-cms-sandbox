@@ -13,10 +13,10 @@ file that was distributed with this source code.
 {% block title %}{{ page.metaTitle }}{% endblock %}
 
 {% block content %}
-    <div class="span{% if block('subnavbar') %}10{% else %}12{% endif %}">
+    <div class="span12">
         {% if page.layoutBlock('left-top') is not empty %}
             <div class="hero-unit">
-                    {% for layoutBlock in page.layoutBlock('left-top') %}
+                    {% for layoutBlock in page.layoutBlock('header') %}
                         {{ networking_init_cms_block('SandboxInitCmsBundle:Content:hero_block.html.twig', layoutBlock) }}
                     {% endfor %}
             </div>
@@ -24,6 +24,11 @@ file that was distributed with this source code.
         <div class="row-fluid">
             {% if page.layoutBlock('right-top')|length > 0 or page.layoutBlock('right-middle')|length > 0 %}
                 <div class="span6">
+                    <div class="middle">
+                        {% for layoutBlock in page.layoutBlock('left-top') %}
+                            {{ networking_init_cms_block('SandboxInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
+                        {% endfor %}
+                    </div>
                     <div class="middle">
                         {% for layoutBlock in page.layoutBlock('left-middle') %}
                             {{ networking_init_cms_block('SandboxInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
@@ -33,7 +38,7 @@ file that was distributed with this source code.
 
                 <div class="span6">
                     {% block content_sidebar %}
-                        <div class="top well">
+                        <div class="middle">
                             {% for layoutBlock in page.layoutBlock('right-top') %}
                                 {{ networking_init_cms_block('SandboxInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
                             {% endfor %}
@@ -48,6 +53,11 @@ file that was distributed with this source code.
                 </div>
             {% else %}
                 <div class="span12">
+                    <div class="middle">
+                        {% for layoutBlock in page.layoutBlock('left-top') %}
+                            {{ networking_init_cms_block('SandboxInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
+                        {% endfor %}
+                    </div>
                     <div class="middle">
                         {% for layoutBlock in page.layoutBlock('left-middle') %}
                             {{ networking_init_cms_block('SandboxInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}

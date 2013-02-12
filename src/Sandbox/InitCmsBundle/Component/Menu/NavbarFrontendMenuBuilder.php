@@ -189,11 +189,32 @@ class NavbarFrontendMenuBuilder extends NavbarMenuBuilder
         foreach ($languages as $language) {
             $node = $menu->addChild(
                 $language['label'],
-                array('uri' => $this->router->generate($route, array('locale' => $language['locale'])))
+                array(
+                    'uri' => $this->router->generate($route, array('locale' => $language['locale'])),
+                    'linkAttributes' => array('class' => 'language')
+                )
             );
             if ($language['locale'] == $currentLanguage) {
                 $node->setCurrent(true);
             }
         }
+    }
+
+    /**
+     * Creates the login and change language navigation for the right side of the top frontend navigation
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param $languages
+     * @param string $classes
+     * @return \Knp\Menu\ItemInterface
+     */
+    public function createFrontendLangMenu(Request $request, $languages, $classes = 'nav pull-right')
+    {
+        $menu = $this->factory->createItem('root');
+        $menu->setChildrenAttribute('class', $classes);
+
+
+        $this->createNavbarsLangMenu($menu, $languages, $request->getLocale());
+
+        return $menu;
     }
 }
