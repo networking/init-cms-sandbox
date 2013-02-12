@@ -131,18 +131,16 @@ networking_init_cms:
             name: "Single Column"
             icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
             zones:
-                - { name: top, span:12 }
-                - { name: middle, span:12}
+                - { name: header, span:12 }
+                - { name: main_content, span:12}
 #                - { name: bottom, span:12}
         'SandboxInitCmsBundle:Default:two_column.html.twig':
             name: "Two Column"
             icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
             zones:
                 - { name: header , span:12}
-                - { name: left-top , span:6}
-                - { name: right-top , span:6}
-                - { name: left-middle , span:6}
-                - { name: right-middle , span:6}
+                - { name: left , span:6}
+                - { name: right , span:6}
 #        'NetworkingNewsBundle:News:news_two_column.html.twig':
 #            name: "News/Two Column"
 #            icon: "bundles/networkinginitcms/img/template_header_two_column.png"
@@ -155,3 +153,6 @@ networking_init_cms:
     content_types:
         - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
         - { name: 'Gallery' , class: 'Networking\GalleryBundle\Entity\Gallery'}
+
+sonata_admin:
+    title:      Demo Sailing Club
