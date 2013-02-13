@@ -25,8 +25,6 @@ class AppKernel extends Kernel
 			new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
 			new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
 			new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
-			new Mopa\Bundle\RemoteUpdateBundle\MopaRemoteUpdateBundle(),
-			new Mopa\Bundle\WSSEAuthenticationBundle\MopaWSSEAuthenticationBundle(),
 			new Sensio\Bundle\BuzzBundle\SensioBuzzBundle(),
 			new FOS\RestBundle\FOSRestBundle(),
 			new Liip\ThemeBundle\LiipThemeBundle(),
