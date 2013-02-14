@@ -44,7 +44,8 @@ class AppKernel extends Kernel
 			new Networking\MediaBundle\NetworkingMediaBundle(),
 			new Networking\GalleryBundle\NetworkingGalleryBundle(),
             new Sandbox\InitCmsBundle\SandboxInitCmsBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle()
+            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Ibrows\Bundle\SonataAdminAnnotationBundle\IbrowsSonataAdminAnnotationBundle(),
 		);
 
 		if (in_array($this->getEnvironment(), array('dev', 'test')))

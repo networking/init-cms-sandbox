@@ -858,6 +858,95 @@
             ]
         },
         {
+            "name": "ibrows/annotation-reader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ibrows/IbrowsAnnotationReader",
+                "reference": "e8235da539522130373a3135ef4f8fcc6f90d613"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/e8235da539522130373a3135ef4f8fcc6f90d613",
+                "reference": "e8235da539522130373a3135ef4f8fcc6f90d613",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2013-02-07 15:31:04",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Ibrows\\AnnotationReader": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Meier",
+                    "email": "mike.meier@ibrows.ch",
+                    "homepage": "http://www.ibrows.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Base Annotation-Reader as enhanced Doctrine Annotation Reader ",
+            "homepage": "http://github.com/ibrows/IbrowsAnnotationReader",
+            "keywords": [
+                "annotation",
+                "reader"
+            ]
+        },
+        {
+            "name": "ibrows/sonata-admin-annotation-bundle",
+            "version": "dev-master",
+            "target-dir": "Ibrows/Bundle/SonataAdminAnnotationBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle",
+                "reference": "ab279043b34baa9bac237065afd1a400cb41952f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ibrows/IbrowsSonataAdminAnnotationBundle/zipball/ab279043b34baa9bac237065afd1a400cb41952f",
+                "reference": "ab279043b34baa9bac237065afd1a400cb41952f",
+                "shasum": ""
+            },
+            "require": {
+                "ibrows/annotation-reader": "dev-master",
+                "php": ">=5.3.0",
+                "symfony/framework-bundle": ">=2.0"
+            },
+            "time": "2013-02-14 08:38:07",
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Ibrows\\Bundle\\SonataAdminAnnotationBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Meier",
+                    "email": "mike.meier@ibrows.ch",
+                    "homepage": "http://www.ibrows.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manage Sonata Form, Data, List and ShowMapper over annotations",
+            "keywords": [
+                "annotation",
+                "ibrows",
+                "sonata"
+            ]
+        },
+        {
             "name": "imagine/Imagine",
             "version": "dev-master",
             "source": {
@@ -2060,19 +2149,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/gallery-bundle.git",
-                "reference": "03a2da7070aa384a2a2dbaa72f5e67443b657d65"
+                "reference": "1f35f65557af9629ee4b4e1339446bfb6c3f72c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/gallery-bundle/zipball/03a2da7070aa384a2a2dbaa72f5e67443b657d65",
-                "reference": "03a2da7070aa384a2a2dbaa72f5e67443b657d65",
+                "url": "https://api.github.com/repos/networking/gallery-bundle/zipball/1f35f65557af9629ee4b4e1339446bfb6c3f72c8",
+                "reference": "1f35f65557af9629ee4b4e1339446bfb6c3f72c8",
                 "shasum": ""
             },
             "require": {
                 "networking/init-cms-bundle": "dev-master",
                 "php": ">=5.3.3"
             },
-            "time": "2013-02-06 17:16:08",
+            "time": "2013-02-14 17:58:48",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2104,12 +2193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "16df50822b3efb8bc8d7470a8129af4b74c6346b"
+                "reference": "8c4bd44e8c3a7578026dde970dab20bdc4ebef87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/16df50822b3efb8bc8d7470a8129af4b74c6346b",
-                "reference": "16df50822b3efb8bc8d7470a8129af4b74c6346b",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/8c4bd44e8c3a7578026dde970dab20bdc4ebef87",
+                "reference": "8c4bd44e8c3a7578026dde970dab20bdc4ebef87",
                 "shasum": ""
             },
             "require": {
@@ -2118,6 +2207,7 @@
                 "doctrine/doctrine-fixtures-bundle": "dev-master",
                 "doctrine/orm": ">=2.2.3,<2.4-dev",
                 "friendsofsymfony/user-bundle": "dev-master",
+                "ibrows/sonata-admin-annotation-bundle": "*",
                 "jms/serializer-bundle": "master",
                 "knplabs/knp-menu-bundle": "1.1.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
@@ -2136,7 +2226,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-14 15:36:33",
+            "time": "2013-02-14 17:58:07",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2661,13 +2751,13 @@
             "target-dir": "Sonata/CacheBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sonata-project/SonataCacheBundle",
-                "reference": "c89d2db291912a866c41f4aa010f4ca45d5bca18"
+                "url": "https://github.com/sonata-project/SonataCacheBundle.git",
+                "reference": "e603f2975b3a7cf43a9e9a41377fa9ea95f54265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sonata-project/SonataCacheBundle/archive/c89d2db291912a866c41f4aa010f4ca45d5bca18.zip",
-                "reference": "c89d2db291912a866c41f4aa010f4ca45d5bca18",
+                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/e603f2975b3a7cf43a9e9a41377fa9ea95f54265",
+                "reference": "e603f2975b3a7cf43a9e9a41377fa9ea95f54265",
                 "shasum": ""
             },
             "require": {
@@ -2687,7 +2777,7 @@
                 "ext-apc": "Caching with ext/apc",
                 "ext-memcached": "Caching with ext/memcached"
             },
-            "time": "2013-01-07 17:18:32",
+            "time": "2013-02-14 17:15:09",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
