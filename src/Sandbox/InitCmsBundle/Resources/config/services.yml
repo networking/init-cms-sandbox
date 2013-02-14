@@ -1,31 +1,22 @@
 services:
-    sandbox_init_cms.menu.navbar_menu_builder:
-        class: Sandbox\InitCmsBundle\Component\Menu\NavbarFrontendMenuBuilder
+    sandbox_init_cms.menu.frontend_menu_builder:
+        class: Networking\InitCmsBundle\Component\Menu\FrontendMenuBuilder
         scope: request
         arguments: [ '@knp_menu.factory', '@security.context', '@service_container' ]
 
     # Create the left main menu and right main menu for the frontend
     sandbox_init_cms.menu.frontend_main_menu_left:
         class: Knp\Menu\MenuItem
-        factory_service: sandbox_init_cms.menu.navbar_menu_builder
+        factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createMainMenu
-        arguments: [ '@request', path: "The main menu", "nav nav-tabs nav-main" ]
+        arguments: [ '@request', menu_name: "The main menu", "nav nav-tabs nav-main" ]
         scope: request
         tags:
-            - { name: knp_menu.menu, alias: main }
-
-    sandbox_init_cms.menu.frontend_main_menu_login:
-        class: Knp\Menu\MenuItem
-        factory_service: sandbox_init_cms.menu.navbar_menu_builder
-        factory_method: createCMSMenu
-        arguments: [ '@request', %networking_init_cms.page.languages% ]
-        scope: request
-        tags:
-            - { name: knp_menu.menu, alias: loginMenu }
+            - { name: knp_menu.menu, alias: mainMenu }
 
     sandbox_init_cms.menu.frontend_main_menu_language:
         class: Knp\Menu\MenuItem
-        factory_service: sandbox_init_cms.menu.navbar_menu_builder
+        factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createFrontendLangMenu
         arguments: [ '@request', %networking_init_cms.page.languages%, "nav nav-pills pull-right" ]
         scope: request
@@ -45,8 +36,8 @@ services:
     # Create the side menu for the frontend
     sandbox_init_cms.menu.frontend_sub_menu:
         class: Knp\Menu\MenuItem
-        factory_service: sandbox_init_cms.menu.navbar_menu_builder
-        factory_method: createNavbarsSubnavMenu
+        factory_service: sandbox_init_cms.menu.frontend_menu_builder
+        factory_method: createSubnavMenu
         arguments: [ '@request', "The main menu", 'nav nav-pills']
         scope: request
         tags:
@@ -67,7 +58,7 @@ services:
 
     sandbox_init_cms.menu.frontend_footer_menu:
         class: Knp\Menu\MenuItem
-        factory_service: sandbox_init_cms.menu.navbar_menu_builder
+        factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createFooterMenu
         arguments: [ @request, 'Footer Menu', 'nav nav-pills']
         scope: request
