@@ -56,7 +56,7 @@ file:
 
 Now we just need to create some folders for our media in the web root directory and make it RW+
 
-	mkdir web/uploads web/uploads/media web/uploads/images
+	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
 	cd ../
 
@@ -104,6 +104,20 @@ navigate to:
 
 Enter your username and password as entered in step 3 and you should be directed to the
 admin dashboard.
+
+
+Further documentation about the initcms
+---------------------------------------
+
+You can find more information about configuring and extend the initcms online, just follow the links
+
+- [InitCmsBundle installation](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/installation.md)
+- [Configuring your cms](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/configuration.md)
+- [Creating templates](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/templates.md)
+- [Creating custom content types](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/content_types.md)
+- [Creating an Admin user interface](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/admin_ui.md)
+- [Creating custom admin settings](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/custom_admin_settings.md)
+
 
 What's inside?
 ---------------
