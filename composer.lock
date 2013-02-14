@@ -784,12 +784,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "3a2a67b96139de6d98f3863caf6a1baa53fbffc5"
+                "reference": "b2806e409f21132e814203e36810b7112453a858"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/3a2a67b96139de6d98f3863caf6a1baa53fbffc5",
-                "reference": "3a2a67b96139de6d98f3863caf6a1baa53fbffc5",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/b2806e409f21132e814203e36810b7112453a858",
+                "reference": "b2806e409f21132e814203e36810b7112453a858",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                 "doctrine/mongodb-odm": ">=1.0.0-BETA7",
                 "doctrine/orm": ">=2.3.2"
             },
-            "time": "2013-02-13 10:22:03",
+            "time": "2013-02-13 19:35:33",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1952,12 +1952,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "04715053efbd58453af4690341fb9996a95c9e20"
+                "reference": "cba2247073c115c07c0b928a062e739c52964318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/04715053efbd58453af4690341fb9996a95c9e20",
-                "reference": "04715053efbd58453af4690341fb9996a95c9e20",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/cba2247073c115c07c0b928a062e739c52964318",
+                "reference": "cba2247073c115c07c0b928a062e739c52964318",
                 "shasum": ""
             },
             "require": {
@@ -1971,7 +1971,7 @@
                 "knplabs/knp-paginator-bundle": "dev-master",
                 "twitter/bootstrap": "2.0.*"
             },
-            "time": "2013-02-13 10:03:36",
+            "time": "2013-02-13 15:51:14",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2104,12 +2104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "0c205bc4363bf21921ce84462854c5b4f5b8be21"
+                "reference": "c8382363f4f352de28cb8f6aaf79ee4cd888f637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/0c205bc4363bf21921ce84462854c5b4f5b8be21",
-                "reference": "0c205bc4363bf21921ce84462854c5b4f5b8be21",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/c8382363f4f352de28cb8f6aaf79ee4cd888f637",
+                "reference": "c8382363f4f352de28cb8f6aaf79ee4cd888f637",
                 "shasum": ""
             },
             "require": {
@@ -2136,7 +2136,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-13 11:38:14",
+            "time": "2013-02-13 16:59:32",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3204,12 +3204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataNotificationBundle",
-                "reference": "ea4b2e56f242de6fea464e7592babfbd2e723dfb"
+                "reference": "15899a1cace0a2bf00483251ccecaa5200483ca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/ea4b2e56f242de6fea464e7592babfbd2e723dfb",
-                "reference": "ea4b2e56f242de6fea464e7592babfbd2e723dfb",
+                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/15899a1cace0a2bf00483251ccecaa5200483ca2",
+                "reference": "15899a1cace0a2bf00483251ccecaa5200483ca2",
                 "shasum": ""
             },
             "require": {
@@ -3225,7 +3225,7 @@
                 "liip/monitor": "*",
                 "videlalvaro/php-amqplib": "*"
             },
-            "time": "2013-02-11 22:29:09",
+            "time": "2013-02-14 00:05:04",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3262,12 +3262,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle",
-                "reference": "1f2802ba33c2e8b315975250ef1cb5084c6ae13b"
+                "reference": "32c74dc130b859c0e1b9f0293784a80e806ce9b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/1f2802ba33c2e8b315975250ef1cb5084c6ae13b",
-                "reference": "1f2802ba33c2e8b315975250ef1cb5084c6ae13b",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/32c74dc130b859c0e1b9f0293784a80e806ce9b6",
+                "reference": "32c74dc130b859c0e1b9f0293784a80e806ce9b6",
                 "shasum": ""
             },
             "require": {
@@ -3284,7 +3284,7 @@
             "suggest": {
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master"
             },
-            "time": "2013-02-12 23:42:50",
+            "time": "2013-02-13 22:33:35",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
