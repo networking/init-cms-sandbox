@@ -862,19 +862,19 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ibrows/IbrowsAnnotationReader",
-                "reference": "e8235da539522130373a3135ef4f8fcc6f90d613"
+                "url": "https://github.com/ibrows/IbrowsAnnotationReader.git",
+                "reference": "1b53fdb4cc6e3c4d9298ed4baa39d50134b8c58a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/e8235da539522130373a3135ef4f8fcc6f90d613",
-                "reference": "e8235da539522130373a3135ef4f8fcc6f90d613",
+                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/1b53fdb4cc6e3c4d9298ed4baa39d50134b8c58a",
+                "reference": "1b53fdb4cc6e3c4d9298ed4baa39d50134b8c58a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2013-02-07 15:31:04",
+            "time": "2013-02-15 14:25:18",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -906,13 +906,13 @@
             "target-dir": "Ibrows/Bundle/SonataAdminAnnotationBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle",
-                "reference": "ab279043b34baa9bac237065afd1a400cb41952f"
+                "url": "https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle.git",
+                "reference": "ca9c2cf55a1fec9e5a7ebe7171767c012b0f00a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrows/IbrowsSonataAdminAnnotationBundle/zipball/ab279043b34baa9bac237065afd1a400cb41952f",
-                "reference": "ab279043b34baa9bac237065afd1a400cb41952f",
+                "url": "https://api.github.com/repos/ibrows/IbrowsSonataAdminAnnotationBundle/zipball/ca9c2cf55a1fec9e5a7ebe7171767c012b0f00a5",
+                "reference": "ca9c2cf55a1fec9e5a7ebe7171767c012b0f00a5",
                 "shasum": ""
             },
             "require": {
@@ -920,7 +920,7 @@
                 "php": ">=5.3.0",
                 "symfony/framework-bundle": ">=2.0"
             },
-            "time": "2013-02-14 08:38:07",
+            "time": "2013-02-15 14:25:39",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -1456,13 +1456,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/KnpLabs/Gaufrette",
-                "reference": "dd76593609f717c5c3e505c8ab788da153586e95"
+                "url": "https://github.com/KnpLabs/Gaufrette.git",
+                "reference": "ad5473de05d1274dec830e3fb6b70e17adad9075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/dd76593609f717c5c3e505c8ab788da153586e95",
-                "reference": "dd76593609f717c5c3e505c8ab788da153586e95",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/ad5473de05d1274dec830e3fb6b70e17adad9075",
+                "reference": "ad5473de05d1274dec830e3fb6b70e17adad9075",
                 "shasum": ""
             },
             "require": {
@@ -1473,7 +1473,7 @@
                 "doctrine/dbal": ">=2.3",
                 "dropbox-php/dropbox-php": "*",
                 "herzult/php-ssh": "*",
-                "phpspec/phpspec2": "1.0.*",
+                "phpspec/phpspec2": "dev-master",
                 "rackspace/php-cloudfiles": "*"
             },
             "suggest": {
@@ -1487,7 +1487,7 @@
                 "ext-zip": "to use the Zip adapter",
                 "knplabs/knp-gaufrette-bundle": "*"
             },
-            "time": "2013-02-12 18:47:06",
+            "time": "2013-02-15 14:26:18",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2193,12 +2193,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "8c4bd44e8c3a7578026dde970dab20bdc4ebef87"
+                "reference": "5ac4e030898fd47d9e7ce505b5b05e11d82594b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/8c4bd44e8c3a7578026dde970dab20bdc4ebef87",
-                "reference": "8c4bd44e8c3a7578026dde970dab20bdc4ebef87",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/5ac4e030898fd47d9e7ce505b5b05e11d82594b4",
+                "reference": "5ac4e030898fd47d9e7ce505b5b05e11d82594b4",
                 "shasum": ""
             },
             "require": {
@@ -2226,7 +2226,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-14 17:58:07",
+            "time": "2013-02-15 16:51:24",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2257,19 +2257,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/media-bundle.git",
-                "reference": "af84a710d125d90fd3b69b25ede6aa2c9b79d3f4"
+                "reference": "e4fc6335c017e64f7f0229767a2b1cacddf40605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/media-bundle/zipball/af84a710d125d90fd3b69b25ede6aa2c9b79d3f4",
-                "reference": "af84a710d125d90fd3b69b25ede6aa2c9b79d3f4",
+                "url": "https://api.github.com/repos/networking/media-bundle/zipball/e4fc6335c017e64f7f0229767a2b1cacddf40605",
+                "reference": "e4fc6335c017e64f7f0229767a2b1cacddf40605",
                 "shasum": ""
             },
             "require": {
                 "networking/init-cms-bundle": "dev-master",
                 "php": ">=5.3.3"
             },
-            "time": "2013-02-13 11:29:22",
+            "time": "2013-02-15 16:52:35",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2695,13 +2695,13 @@
             "target-dir": "Sonata/BlockBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sonata-project/SonataBlockBundle",
-                "reference": "3effdf4f8da8ebd256bfef9e42ad0f7ca53a5f9b"
+                "url": "https://github.com/sonata-project/SonataBlockBundle.git",
+                "reference": "46738edd9d0414c3ce904ec761f8041424331fd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/3effdf4f8da8ebd256bfef9e42ad0f7ca53a5f9b",
-                "reference": "3effdf4f8da8ebd256bfef9e42ad0f7ca53a5f9b",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/46738edd9d0414c3ce904ec761f8041424331fd2",
+                "reference": "46738edd9d0414c3ce904ec761f8041424331fd2",
                 "shasum": ""
             },
             "require": {
@@ -2716,7 +2716,7 @@
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master"
             },
-            "time": "2013-02-11 17:36:47",
+            "time": "2013-02-14 18:47:42",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2752,12 +2752,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCacheBundle.git",
-                "reference": "e603f2975b3a7cf43a9e9a41377fa9ea95f54265"
+                "reference": "a0dc9a172847b3584d068b4085d420dc9ad85261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/e603f2975b3a7cf43a9e9a41377fa9ea95f54265",
-                "reference": "e603f2975b3a7cf43a9e9a41377fa9ea95f54265",
+                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/a0dc9a172847b3584d068b4085d420dc9ad85261",
+                "reference": "a0dc9a172847b3584d068b4085d420dc9ad85261",
                 "shasum": ""
             },
             "require": {
@@ -2777,7 +2777,7 @@
                 "ext-apc": "Caching with ext/apc",
                 "ext-memcached": "Caching with ext/memcached"
             },
-            "time": "2013-02-14 17:15:09",
+            "time": "2013-02-14 18:08:20",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3570,13 +3570,13 @@
             "target-dir": "Symfony/Cmf/Bundle/RoutingExtraBundle",
             "source": {
                 "type": "git",
-                "url": "git://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "b0567372ddcea516c2ef619b3a2a96d04739611f"
+                "url": "https://github.com/symfony-cmf/RoutingExtraBundle.git",
+                "reference": "8df254c2fb999985b4791406a872890f8381772d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/b0567372ddcea516c2ef619b3a2a96d04739611f",
-                "reference": "b0567372ddcea516c2ef619b3a2a96d04739611f",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/8df254c2fb999985b4791406a872890f8381772d",
+                "reference": "8df254c2fb999985b4791406a872890f8381772d",
                 "shasum": ""
             },
             "require": {
@@ -3601,7 +3601,7 @@
                 "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents",
                 "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle"
             },
-            "time": "2013-02-12 20:14:01",
+            "time": "2013-02-15 12:14:14",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
