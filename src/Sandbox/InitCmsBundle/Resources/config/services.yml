@@ -9,7 +9,7 @@ services:
         class: Knp\Menu\MenuItem
         factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createMainMenu
-        arguments: [ '@request', menu_name: "The main menu", "nav nav-tabs nav-main" ]
+        arguments: [ '@request', menu_name: "Main menu", "nav nav-tabs nav-main" ]
         scope: request
         tags:
             - { name: knp_menu.menu, alias: mainMenu }
@@ -38,7 +38,7 @@ services:
         class: Knp\Menu\MenuItem
         factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createSubnavMenu
-        arguments: [ '@request', "The main menu", 'nav nav-pills']
+        arguments: [ '@request', "Main menu", 'nav nav-pills']
         scope: request
         tags:
             - { name: knp_menu.menu, alias: subMenu }
@@ -60,7 +60,7 @@ services:
         class: Knp\Menu\MenuItem
         factory_service: sandbox_init_cms.menu.frontend_menu_builder
         factory_method: createFooterMenu
-        arguments: [ @request, 'Footer Menu', 'nav nav-pills']
+        arguments: [ @request, 'Footer menu', 'nav nav-pills']
         scope: request
         tags:
             - { name: knp_menu.menu, alias: footerMenu }
