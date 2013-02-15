@@ -2,7 +2,26 @@ Networking init CMS sandbox based on the networking init CMS and the Symfony Sta
 =============================================================================================
 
 Welcome to the init CMS Sandbox. This will get you started with a working CMS based
-on the networking init CMS bundle and Symfony. The project is being developed by the
+on the [InitCmsBundle](https://github.com/networking/init-cms-bundle) and Symfony 2.
+
+The InitCmsBundle is a small flexible cms core based on symfony 2 which can be used as a standalone CMS or integrated into
+any existing symfony 2 project.
+
+The main features are:
+- Page manager with draft and published states, as well as public or protected (login only) pages, and customised URLs
+- Menu manager to organise multiple menu bars
+- Media manager and gallery manager
+- User manager with ACL access control
+- Help page manager
+
+Other Features:
+- Integrate your own twig templates
+- Create your own content types
+- Based on the SonataAdminBundle so you can easily create your own admin modules
+
+
+
+The project is being developed by the
 small hard working team at [net working AG][1] in Zürich.
 
 **IMPORTANT NOTICE** This project is very much in an Alpha stage.
