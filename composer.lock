@@ -2158,12 +2158,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "9a9a827260caacfcec0efa1b1a7f3bcacbf0b82a"
+                "reference": "d91d63a17549bd48195645061a218f547e9e56a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/9a9a827260caacfcec0efa1b1a7f3bcacbf0b82a",
-                "reference": "9a9a827260caacfcec0efa1b1a7f3bcacbf0b82a",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/d91d63a17549bd48195645061a218f547e9e56a2",
+                "reference": "d91d63a17549bd48195645061a218f547e9e56a2",
                 "shasum": ""
             },
             "require": {
@@ -2177,7 +2177,7 @@
                 "knplabs/knp-paginator-bundle": "dev-master",
                 "twitter/bootstrap": "2.0.*"
             },
-            "time": "2013-02-19 13:11:50",
+            "time": "2013-02-20 12:13:04",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
