@@ -77,7 +77,6 @@ Now we just need to create some folders for our media in the web root directory 
 
 	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
-	cd ../
 
 
 2) Checking your System Configuration
