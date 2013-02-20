@@ -659,17 +659,17 @@
         },
         {
             "name": "egeloen/ckeditor-bundle",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "target-dir": "Ivory/CKEditorBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/egeloen/IvoryCKEditorBundle",
-                "reference": "2.1.1"
+                "url": "https://github.com/egeloen/IvoryCKEditorBundle.git",
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/egeloen/IvoryCKEditorBundle/archive/2.1.1.zip",
-                "reference": "2.1.1",
+                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/2.1.2",
+                "reference": "2.1.2",
                 "shasum": ""
             },
             "require": {
@@ -681,7 +681,7 @@
                 "symfony/yaml": "2.1.*",
                 "twig/twig": "1.*"
             },
-            "time": "2013-01-27 16:13:00",
+            "time": "2013-02-19 19:15:52",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -1645,12 +1645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/knp-components.git",
-                "reference": "cbec129a693e7d450e2fab4e9e2bf1e122d940a6"
+                "reference": "1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/cbec129a693e7d450e2fab4e9e2bf1e122d940a6",
-                "reference": "cbec129a693e7d450e2fab4e9e2bf1e122d940a6",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/1.2.1",
+                "reference": "1.2.1",
                 "shasum": ""
             },
             "require": {
@@ -1879,12 +1879,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "84b368777e3ca9cbe9db56f4a7b3c3b558cdf9ae"
+                "reference": "v2.3.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/84b368777e3ca9cbe9db56f4a7b3c3b558cdf9ae",
-                "reference": "84b368777e3ca9cbe9db56f4a7b3c3b558cdf9ae",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/v2.3.2",
+                "reference": "v2.3.2",
                 "shasum": ""
             },
             "require": {
@@ -2310,12 +2310,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "11533fc819cf287bb0e119aace9a9284c8e6e17c"
+                "reference": "79600f4de5c71e3118b23e172dddbbe0256eac4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/11533fc819cf287bb0e119aace9a9284c8e6e17c",
-                "reference": "11533fc819cf287bb0e119aace9a9284c8e6e17c",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/79600f4de5c71e3118b23e172dddbbe0256eac4d",
+                "reference": "79600f4de5c71e3118b23e172dddbbe0256eac4d",
                 "shasum": ""
             },
             "require": {
@@ -2343,7 +2343,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-19 14:20:29",
+            "time": "2013-02-20 08:29:52",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3412,12 +3412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataNotificationBundle.git",
-                "reference": "e420489d66aaecdfe6c886ece527cc7146255b03"
+                "reference": "4422461f53ed22158b57484909cd5da278863df3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/e420489d66aaecdfe6c886ece527cc7146255b03",
-                "reference": "e420489d66aaecdfe6c886ece527cc7146255b03",
+                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/4422461f53ed22158b57484909cd5da278863df3",
+                "reference": "4422461f53ed22158b57484909cd5da278863df3",
                 "shasum": ""
             },
             "require": {
@@ -3434,7 +3434,7 @@
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
                 "videlalvaro/php-amqplib": "*"
             },
-            "time": "2013-02-19 00:53:30",
+            "time": "2013-02-19 16:08:59",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3529,13 +3529,13 @@
             "target-dir": "Stof/DoctrineExtensionsBundle",
             "source": {
                 "type": "git",
-                "url": "https://github.com/stof/StofDoctrineExtensionsBundle",
-                "reference": "4a17550d8b101c5aafc56c9950149aa189b8402d"
+                "url": "https://github.com/stof/StofDoctrineExtensionsBundle.git",
+                "reference": "ba84426a47e555fdf346fc9f8434c2a25b3cee9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/stof/StofDoctrineExtensionsBundle/archive/4a17550d8b101c5aafc56c9950149aa189b8402d.zip",
-                "reference": "4a17550d8b101c5aafc56c9950149aa189b8402d",
+                "url": "https://api.github.com/repos/stof/StofDoctrineExtensionsBundle/zipball/ba84426a47e555fdf346fc9f8434c2a25b3cee9d",
+                "reference": "ba84426a47e555fdf346fc9f8434c2a25b3cee9d",
                 "shasum": ""
             },
             "require": {
@@ -3547,7 +3547,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "2.1.*"
             },
-            "time": "2012-12-13 17:58:07",
+            "time": "2013-02-19 23:30:04",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
