@@ -8,25 +8,46 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
 #}
-{% extends 'MopaBootstrapBundle::base.html.twig' %}
+{% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
 {% use "NetworkingInitCmsBundle:Navbar:admin_navbar.html.twig" %}
 
-{% block head_style %}
-{# Override this block to add your own files! #}
-{% stylesheets filter='less,?yui_css'
-   '@SandboxInitCmsBundle/Resources/public/less/sandboxbundle.less'
-   '@SandboxInitCmsBundle/Resources/public/css/prettyPhoto.css'
-%}
-<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
-{% endstylesheets %}
-    {{ block('admin_style') }}
-{% endblock head_style %}
+<!DOCTYPE html>
 
-{% block head_script %}
-{# Overwrite this block to add your own js here, to get them generated into final files #}
-{% endblock head_script %}
+{% block html_tag %}
+<html>
+{% endblock html_tag %}
 
-{% block title %}{% endblock title %}
+{% block head %}
+<head>
+    <meta charset="UTF-8" />
+
+    {% block head_style %}
+    {# Override this block to add your own files! #}
+    {% stylesheets filter='less,?yui_css'
+       '@SandboxInitCmsBundle/Resources/public/less/sandboxbundle.less'
+       '@SandboxInitCmsBundle/Resources/public/css/prettyPhoto.css'
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+    {% endstylesheets %}
+        {{ block('admin_style') }}
+    {% endblock head_style %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head_script %}
+    {# Overwrite this block to add your own js here, to get them generated into final files #}
+    {% endblock head_script %}
+
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    {% block head_bottom %}
+    {% endblock head_bottom %}
+</head>
+{% endblock head %}
+
+{% block body_tag %}
+<body data-spy="scroll">
+{% endblock body_tag %}
 
 {# From here the body starts #}
 {% block body_start %}
@@ -107,3 +128,6 @@ file that was distributed with this source code.
 {% endjavascripts %}
 {% endblock foot_script %}
 {% endblock body %}
+</body>
+</html>
+
