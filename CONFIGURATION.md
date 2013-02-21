@@ -12,13 +12,16 @@ networking_init_cms:
         - {label: English, locale: en_US}
         - {label: Deutsch, locale: de_CH}
     templates:
-        'SandboxInitCmsBundle:Default:one_column.html.twig':
+        'Sandbox_one_column_template':
+            template: "SandboxInitCmsBundle:Default:one_column.html.twig"
             name: "Single Column"
             icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
             zones:
                 - { name: header, span:12 }
                 - { name: main_content, span:12}
-        'SandboxInitCmsBundle:Default:two_column.html.twig':
+#                - { name: bottom, span:12}
+        'Sandbox_two_column_template':
+            template: "SandboxInitCmsBundle:Default:two_column.html.twig"
             name: "Two Column"
             icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
             zones:
@@ -60,13 +63,16 @@ The paremeters fo the template include:
 
 ```
 templates:
-    'SandboxInitCmsBundle:Default:one_column.html.twig':
+    'Sandbox_one_column_template':
+        template: "SandboxInitCmsBundle:Default:one_column.html.twig"
         name: "Single Column"
         icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
         zones:
             - { name: header, span:12 }
             - { name: main_content, span:12}
-    'SandboxInitCmsBundle:Default:two_column.html.twig':
+#                - { name: bottom, span:12}
+    'Sandbox_two_column_template':
+        template: "SandboxInitCmsBundle:Default:two_column.html.twig"
         name: "Two Column"
         icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
         zones:
