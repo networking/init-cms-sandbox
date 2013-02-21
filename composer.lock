@@ -2266,12 +2266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "e5b8657c5c49322565b78fccdd1d7d353bb91e10"
+                "reference": "2992490b972a7be728a03823dceee746422d3046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e5b8657c5c49322565b78fccdd1d7d353bb91e10",
-                "reference": "e5b8657c5c49322565b78fccdd1d7d353bb91e10",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/2992490b972a7be728a03823dceee746422d3046",
+                "reference": "2992490b972a7be728a03823dceee746422d3046",
                 "shasum": ""
             },
             "require": {
@@ -2296,7 +2296,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-21 15:49:09",
+            "time": "2013-02-21 16:46:30",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
