@@ -13,7 +13,7 @@ class BackendControllerTest extends WebTestCase
         $crawler = $client->request('GET', '/admin');
         $this->assertTrue($client->getResponse()->isRedirect('http://localhost/admin/login'), 'redirect to login page');
         $crawler = $client->followRedirect();
-        $this->assertRegExp('#Anmelden#', $client->getResponse()->getContent(), 'its the login page');
+        $this->assertRegExp('#admin/login_check#', $client->getResponse()->getContent(), 'its the login page');
 
     }
 
