@@ -1,6 +1,9 @@
 Networking init CMS sandbox based on the networking init CMS and the Symfony Standard Edition
 =============================================================================================
 
+[![Build Status](https://travis-ci.org/networking/init-cms-sandbox.png?branch=master)](https://travis-ci.org/networking/init-cms-sandbox)
+
+
 Welcome to the init CMS Sandbox. This will get you started with a working CMS based
 on the [InitCmsBundle](https://github.com/networking/init-cms-bundle) and Symfony 2.
 
