@@ -83,17 +83,12 @@ file that was distributed with this source code.
 
             {% block content_row %}
             <div class="row-fluid">
-
                 {% block content %}
-                <div class="span7">
-                    <strong>Hier könnte Ihre Werbung stehen ... </strong>
-                </div>
-                <div class="span3">
                     {% block content_sidebar %}
-                    <h2>Sidebar</h2>
                     {% endblock content_sidebar %}
-                </div>
                 {% endblock content %}
+                {% block fos_user_content %}
+                {% endblock fos_user_content %}
             </div>
             {% endblock content_row %}
         </div>
