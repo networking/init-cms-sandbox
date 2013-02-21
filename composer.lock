@@ -833,12 +833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "1ba866579a83e96c7c92161e6425a94d30b1c561"
+                "reference": "993eebfb836a548b9120469ef48543bac10916b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/1ba866579a83e96c7c92161e6425a94d30b1c561",
-                "reference": "1ba866579a83e96c7c92161e6425a94d30b1c561",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/993eebfb836a548b9120469ef48543bac10916b6",
+                "reference": "993eebfb836a548b9120469ef48543bac10916b6",
                 "shasum": ""
             },
             "require": {
@@ -854,7 +854,7 @@
                 "twig/twig": "*",
                 "willdurand/propel-typehintable-behavior": "dev-master"
             },
-            "time": "2013-02-19 01:52:18",
+            "time": "2013-02-20 08:35:53",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -972,16 +972,16 @@
         },
         {
             "name": "ibrows/annotation-reader",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ibrows/IbrowsAnnotationReader.git",
-                "reference": "39ebfbf61ecb6ced03ddb6131eae1481b193ff14"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/39ebfbf61ecb6ced03ddb6131eae1481b193ff14",
-                "reference": "39ebfbf61ecb6ced03ddb6131eae1481b193ff14",
+                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
@@ -991,7 +991,7 @@
             "require-dev": {
                 "phpunit/phpunit": "3.8.*@dev"
             },
-            "time": "2013-02-19 14:39:10",
+            "time": "2013-02-20 09:17:34",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -1024,20 +1024,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle.git",
-                "reference": "77160ac49979182c6785abde96acc82de198bbaa"
+                "reference": "1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrows/IbrowsSonataAdminAnnotationBundle/zipball/77160ac49979182c6785abde96acc82de198bbaa",
-                "reference": "77160ac49979182c6785abde96acc82de198bbaa",
+                "url": "https://api.github.com/repos/ibrows/IbrowsSonataAdminAnnotationBundle/zipball/1.2.0",
+                "reference": "1.2.0",
                 "shasum": ""
             },
             "require": {
-                "ibrows/annotation-reader": "dev-master",
+                "ibrows/annotation-reader": "1.*@dev",
                 "php": ">=5.3.0",
                 "symfony/framework-bundle": ">=2.0"
             },
-            "time": "2013-02-19 14:37:31",
+            "time": "2013-02-20 16:41:28",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -1645,12 +1645,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/knp-components.git",
-                "reference": "1.2.1"
+                "reference": "1.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/1.2.1",
-                "reference": "1.2.1",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/1.2.2",
+                "reference": "1.2.2",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1664,7 @@
                 "ruflin/Elastica": "to allow usage pagination with ElasticSearch Client",
                 "solarium/solarium": "to allow usage pagination with Solarium Client"
             },
-            "time": "2013-02-19 14:50:25",
+            "time": "2013-02-20 12:05:07",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2158,12 +2158,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "d91d63a17549bd48195645061a218f547e9e56a2"
+                "reference": "2dd90d719ca3b6a29abeabe93665f61f920ba1bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/d91d63a17549bd48195645061a218f547e9e56a2",
-                "reference": "d91d63a17549bd48195645061a218f547e9e56a2",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/2dd90d719ca3b6a29abeabe93665f61f920ba1bc",
+                "reference": "2dd90d719ca3b6a29abeabe93665f61f920ba1bc",
                 "shasum": ""
             },
             "require": {
@@ -2177,7 +2177,7 @@
                 "knplabs/knp-paginator-bundle": "dev-master",
                 "twitter/bootstrap": "2.0.*"
             },
-            "time": "2013-02-20 12:13:04",
+            "time": "2013-02-20 14:19:39",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2260,62 +2260,18 @@
             ]
         },
         {
-            "name": "networking/gallery-bundle",
-            "version": "dev-master",
-            "target-dir": "Networking/GalleryBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/networking/gallery-bundle.git",
-                "reference": "c148da9605bfa5e9348a22345c6a778c343636f6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/networking/gallery-bundle/zipball/c148da9605bfa5e9348a22345c6a778c343636f6",
-                "reference": "c148da9605bfa5e9348a22345c6a778c343636f6",
-                "shasum": ""
-            },
-            "require": {
-                "networking/init-cms-bundle": "dev-master",
-                "php": ">=5.3.3"
-            },
-            "time": "2013-02-19 14:20:48",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Networking\\GalleryBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yorkie Chadwick",
-                    "email": "y.chadwick@networking.ch",
-                    "homepage": "http://web.networking.ch"
-                }
-            ],
-            "description": "This Bundle is a gallery bundle for the networking init cms",
-            "keywords": [
-                "cms",
-                "news",
-                "symfony"
-            ]
-        },
-        {
             "name": "networking/init-cms-bundle",
             "version": "dev-master",
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "79600f4de5c71e3118b23e172dddbbe0256eac4d"
+                "reference": "28651ffaf734f6a3d4c6d57f84700fe5212071f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/79600f4de5c71e3118b23e172dddbbe0256eac4d",
-                "reference": "79600f4de5c71e3118b23e172dddbbe0256eac4d",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/28651ffaf734f6a3d4c6d57f84700fe5212071f1",
+                "reference": "28651ffaf734f6a3d4c6d57f84700fe5212071f1",
                 "shasum": ""
             },
             "require": {
@@ -2329,9 +2285,6 @@
                 "knplabs/knp-menu-bundle": "1.1.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
                 "mopa/bootstrap-bundle": "dev-master",
-                "networking/gallery-bundle": "dev-master",
-                "networking/media-bundle": "dev-master",
-                "networking/user-bundle": "dev-master",
                 "php": ">=5.3.3",
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master",
@@ -2343,7 +2296,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-20 08:29:52",
+            "time": "2013-02-21 14:41:43",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -2364,94 +2317,6 @@
             "description": "This Bundle is a basic cms based on symfony",
             "keywords": [
                 "cms",
-                "symfony"
-            ]
-        },
-        {
-            "name": "networking/media-bundle",
-            "version": "dev-master",
-            "target-dir": "Networking/MediaBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/networking/media-bundle.git",
-                "reference": "9a617a2eac46fb850af6e606a764e39aa371e575"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/networking/media-bundle/zipball/9a617a2eac46fb850af6e606a764e39aa371e575",
-                "reference": "9a617a2eac46fb850af6e606a764e39aa371e575",
-                "shasum": ""
-            },
-            "require": {
-                "networking/init-cms-bundle": "dev-master",
-                "php": ">=5.3.3"
-            },
-            "time": "2013-02-19 13:15:21",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Networking\\MediaBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yorkie Chadwick",
-                    "email": "y.chadwick@networking.ch",
-                    "homepage": "http://web.networking.ch"
-                }
-            ],
-            "description": "This Bundle is an extension of the sonata media bundle for the networking init cms",
-            "keywords": [
-                "cms",
-                "news",
-                "symfony"
-            ]
-        },
-        {
-            "name": "networking/user-bundle",
-            "version": "dev-master",
-            "target-dir": "Networking/UserBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/networking/user-bundle.git",
-                "reference": "63e30479eef38ef0fe55d63f3cbca309cf5cfc6b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/networking/user-bundle/zipball/63e30479eef38ef0fe55d63f3cbca309cf5cfc6b",
-                "reference": "63e30479eef38ef0fe55d63f3cbca309cf5cfc6b",
-                "shasum": ""
-            },
-            "require": {
-                "networking/init-cms-bundle": "dev-master",
-                "php": ">=5.3.3"
-            },
-            "time": "2013-02-12 13:25:56",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Networking\\UserBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yorkie Chadwick",
-                    "email": "y.chadwick@networking.ch",
-                    "homepage": "http://web.networking.ch"
-                }
-            ],
-            "description": "This Bundle is an extension of the sonata user bundle for the networking init cms",
-            "keywords": [
-                "cms",
-                "news",
                 "symfony"
             ]
         },
@@ -4067,18 +3932,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "ac86c6368c8b1ed27adb436af54d0398b64cab1f"
+                "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ac86c6368c8b1ed27adb436af54d0398b64cab1f",
-                "reference": "ac86c6368c8b1ed27adb436af54d0398b64cab1f",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/15336c154c960f7e55e8b9fc1043ce7764ed7edc",
+                "reference": "15336c154c960f7e55e8b9fc1043ce7764ed7edc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-02-17 19:51:08",
+            "time": "2013-02-21 06:47:52",
             "type": "library",
             "extra": {
                 "branch-alias": {

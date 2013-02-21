@@ -1,13 +1,6 @@
 imports:
     - { resource: parameters.yml }
     - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
-jms_serializer:
-    metadata:
-        directories:
-          NetworkingSonataMediaBundle:
-            namespace_prefix: "Sonata\\MediaBundle"
-            path: "@NetworkingMediaBundle/Resources/config/serializer"
-
 
 
 framework:
@@ -109,8 +102,6 @@ doctrine:
                         alias: GedmoSortable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     FOSUserBundle: ~
-                    NetworkingMediaBundle: ~
-                    NetworkingUserBundle: ~
 
 
 # Swiftmailer Configuration
@@ -152,7 +143,7 @@ networking_init_cms:
 
     content_types:
         - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
-        - { name: 'Gallery' , class: 'Networking\GalleryBundle\Entity\Gallery'}
+        - { name: 'Gallery' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
 
 sonata_admin:
     title:      Demo Sailing Club
