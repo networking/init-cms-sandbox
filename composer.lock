@@ -2266,12 +2266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "2992490b972a7be728a03823dceee746422d3046"
+                "reference": "889288cbbf2daa90394df8333a5cfbf079328177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/2992490b972a7be728a03823dceee746422d3046",
-                "reference": "2992490b972a7be728a03823dceee746422d3046",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/889288cbbf2daa90394df8333a5cfbf079328177",
+                "reference": "889288cbbf2daa90394df8333a5cfbf079328177",
                 "shasum": ""
             },
             "require": {
@@ -2296,7 +2296,7 @@
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "twitter/bootstrap": "master"
             },
-            "time": "2013-02-21 16:46:30",
+            "time": "2013-02-22 15:40:23",
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
@@ -3505,13 +3505,13 @@
             "target-dir": "Symfony/Cmf/Component/Routing",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony-cmf/Routing",
-                "reference": "72df1da07b3c4edf16df169fb7987f504070fe0d"
+                "url": "https://github.com/symfony-cmf/Routing.git",
+                "reference": "43585d83fb07f9354c098fcae593010567f53d45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/Routing/archive/72df1da07b3c4edf16df169fb7987f504070fe0d.zip",
-                "reference": "72df1da07b3c4edf16df169fb7987f504070fe0d",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/43585d83fb07f9354c098fcae593010567f53d45",
+                "reference": "43585d83fb07f9354c098fcae593010567f53d45",
                 "shasum": ""
             },
             "require": {
@@ -3519,7 +3519,7 @@
                 "symfony/http-kernel": ">=2.1,<2.3-dev",
                 "symfony/routing": ">=2.1,<2.3-dev"
             },
-            "time": "2013-01-24 16:09:01",
+            "time": "2013-02-22 13:50:34",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3555,12 +3555,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "8df254c2fb999985b4791406a872890f8381772d"
+                "reference": "9ca27d732b790a6186c45a03b3c05d022f593605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/8df254c2fb999985b4791406a872890f8381772d",
-                "reference": "8df254c2fb999985b4791406a872890f8381772d",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/9ca27d732b790a6186c45a03b3c05d022f593605",
+                "reference": "9ca27d732b790a6186c45a03b3c05d022f593605",
                 "shasum": ""
             },
             "require": {
@@ -3585,7 +3585,7 @@
                 "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents",
                 "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle"
             },
-            "time": "2013-02-15 12:14:14",
+            "time": "2013-02-22 13:46:29",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
