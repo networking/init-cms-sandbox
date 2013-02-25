@@ -2,102 +2,6 @@
     "hash": "e5b5eeab91c5fadcd76c95bf363ddc0f",
     "packages": [
         {
-            "name": "a2lix/translation-form-bundle",
-            "version": "dev-master",
-            "target-dir": "A2lix/TranslationFormBundle",
-            "source": {
-                "type": "git",
-                "url": "http://github.com/a2lix/TranslationFormBundle",
-                "reference": "5a1317ac2ba878b876c18d7c96de2c03da96b41a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/a2lix/TranslationFormBundle/zipball/5a1317ac2ba878b876c18d7c96de2c03da96b41a",
-                "reference": "5a1317ac2ba878b876c18d7c96de2c03da96b41a",
-                "shasum": ""
-            },
-            "require": {
-                "stof/doctrine-extensions-bundle": "dev-master"
-            },
-            "time": "2013-02-04 19:01:28",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "A2lix\\TranslationFormBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "A2lix",
-                    "homepage": "http://www.a2lix.fr"
-                },
-                {
-                    "name": "David ALLIX"
-                }
-            ],
-            "description": "Translation field to use with Translatable Doctrine extension",
-            "homepage": "https://github.com/a2lix/TranslationFormBundle",
-            "keywords": [
-                "doctrine2",
-                "form",
-                "gedmo",
-                "translatable",
-                "translation"
-            ]
-        },
-        {
-            "name": "craue/formflow-bundle",
-            "version": "dev-master",
-            "target-dir": "Craue/FormFlowBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craue/CraueFormFlowBundle",
-                "reference": "ada04ac3accc66029ee917b6720f3f700277dadd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/ada04ac3accc66029ee917b6720f3f700277dadd",
-                "reference": "ada04ac3accc66029ee917b6720f3f700277dadd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "symfony/form": ">=2.1-dev,<2.3-dev",
-                "symfony/framework-bundle": ">=2.1-dev,<2.3-dev"
-            },
-            "time": "2013-01-31 10:42:45",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Craue\\FormFlowBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Raue",
-                    "email": "christian.raue@gmail.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://github.com/craue/CraueFormFlowBundle/contributors"
-                }
-            ],
-            "description": "Multi-step forms for your Symfony2 project.",
-            "homepage": "https://github.com/craue/CraueFormFlowBundle",
-            "keywords": [
-                "Symfony2",
-                "form"
-            ]
-        },
-        {
             "name": "dflydev/markdown",
             "version": "dev-master",
             "source": {
@@ -655,52 +559,6 @@
             "keywords": [
                 "database",
                 "orm"
-            ]
-        },
-        {
-            "name": "egeloen/ckeditor-bundle",
-            "version": "2.1.2",
-            "target-dir": "Ivory/CKEditorBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/egeloen/IvoryCKEditorBundle.git",
-                "reference": "2.1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/2.1.2",
-                "reference": "2.1.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "symfony/framework-bundle": ">=2.1"
-            },
-            "require-dev": {
-                "symfony/form": "2.1.*",
-                "symfony/yaml": "2.1.*",
-                "twig/twig": "1.*"
-            },
-            "time": "2013-02-19 19:15:52",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Ivory\\CKEditorBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                }
-            ],
-            "description": "Provides a CKEditor integration for your Symfony2 Project.",
-            "keywords": [
-                "CKEditor"
             ]
         },
         {
@@ -2266,17 +2124,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "dec828564380cb94c071c47ce98fcbb7c67de288"
+                "reference": "fcdbe97f9bcb670391a0409410abb55f0da18523"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/dec828564380cb94c071c47ce98fcbb7c67de288",
-                "reference": "dec828564380cb94c071c47ce98fcbb7c67de288",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/fcdbe97f9bcb670391a0409410abb55f0da18523",
+                "reference": "fcdbe97f9bcb670391a0409410abb55f0da18523",
                 "shasum": ""
             },
             "require": {
-                "a2lix/translation-form-bundle": "dev-master",
-                "craue/formflow-bundle": "dev-master",
                 "doctrine/doctrine-fixtures-bundle": "dev-master",
                 "doctrine/orm": ">=2.2.3,<2.4-dev",
                 "friendsofsymfony/user-bundle": "dev-master",
@@ -2287,9 +2143,7 @@
                 "mopa/bootstrap-bundle": "dev-master",
                 "php": ">=5.3.3",
                 "sonata-project/admin-bundle": "dev-master",
-                "sonata-project/cache-bundle": "dev-master",
                 "sonata-project/doctrine-orm-admin-bundle": "dev-master",
-                "sonata-project/formatter-bundle": "dev-master",
                 "sonata-project/media-bundle": "dev-master",
                 "sonata-project/user-bundle": "dev-master",
                 "stof/doctrine-extensions-bundle": "dev-master",
@@ -2729,66 +2583,6 @@
             ]
         },
         {
-            "name": "sonata-project/cache-bundle",
-            "version": "dev-master",
-            "target-dir": "Sonata/CacheBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sonata-project/SonataCacheBundle.git",
-                "reference": "2ac53eb6a44f43e8dd47f08190af7eac81265b6b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCacheBundle/zipball/2ac53eb6a44f43e8dd47f08190af7eac81265b6b",
-                "reference": "2ac53eb6a44f43e8dd47f08190af7eac81265b6b",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/http-foundation": ">=2.1,<2.3-dev",
-                "symfony/process": ">=2.1,<2.3-dev",
-                "symfony/routing": ">=2.1,<2.3-dev",
-                "symfony/security": ">=2.1,<2.3-dev"
-            },
-            "require-dev": {
-                "doctrine/orm": ">=2.2.0"
-            },
-            "suggest": {
-                "doctrine/doctrine-bundle": "ORM support",
-                "doctrine/orm": "ORM support",
-                "doctrine/phpcr-bundle": "PHPCR ODM support",
-                "doctrine/phpcr-odm": "PHPCR ODM support",
-                "ext-apc": "Caching with ext/apc",
-                "ext-memcached": "Caching with ext/memcached"
-            },
-            "time": "2013-02-16 14:06:32",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Sonata\\CacheBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Rabaix",
-                    "email": "thomas.rabaix@sonata-project.org",
-                    "homepage": "http://sonata-project.org"
-                },
-                {
-                    "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataCacheBundle/contributors"
-                }
-            ],
-            "description": "This bundle provides caching services",
-            "homepage": "https://github.com/sonata-project/SonataCacheBundle",
-            "keywords": [
-                "cache block"
-            ]
-        },
-        {
             "name": "sonata-project/doctrine-extensions",
             "version": "dev-master",
             "source": {
@@ -2989,60 +2783,6 @@
                 "data",
                 "export",
                 "xls"
-            ]
-        },
-        {
-            "name": "sonata-project/formatter-bundle",
-            "version": "dev-master",
-            "target-dir": "Sonata/FormatterBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sonata-project/SonataFormatterBundle.git",
-                "reference": "eafd776c431ee01cf0b3fc21e128dbb896879a11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/eafd776c431ee01cf0b3fc21e128dbb896879a11",
-                "reference": "eafd776c431ee01cf0b3fc21e128dbb896879a11",
-                "shasum": ""
-            },
-            "require": {
-                "egeloen/ckeditor-bundle": "2.*@stable",
-                "knplabs/knp-markdown-bundle": "1.1.*",
-                "sonata-project/markitup-bundle": "dev-master",
-                "symfony/symfony": ">=2.1,<2.3-dev",
-                "twig/twig": "*"
-            },
-            "time": "2013-02-16 14:19:16",
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Sonata\\FormatterBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Rabaix",
-                    "email": "thomas.rabaix@sonata-project.org",
-                    "homepage": "http://sonata-project.org"
-                },
-                {
-                    "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataFormatterBundle/contributors"
-                }
-            ],
-            "description": "Symfony SonataFormatterBundle",
-            "homepage": "http://sonata-project.org/bundles/formatter",
-            "keywords": [
-                "CKEditor",
-                "formatter",
-                "markdown",
-                "markitup",
-                "sonata"
             ]
         },
         {

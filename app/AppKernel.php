@@ -32,7 +32,6 @@ class AppKernel extends Kernel
 			new Sonata\AdminBundle\SonataAdminBundle(),
 			new Sonata\jQueryBundle\SonatajQueryBundle(),
 			new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-			new Sonata\CacheBundle\SonataCacheBundle(),
 			new Sonata\BlockBundle\SonataBlockBundle(),
 			new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
 			new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
@@ -41,7 +40,6 @@ class AppKernel extends Kernel
 			new Symfony\Cmf\Bundle\RoutingExtraBundle\SymfonyCmfRoutingExtraBundle(),
 			new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
             new Sandbox\InitCmsBundle\SandboxInitCmsBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Ibrows\Bundle\SonataAdminAnnotationBundle\IbrowsSonataAdminAnnotationBundle(),
 		);
 
