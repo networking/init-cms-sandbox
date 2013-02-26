@@ -34,7 +34,6 @@
         "jms/security-extra-bundle": "master",
         "jms/serializer-bundle": "master",
         "networking/init-cms-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "dev-master as v1.3.1",
         "php": ">=5.3.3",
         "sensio/distribution-bundle": "2.1.*",
         "sensio/framework-extra-bundle": "2.1.*",
