@@ -1,5 +1,5 @@
-sandbox_init_cms:
-    resource: "@SandboxInitCmsBundle/Controller/"
+SandboxInitCmsBundle:
+    resource: "@SandboxInitCmsBundle/Controller/WelcomeController.php"
     type:     annotation
     prefix:   /
 
