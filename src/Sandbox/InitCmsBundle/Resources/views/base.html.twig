@@ -24,8 +24,9 @@ file that was distributed with this source code.
     {% block head_style %}
     {# Override this block to add your own files! #}
     {% stylesheets filter='less,?yui_css'
-       '@SandboxInitCmsBundle/Resources/public/less/sandboxbundle.less'
+       '@SandboxInitCmsBundle/Resources/public/less/styles.less'
        '@SandboxInitCmsBundle/Resources/public/css/prettyPhoto.css'
+        output='css/styles.css'
     %}
     <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
     {% endstylesheets %}
@@ -72,10 +73,11 @@ file that was distributed with this source code.
 
             {% block flashes %}
             {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
+                {{ session_flash(null,true) }}
             {% if app.session.flashbag.peekAll|length > 0 %}
             <div class="row-fluid">
                 <div class="span12">
-                {{ session_flash() }}
+                {{ session_flash()}}
                 </div>
             </div>
             {% endif %}
@@ -118,6 +120,7 @@ file that was distributed with this source code.
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-collapse.js'
         '@SandboxInitCmsBundle/Resources/public/js/bootstrap-carousel.js'
         '@SandboxInitCmsBundle/Resources/public/js/jquery.prettyPhoto.js'
+    output='js/sandbox.js'
     %}
 <script type="text/javascript" src="{{ asset_url }}"></script>
 {% endjavascripts %}
