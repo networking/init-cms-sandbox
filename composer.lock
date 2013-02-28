@@ -1835,12 +1835,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "80a88097faf62c4d13e9dc212efe41f443353b4b"
+                "reference": "e87cbccf3ba43505651e250e87c5ac5172f8322b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/80a88097faf62c4d13e9dc212efe41f443353b4b",
-                "reference": "80a88097faf62c4d13e9dc212efe41f443353b4b",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e87cbccf3ba43505651e250e87c5ac5172f8322b",
+                "reference": "e87cbccf3ba43505651e250e87c5ac5172f8322b",
                 "shasum": ""
             },
             "require": {
@@ -1866,7 +1866,7 @@
                     "Networking\\InitCmsBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1882,7 +1882,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-02-27 16:22:56"
+            "time": "2013-02-28 13:58:31"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2131,12 +2131,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "8f4cf30f9a5c0ba97cda5740f44071896600f142"
+                "reference": "a537875ad3b97ddf9e7aa2f5d9b1ee9cbfbc21e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/8f4cf30f9a5c0ba97cda5740f44071896600f142",
-                "reference": "8f4cf30f9a5c0ba97cda5740f44071896600f142",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/a537875ad3b97ddf9e7aa2f5d9b1ee9cbfbc21e8",
+                "reference": "a537875ad3b97ddf9e7aa2f5d9b1ee9cbfbc21e8",
                 "shasum": ""
             },
             "require": {
@@ -2175,7 +2175,7 @@
                     "Sonata\\AdminBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2198,7 +2198,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-02-26 14:47:39"
+            "time": "2013-02-27 19:23:45"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -3327,12 +3327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "bc30d9b7e24b0cd2f02078064b2d9fe1c20aa1aa"
+                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/bc30d9b7e24b0cd2f02078064b2d9fe1c20aa1aa",
-                "reference": "bc30d9b7e24b0cd2f02078064b2d9fe1c20aa1aa",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/39d94faabcea7d60b90c2996d51e1b6691ab39d2",
+                "reference": "39d94faabcea7d60b90c2996d51e1b6691ab39d2",
                 "shasum": ""
             },
             "require": {
@@ -3349,7 +3349,7 @@
                     "Twig_": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "BSD-3"
             ],
@@ -3368,7 +3368,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-02-26 13:03:39"
+            "time": "2013-02-28 14:08:49"
         },
         {
             "name": "twitter/bootstrap",
