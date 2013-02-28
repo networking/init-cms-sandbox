@@ -99,7 +99,8 @@ class BackendControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
 
         // is the locale de?
-        $this->assertTrue($crawler->filter('a:contains("abmelden")')->count() > 0, 'it\'s German');
+        $this->assertTrue($crawler->filter('a:contains("abmelden")')->count() > 0, 'Abmelden is German');
+        $this->assertTrue($crawler->filter('html:contains("Benutzer")')->count() > 0, 'Benutzer is German');
 
     }
 
