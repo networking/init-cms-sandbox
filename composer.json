@@ -1,63 +1,63 @@
 {
-    "autoload": {
-        "psr-0":         {
-            "": "src/"
+    "autoload":{
+        "psr-0":{
+            "":"src/"
         }
     },
-    "config": {
-        "bin-dir": "bin"
+    "config":{
+        "bin-dir":"bin"
     },
-    "description": "the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
-    "extra": {
-        "symfony-app-dir": "app",
-        "symfony-web-dir": "web"
+    "description":"the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
+    "extra":{
+        "symfony-app-dir":"app",
+        "symfony-web-dir":"web"
     },
-    "minimum-stability": "dev",
-    "name": "networking/init-cms-sandbox",
-    "repositories": [
+    "minimum-stability":"dev",
+    "name":"networking/init-cms-sandbox",
+    "repositories":[
         {
-            "package":             {
-                "name": "twitter/bootstrap",
-                "source":                 {
-                    "reference": "master",
-                    "type": "git",
-                    "url": "https://github.com/twitter/bootstrap.git"
+            "package":{
+                "name":"twitter/bootstrap",
+                "source":{
+                    "reference":"master",
+                    "type":"git",
+                    "url":"https://github.com/twitter/bootstrap.git"
                 },
-                "version": "master"
+                "version":"master"
             },
-            "type": "package"
+            "type":"package"
         }
     ],
-    "require": {
-        "doctrine/doctrine-bundle": "1.0.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "jms/security-extra-bundle": "master",
-        "jms/serializer-bundle": "master",
-        "networking/init-cms-bundle": "dev-master",
-        "php": ">=5.3.3",
-        "sensio/distribution-bundle": "2.1.*",
-        "sensio/framework-extra-bundle": "2.1.*",
-        "sensio/generator-bundle": "2.1.*",
-        "symfony/assetic-bundle": "2.1.*",
-        "symfony/monolog-bundle": "2.1.*",
-        "symfony/swiftmailer-bundle": "2.1.*",
-        "symfony/symfony": "2.1.*",
-        "twig/extensions": "1.0.*"
+    "require":{
+        "php":">=5.3.3",
+        "symfony/symfony":"2.1.*",
+        "sensio/distribution-bundle":"2.1.*",
+        "sensio/framework-extra-bundle":"2.1.*",
+        "sensio/generator-bundle":"2.1.*",
+        "symfony/assetic-bundle":"2.1.*",
+        "symfony/monolog-bundle":"2.1.*",
+        "symfony/swiftmailer-bundle":"2.1.*",
+        "twig/extensions":"1.0.*",
+        "doctrine/doctrine-bundle":"1.0.*",
+        "doctrine/orm":">=2.2.3,<2.4-dev",
+        "jms/security-extra-bundle":"master",
+        "jms/serializer-bundle":"master",
+        "networking/init-cms-bundle":"dev-master"
     },
-    "scripts": {
-        "post-install-cmd": [
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-"Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
-    ],
-        "post-update-cmd": [
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-"Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
-    ]
+    "scripts":{
+        "post-install-cmd":[
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+        ],
+        "post-update-cmd":[
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+        ]
     }
 }

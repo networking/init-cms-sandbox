@@ -8,28 +8,21 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
 #}
+{% from 'NetworkingInitCmsBundle:GalleryView:macro.html.twig' import lightbox, carousel %}
+
 {% if text is defined %}
-<div class="{% if gallery is defined %}span5{% endif %}">
+<div class="text">
 	{{ text | raw }}
 </div>
 {% endif %}
-{% if gallery is defined %}
-<div class="span7">
-	<div id="heroCarousel" class="carousel slide">
-		<!-- Carousel items -->
-		<div class="carousel-inner">
-			{% for mediaItem in gallery.galleryHasMedias %}
-			<div class="item">
-				<img src="{% path mediaItem.media, 'big' %}" alt="" />
-				<div class="carousel-caption">
-					<p>{{ mediaItem.media.getDescription }}</p>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		<!-- Carousel nav -->
-		<a class="carousel-control left" href="#heroCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="carousel-control right" href="#heroCarousel" data-slide="next">&rsaquo;</a>
-	</div>
+
+{% if galleryView is defined %}
+<div class="gallery">
+    {% if galleryView.galleryType == 'lightbox' %}
+        {{ lightbox(galleryView.mediaGallery) }}
+    {% endif %}
+    {% if galleryView.galleryType == 'carousel' %}
+        {{ carousel(galleryView.mediaGallery, 'heroCarousel', null, 'medium', '300px') }}
+    {% endif %}
 </div>
 {% endif %}
