@@ -111,7 +111,7 @@ fixtures, as well as create an admin user. The following command will do that fo
 be prompted to enter a username, email address and password, these will get you into the backend.
 
 
-	php app/console networking:cms:install
+	php app/console networking:initcms:install
 
 Now you should be up and running.
 
