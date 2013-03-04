@@ -25,7 +25,8 @@ class InitCmsInstallController extends Controller
     private $consoleOutput = array();
 
     /**
-     * @Route("/welcome", name="_configure_cms")
+     * @Route("/cms_install", name="_configure_cms")
+     * @Route("/welcome", name="_welcome_cms")
      * @Template()
      */
     public function indexAction()

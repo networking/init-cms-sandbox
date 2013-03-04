@@ -107,11 +107,17 @@ file directly
 -------------------------------------------
 
 Now that the symfony application is more or less setup, it is time to load the CMS DBs and
-fixtures, as well as create an admin user. The following command will do that for you. You will
-be prompted to enter a username, email address and password, these will get you into the backend.
+fixtures, as well as create an admin user.
+
+There is an install wizard which will get this done for you, just go to the following URL and follow the instructions:
+
+    http://localhost//app_dev.php/cms_install
 
 
-	php app/console networking:cms:install
+Alternatively you can run the install process on the command line,
+you will be prompted to enter a username, email address and password, these will get you into the backend.
+
+	php app/console networking:initcms:install
 
 Now you should be up and running.
 
