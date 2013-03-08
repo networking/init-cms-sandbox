@@ -1,5 +1,5 @@
 {
-    "hash": "5bbba4a4206569602dbe0fe10625ebd3",
+    "hash": "b6873799611497fc77cee630dd09c90b",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2005,7 +2005,7 @@
         },
         {
             "name": "networking/init-cms-bundle",
-            "version": "dev-master",
+            "version": "2.1.x-dev",
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
@@ -3689,7 +3689,7 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "networking/init-cms-bundle": 20
-    }
+    "stability-flags": [
+
+    ]
 }
