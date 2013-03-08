@@ -1,8 +1,3 @@
-SandboxInitCmsBundle:
-    resource: "@SandboxInitCmsBundle/Controller/InitCmsInstallController.php"
-    type:     annotation
-    prefix:   /
-
 NetworkingInitCmsBundle:
     resource: "@NetworkingInitCmsBundle/Resources/config/routing.yml"
     prefix:   /
