@@ -81,6 +81,10 @@ Now we just need to create some folders for our media in the web root directory 
 	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
 
+Add lets get our assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+
+    app/console assetic:dump
+
 
 2) Checking your System Configuration
 -------------------------------------
