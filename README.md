@@ -29,7 +29,7 @@ small hard working team at [net working AG][1] in Zürich.
 
 **IMPORTANT NOTICE** This project is in Beta stage, however we are currently developing customer projects on this platform.
 
-A demo of the CMS can be found at [demo.initcms.com](https://demo.initcms.com)
+A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com)
 The login is:
 User: admin
 Password: initcms
