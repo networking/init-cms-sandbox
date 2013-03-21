@@ -27,8 +27,14 @@ Other Features:
 The project is being developed by the
 small hard working team at [net working AG][1] in Zürich.
 
-**IMPORTANT NOTICE** This project is very much in an Alpha stage.
-It is not advisable to use this for a production web site.
+**IMPORTANT NOTICE** This project is in Beta stage, however we are currently developing customer projects on this platform.
+
+A demo of the CMS can be found at [demo.initcms.com](https://demo.initcms.com)
+The login is:
+User: admin
+Password: initcms
+
+The Demo is reset every 3 hours.
 
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
