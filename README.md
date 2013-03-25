@@ -30,11 +30,13 @@ small hard working team at [net working AG][1] in Zürich.
 **IMPORTANT NOTICE** This project is in Beta stage, however we are currently developing customer projects on this platform.
 
 A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com)
+
+The administration is located at [demo.initcms.com/admin](http://demo.initcms.com/admin)
 The login is:
 User: admin
 Password: initcms
 
-The Demo is reset every 3 hours.
+The Demo is reset every 24 hours.
 
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
