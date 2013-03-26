@@ -27,8 +27,6 @@ Other Features:
 The project is being developed by the
 small hard working team at [net working AG][1] in Zürich.
 
-**IMPORTANT NOTICE** This project is in Beta stage, however we are currently developing customer projects on this platform.
-
 The administration is located at [demo.initcms.com/admin](http://demo.initcms.com/admin)
 The login is:
 User: admin
