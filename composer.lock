@@ -894,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "db0585625f6944a755534688e971b86d1d33ec45"
+                "reference": "af197d8d65de90827778379a18dd44d82c61d3fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/db0585625f6944a755534688e971b86d1d33ec45",
-                "reference": "db0585625f6944a755534688e971b86d1d33ec45",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/af197d8d65de90827778379a18dd44d82c61d3fc",
+                "reference": "af197d8d65de90827778379a18dd44d82c61d3fc",
                 "shasum": ""
             },
             "require": {
@@ -965,7 +965,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-04-07 10:44:07"
+            "time": "2013-04-08 16:55:03"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -1877,12 +1877,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "8bd7f961d0ef8705c7ec12e7a1a0fce1f03e0207"
+                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/8bd7f961d0ef8705c7ec12e7a1a0fce1f03e0207",
-                "reference": "8bd7f961d0ef8705c7ec12e7a1a0fce1f03e0207",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
+                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
                 "shasum": ""
             },
             "require": {
@@ -1927,7 +1927,7 @@
                 "pagination",
                 "paginator"
             ],
-            "time": "2013-04-05 16:25:42"
+            "time": "2013-04-08 18:28:56"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2224,12 +2224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "15298d355a34c1316d6f11567d6fe3b8d3b69a33"
+                "reference": "1d47f3443561dfa1cae8c6c39a145109d9f86c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/15298d355a34c1316d6f11567d6fe3b8d3b69a33",
-                "reference": "15298d355a34c1316d6f11567d6fe3b8d3b69a33",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/1d47f3443561dfa1cae8c6c39a145109d9f86c95",
+                "reference": "1d47f3443561dfa1cae8c6c39a145109d9f86c95",
                 "shasum": ""
             },
             "require": {
@@ -2273,7 +2273,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-04-08 09:43:38"
+            "time": "2013-04-09 08:02:56"
         },
         {
             "name": "phpcollection/phpcollection",
