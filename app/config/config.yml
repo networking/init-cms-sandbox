@@ -1,6 +1,6 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: @SandboxInitCmsBundle/Resources/config/cms/cms_config.yml }
+    - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
 
 
 framework:
