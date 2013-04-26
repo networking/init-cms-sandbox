@@ -1,4 +1,8 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
     "hash": "5bbba4a4206569602dbe0fe10625ebd3",
     "packages": [
         {
@@ -66,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "7cb1799d2d61a6e5984ad75dc33a9c507cdc40e5"
+                "reference": "v1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/7cb1799d2d61a6e5984ad75dc33a9c507cdc40e5",
-                "reference": "7cb1799d2d61a6e5984ad75dc33a9c507cdc40e5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/v1.1.1",
+                "reference": "v1.1.1",
                 "shasum": ""
             },
             "require": {
@@ -118,7 +122,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -129,7 +133,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-03-17 14:03:27"
+            "time": "2013-04-20 08:30:17"
         },
         {
             "name": "doctrine/cache",
@@ -381,7 +385,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
+                    "name": "Jonathan H. Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/"
                 }
@@ -399,12 +403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "c75da707518488506efa93e29fb67cf278353f85"
+                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c75da707518488506efa93e29fb67cf278353f85",
-                "reference": "c75da707518488506efa93e29fb67cf278353f85",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4abe8f7602e0f4079848950190fb6798781c94c7",
+                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7",
                 "shasum": ""
             },
             "require": {
@@ -454,7 +458,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-04-14 12:36:49"
+            "time": "2013-04-20 08:33:51"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -678,7 +682,7 @@
                     "Doctrine\\Common\\Lexer\\": "lib/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -894,12 +898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "b31e0a4664f13dbf24b0215547e42c401ca5300a"
+                "reference": "78264361e12e643b58e3fe0396e9500fb3b6d222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/b31e0a4664f13dbf24b0215547e42c401ca5300a",
-                "reference": "b31e0a4664f13dbf24b0215547e42c401ca5300a",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/78264361e12e643b58e3fe0396e9500fb3b6d222",
+                "reference": "78264361e12e643b58e3fe0396e9500fb3b6d222",
                 "shasum": ""
             },
             "require": {
@@ -965,7 +969,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-04-12 04:03:22"
+            "time": "2013-04-26 04:27:28"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -1568,12 +1572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/Gaufrette.git",
-                "reference": "8e621420008b3d59c4862bc59a59ba9fa522d29b"
+                "reference": "1540391e4115ac7c01255e07e02ea3250ca31c51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/8e621420008b3d59c4862bc59a59ba9fa522d29b",
-                "reference": "8e621420008b3d59c4862bc59a59ba9fa522d29b",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/1540391e4115ac7c01255e07e02ea3250ca31c51",
+                "reference": "1540391e4115ac7c01255e07e02ea3250ca31c51",
                 "shasum": ""
             },
             "require": {
@@ -1635,7 +1639,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2013-04-15 06:10:15"
+            "time": "2013-04-20 08:12:21"
         },
         {
             "name": "knplabs/knp-components",
@@ -1846,7 +1850,7 @@
                     "Knp\\Bundle\\MenuBundle": ""
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1877,16 +1881,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
-                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3"
+                "reference": "e798c5689ff63edfb22df2b65d5094485c0e6bd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
-                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/e798c5689ff63edfb22df2b65d5094485c0e6bd2",
+                "reference": "e798c5689ff63edfb22df2b65d5094485c0e6bd2",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-components": ">=1.1,<2.0",
+                "knplabs/knp-components": ">=1.2,<2.0",
                 "php": ">=5.3.3",
                 "symfony/framework-bundle": ">=2.0,<3.0",
                 "twig/twig": ">=1.5,<2.0"
@@ -1927,7 +1931,7 @@
                 "pagination",
                 "paginator"
             ],
-            "time": "2013-04-08 18:28:56"
+            "time": "2013-04-23 07:46:41"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2111,12 +2115,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "63b9e27671bddb59e55131c55587331920141430"
+                "reference": "76ef1571301e0cff2775538ec714043736c47930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/63b9e27671bddb59e55131c55587331920141430",
-                "reference": "63b9e27671bddb59e55131c55587331920141430",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/76ef1571301e0cff2775538ec714043736c47930",
+                "reference": "76ef1571301e0cff2775538ec714043736c47930",
                 "shasum": ""
             },
             "require": {
@@ -2164,7 +2168,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-13 12:58:51"
+            "time": "2013-04-25 13:21:16"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2194,7 +2198,7 @@
                     "Mopa\\Bridge\\Composer": "src/"
                 }
             },
-            "notification-url": "http://packagist.org/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2224,12 +2228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "ab1352249f97879289720b6ba9dfabcba88f80ba"
+                "reference": "e9c4037e9df8f19efa293ddcfe8de244ce2c38bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/ab1352249f97879289720b6ba9dfabcba88f80ba",
-                "reference": "ab1352249f97879289720b6ba9dfabcba88f80ba",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e9c4037e9df8f19efa293ddcfe8de244ce2c38bc",
+                "reference": "e9c4037e9df8f19efa293ddcfe8de244ce2c38bc",
                 "shasum": ""
             },
             "require": {
@@ -2273,7 +2277,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-04-17 11:55:52"
+            "time": "2013-04-26 12:09:31"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2578,7 +2582,7 @@
                 },
                 {
                     "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataAdminBundle/contributors"
+                    "homepage": "https://github.com/sonata-project/SonataDoctrineMongoDBAdminBundle/contributors"
                 }
             ],
             "description": "Symfony SonataAdminBundle",
@@ -3469,12 +3473,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "98ccdc52240fa00b3e6da914cbadc91ce66cff8d"
+                "reference": "5ff03355e02d76978265796043ce6ed4f68762d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/98ccdc52240fa00b3e6da914cbadc91ce66cff8d",
-                "reference": "98ccdc52240fa00b3e6da914cbadc91ce66cff8d",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/5ff03355e02d76978265796043ce6ed4f68762d3",
+                "reference": "5ff03355e02d76978265796043ce6ed4f68762d3",
                 "shasum": ""
             },
             "require": {
@@ -3526,7 +3530,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-04-16 11:30:51"
+            "time": "2013-04-21 21:54:33"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -3846,12 +3850,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "887b6ee797dc338c5ef5669c98252db6bde7042d"
+                "reference": "536ea37d1f87a882ce8a5d62680caf881ecaf6fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/887b6ee797dc338c5ef5669c98252db6bde7042d",
-                "reference": "887b6ee797dc338c5ef5669c98252db6bde7042d",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/536ea37d1f87a882ce8a5d62680caf881ecaf6fe",
+                "reference": "536ea37d1f87a882ce8a5d62680caf881ecaf6fe",
                 "shasum": ""
             },
             "require": {
@@ -3887,7 +3891,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-04-15 09:43:17"
+            "time": "2013-04-26 09:34:36"
         },
         {
             "name": "twitter/bootstrap",
