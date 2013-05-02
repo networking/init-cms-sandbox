@@ -403,12 +403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7"
+                "reference": "ac0c0630e63ae5b3c569996aac8f174a74ba599b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4abe8f7602e0f4079848950190fb6798781c94c7",
-                "reference": "4abe8f7602e0f4079848950190fb6798781c94c7",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ac0c0630e63ae5b3c569996aac8f174a74ba599b",
+                "reference": "ac0c0630e63ae5b3c569996aac8f174a74ba599b",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +458,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-04-20 08:33:51"
+            "time": "2013-05-01 17:16:27"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -535,19 +535,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineFixturesBundle.git",
-                "reference": "275540d96599baec19fa3292c4d06c5cd4eefd06"
+                "reference": "5696cd636df7cbfaf4d1c45ed2922438968cf890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/275540d96599baec19fa3292c4d06c5cd4eefd06",
-                "reference": "275540d96599baec19fa3292c4d06c5cd4eefd06",
+                "url": "https://api.github.com/repos/doctrine/DoctrineFixturesBundle/zipball/5696cd636df7cbfaf4d1c45ed2922438968cf890",
+                "reference": "5696cd636df7cbfaf4d1c45ed2922438968cf890",
                 "shasum": ""
             },
             "require": {
                 "doctrine/data-fixtures": "*",
                 "doctrine/doctrine-bundle": ">=1.0,<2.0",
                 "php": ">=5.3.2",
-                "symfony/doctrine-bridge": ">=2.1.0,<2.3-dev"
+                "symfony/doctrine-bridge": ">=2.1.0,<2.4-dev"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -584,7 +584,7 @@
                 "Fixture",
                 "persistence"
             ],
-            "time": "2013-02-12 11:13:27"
+            "time": "2013-04-27 11:57:35"
         },
         {
             "name": "doctrine/inflector",
@@ -898,12 +898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "78264361e12e643b58e3fe0396e9500fb3b6d222"
+                "reference": "6b263e633615003fe9026fc8146a0e6a5a7f80b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/78264361e12e643b58e3fe0396e9500fb3b6d222",
-                "reference": "78264361e12e643b58e3fe0396e9500fb3b6d222",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/6b263e633615003fe9026fc8146a0e6a5a7f80b4",
+                "reference": "6b263e633615003fe9026fc8146a0e6a5a7f80b4",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +969,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-04-26 04:27:28"
+            "time": "2013-05-01 16:51:50"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -1572,12 +1572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/Gaufrette.git",
-                "reference": "1540391e4115ac7c01255e07e02ea3250ca31c51"
+                "reference": "4bfc8e16086276134768159093e2f5d2ad752991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/1540391e4115ac7c01255e07e02ea3250ca31c51",
-                "reference": "1540391e4115ac7c01255e07e02ea3250ca31c51",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/4bfc8e16086276134768159093e2f5d2ad752991",
+                "reference": "4bfc8e16086276134768159093e2f5d2ad752991",
                 "shasum": ""
             },
             "require": {
@@ -1639,7 +1639,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2013-04-20 08:12:21"
+            "time": "2013-04-28 21:52:32"
         },
         {
             "name": "knplabs/knp-components",
@@ -2115,12 +2115,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "76ef1571301e0cff2775538ec714043736c47930"
+                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/76ef1571301e0cff2775538ec714043736c47930",
-                "reference": "76ef1571301e0cff2775538ec714043736c47930",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/1a91bd5ffb216a9b7fbd7936599671871790d944",
+                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944",
                 "shasum": ""
             },
             "require": {
@@ -2130,14 +2130,15 @@
             "suggest": {
                 "craue/formflow-bundle": "dev-master",
                 "jlong/sass-twitter-bootstrap": "dev-master",
-                "knplabs/knp-menu-bundle": "1.1.*",
+                "knplabs/knp-menu-bundle": "2.0.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
-                "twitter/bootstrap": "2.0.*"
+                "mopa/bootstrap-sandbox-bundle": "~2.3",
+                "twitter/bootstrap": "2.*"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
@@ -2168,7 +2169,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-25 13:21:16"
+            "time": "2013-04-30 09:57:19"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2228,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "678aeb1492fc4fcfb825caf4d44ba713d01ab853"
+                "reference": "d7aa6222f91e6afcc282852ce9fd37f1d84b8575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/678aeb1492fc4fcfb825caf4d44ba713d01ab853",
-                "reference": "678aeb1492fc4fcfb825caf4d44ba713d01ab853",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d7aa6222f91e6afcc282852ce9fd37f1d84b8575",
+                "reference": "d7aa6222f91e6afcc282852ce9fd37f1d84b8575",
                 "shasum": ""
             },
             "require": {
@@ -2277,7 +2278,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-04-26 14:00:38"
+            "time": "2013-05-02 13:27:56"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3416,17 +3417,17 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "dev-master",
+            "version": "1.0.1",
             "target-dir": "Symfony/Cmf/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "ed18eb44bec624bc244eb37b7ab7a39becaeb1eb"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/ed18eb44bec624bc244eb37b7ab7a39becaeb1eb",
-                "reference": "ed18eb44bec624bc244eb37b7ab7a39becaeb1eb",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
@@ -3464,7 +3465,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-04-12 12:40:51"
+            "time": "2013-04-30 09:20:58"
         },
         {
             "name": "symfony-cmf/routing-extra-bundle",
@@ -3473,12 +3474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "5ff03355e02d76978265796043ce6ed4f68762d3"
+                "reference": "1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/5ff03355e02d76978265796043ce6ed4f68762d3",
-                "reference": "5ff03355e02d76978265796043ce6ed4f68762d3",
+                "url": "https://api.github.com/repos/symfony-cmf/RoutingExtraBundle/zipball/1.0.0",
+                "reference": "1.0.0",
                 "shasum": ""
             },
             "require": {
@@ -3850,12 +3851,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "536ea37d1f87a882ce8a5d62680caf881ecaf6fe"
+                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/536ea37d1f87a882ce8a5d62680caf881ecaf6fe",
-                "reference": "536ea37d1f87a882ce8a5d62680caf881ecaf6fe",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7f70bbf77581c25a5b225823e2dde578b63fddb3",
+                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3",
                 "shasum": ""
             },
             "require": {
@@ -3864,7 +3865,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -3891,7 +3892,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-04-26 09:34:36"
+            "time": "2013-05-01 19:03:39"
         },
         {
             "name": "twitter/bootstrap",
