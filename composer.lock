@@ -385,7 +385,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/"
                 }
@@ -898,12 +898,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "6b263e633615003fe9026fc8146a0e6a5a7f80b4"
+                "reference": "e4ede013a1dff69c82db5035d5028f2798c770c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/6b263e633615003fe9026fc8146a0e6a5a7f80b4",
-                "reference": "6b263e633615003fe9026fc8146a0e6a5a7f80b4",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e4ede013a1dff69c82db5035d5028f2798c770c3",
+                "reference": "e4ede013a1dff69c82db5035d5028f2798c770c3",
                 "shasum": ""
             },
             "require": {
@@ -969,7 +969,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-05-01 16:51:50"
+            "time": "2013-05-02 17:52:38"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -2229,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "bccc3fa04e00487d003cb535e9423552a07baabf"
+                "reference": "1bdce2a7eb590e79d11c4be8b4b13f27f3dd0304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/bccc3fa04e00487d003cb535e9423552a07baabf",
-                "reference": "bccc3fa04e00487d003cb535e9423552a07baabf",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/1bdce2a7eb590e79d11c4be8b4b13f27f3dd0304",
+                "reference": "1bdce2a7eb590e79d11c4be8b4b13f27f3dd0304",
                 "shasum": ""
             },
             "require": {
@@ -2278,7 +2278,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-05-02 13:28:17"
+            "time": "2013-05-03 14:15:43"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3417,7 +3417,7 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "1.0.1",
+            "version": "1.0.x-dev",
             "target-dir": "Symfony/Cmf/Component/Routing",
             "source": {
                 "type": "git",
@@ -3903,7 +3903,7 @@
                 "reference": "master"
             },
             "type": "library",
-            "time": "2013-02-21 21:10:21"
+            "time": "2013-03-15 05:21:06"
         }
     ],
     "packages-dev": [
