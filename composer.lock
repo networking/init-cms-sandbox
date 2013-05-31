@@ -277,12 +277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "1459223adae87305d07c9ea5f742a7fd6c8a740e"
+                "reference": "2169b0ce1d253d448c60b7d40bbe4e4b5afe22fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/1459223adae87305d07c9ea5f742a7fd6c8a740e",
-                "reference": "1459223adae87305d07c9ea5f742a7fd6c8a740e",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/2169b0ce1d253d448c60b7d40bbe4e4b5afe22fe",
+                "reference": "2169b0ce1d253d448c60b7d40bbe4e4b5afe22fe",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +330,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -343,7 +343,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-05-21 02:44:34"
+            "time": "2013-05-27 19:11:46"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -904,12 +904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "5916b3ab254f2e52404fd76311c38e4219f548bc"
+                "reference": "74c7e03d342e51d1c0e9da0b18a0dfcc6484e453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/5916b3ab254f2e52404fd76311c38e4219f548bc",
-                "reference": "5916b3ab254f2e52404fd76311c38e4219f548bc",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/74c7e03d342e51d1c0e9da0b18a0dfcc6484e453",
+                "reference": "74c7e03d342e51d1c0e9da0b18a0dfcc6484e453",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +976,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-05-26 16:54:03"
+            "time": "2013-05-31 11:39:14"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -2013,16 +2013,16 @@
         },
         {
             "name": "kriswallsmith/buzz",
-            "version": "v0.9",
+            "version": "v0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "v0.9"
+                "reference": "v0.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/v0.9",
-                "reference": "v0.9",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/v0.10",
+                "reference": "v0.10",
                 "shasum": ""
             },
             "require": {
@@ -2057,7 +2057,7 @@
                 "curl",
                 "http client"
             ],
-            "time": "2013-02-19 00:26:38"
+            "time": "2013-05-19 03:41:15"
         },
         {
             "name": "monolog/monolog",
@@ -2235,12 +2235,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "2181cf3a63443d3a349a65acbc830b044833786f"
+                "reference": "79249f057d4a80989eef2057148b03c431eeaa75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/2181cf3a63443d3a349a65acbc830b044833786f",
-                "reference": "2181cf3a63443d3a349a65acbc830b044833786f",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/79249f057d4a80989eef2057148b03c431eeaa75",
+                "reference": "79249f057d4a80989eef2057148b03c431eeaa75",
                 "shasum": ""
             },
             "require": {
@@ -2284,7 +2284,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-05-27 14:45:19"
+            "time": "2013-05-31 14:02:18"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3857,12 +3857,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "f6c00587f8b2d6e680d09fd6015fa521f9c72327"
+                "reference": "fca6a9562dc032a7ba3ab8278b731b72efa8bd9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/f6c00587f8b2d6e680d09fd6015fa521f9c72327",
-                "reference": "f6c00587f8b2d6e680d09fd6015fa521f9c72327",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/fca6a9562dc032a7ba3ab8278b731b72efa8bd9c",
+                "reference": "fca6a9562dc032a7ba3ab8278b731b72efa8bd9c",
                 "shasum": ""
             },
             "require": {
@@ -3898,7 +3898,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-27 06:08:37"
+            "time": "2013-05-29 14:58:12"
         },
         {
             "name": "twitter/bootstrap",
