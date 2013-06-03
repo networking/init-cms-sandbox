@@ -904,12 +904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "15294fa034525c4cba3518317dfcfb3b4e182cab"
+                "reference": "e1d33ee86e1718ab14b814443fe021e1a1895d82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/15294fa034525c4cba3518317dfcfb3b4e182cab",
-                "reference": "15294fa034525c4cba3518317dfcfb3b4e182cab",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e1d33ee86e1718ab14b814443fe021e1a1895d82",
+                "reference": "e1d33ee86e1718ab14b814443fe021e1a1895d82",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +976,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-05-31 17:57:14"
+            "time": "2013-06-03 14:33:44"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -2235,12 +2235,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "185b8ba0630f081d05803ce91b8e8daa6009fc0e"
+                "reference": "61486b8dfcce6b3d2cb9c61347bd6b6542222aef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/185b8ba0630f081d05803ce91b8e8daa6009fc0e",
-                "reference": "185b8ba0630f081d05803ce91b8e8daa6009fc0e",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/61486b8dfcce6b3d2cb9c61347bd6b6542222aef",
+                "reference": "61486b8dfcce6b3d2cb9c61347bd6b6542222aef",
                 "shasum": ""
             },
             "require": {
@@ -2284,7 +2284,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-06-03 09:45:55"
+            "time": "2013-06-03 15:02:05"
         },
         {
             "name": "phpcollection/phpcollection",
