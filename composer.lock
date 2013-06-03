@@ -66,16 +66,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "dev-master",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "4700c531afc57a612e179b91a2bd918ab6ef7b24"
+                "reference": "v1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/4700c531afc57a612e179b91a2bd918ab6ef7b24",
-                "reference": "4700c531afc57a612e179b91a2bd918ab6ef7b24",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/v1.1.1",
+                "reference": "v1.1.1",
                 "shasum": ""
             },
             "require": {
@@ -133,7 +133,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-05-21 15:40:13"
+            "time": "2013-04-20 08:30:17"
         },
         {
             "name": "doctrine/cache",
@@ -904,12 +904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "74c7e03d342e51d1c0e9da0b18a0dfcc6484e453"
+                "reference": "e1d33ee86e1718ab14b814443fe021e1a1895d82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/74c7e03d342e51d1c0e9da0b18a0dfcc6484e453",
-                "reference": "74c7e03d342e51d1c0e9da0b18a0dfcc6484e453",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/e1d33ee86e1718ab14b814443fe021e1a1895d82",
+                "reference": "e1d33ee86e1718ab14b814443fe021e1a1895d82",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +976,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-05-31 11:39:14"
+            "time": "2013-06-03 14:33:44"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -984,16 +984,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ibrows/IbrowsAnnotationReader.git",
-                "reference": "1.0.1"
+                "reference": "cd4dacefe006a022b8ae7988df1c4274d571d3a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/1.0.1",
-                "reference": "1.0.1",
+                "url": "https://api.github.com/repos/ibrows/IbrowsAnnotationReader/zipball/cd4dacefe006a022b8ae7988df1c4274d571d3a3",
+                "reference": "cd4dacefe006a022b8ae7988df1c4274d571d3a3",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "dev-master",
+                "doctrine/annotations": "1.*",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -1023,7 +1023,7 @@
                 "annotation",
                 "reader"
             ],
-            "time": "2013-02-20 09:17:34"
+            "time": "2013-06-03 07:25:55"
         },
         {
             "name": "ibrows/sonata-admin-annotation-bundle",
@@ -2235,12 +2235,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "34b18bd342301a26c11854cd9a981bf9abba8512"
+                "reference": "a4347e47f252f9ed7e80051b0837ddbcf020fa67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/34b18bd342301a26c11854cd9a981bf9abba8512",
-                "reference": "34b18bd342301a26c11854cd9a981bf9abba8512",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/a4347e47f252f9ed7e80051b0837ddbcf020fa67",
+                "reference": "a4347e47f252f9ed7e80051b0837ddbcf020fa67",
                 "shasum": ""
             },
             "require": {
@@ -2284,7 +2284,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-05-31 14:02:41"
+            "time": "2013-06-03 15:02:27"
         },
         {
             "name": "phpcollection/phpcollection",
