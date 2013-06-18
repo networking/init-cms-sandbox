@@ -27,6 +27,9 @@ Other Features:
 The project is being developed by the
 small hard working team at [net working AG][1] in Zürich.
 
+
+A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com)
+
 The administration is located at [demo.initcms.com/admin](http://demo.initcms.com/admin)
 The login is:
 User: admin
