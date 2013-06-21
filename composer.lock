@@ -2240,12 +2240,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "e8a66e70e0ecc4a833f67688b87eab6c9bb622eb"
+                "reference": "af6216958bb169954659ba7d54a19d34203e33a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e8a66e70e0ecc4a833f67688b87eab6c9bb622eb",
-                "reference": "e8a66e70e0ecc4a833f67688b87eab6c9bb622eb",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/af6216958bb169954659ba7d54a19d34203e33a2",
+                "reference": "af6216958bb169954659ba7d54a19d34203e33a2",
                 "shasum": ""
             },
             "require": {
@@ -2259,6 +2259,7 @@
                 "php": ">=5.3.3",
                 "sonata-project/admin-bundle": "2.1.*",
                 "sonata-project/doctrine-orm-admin-bundle": "2.1.*",
+                "sonata-project/exporter": "1.2.3",
                 "sonata-project/formatter-bundle": "2.1.*",
                 "sonata-project/media-bundle": "2.1.*",
                 "sonata-project/user-bundle": "2.1.*",
@@ -2289,7 +2290,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-06-18 12:49:07"
+            "time": "2013-06-18 14:03:22"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2833,16 +2834,16 @@
         },
         {
             "name": "sonata-project/exporter",
-            "version": "1.3.0",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "1.3.0"
+                "reference": "1.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.3.0",
-                "reference": "1.3.0",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/1.2.3",
+                "reference": "1.2.3",
                 "shasum": ""
             },
             "require": {
@@ -2850,7 +2851,6 @@
             },
             "require-dev": {
                 "php": ">=5.3.0",
-                "symfony/property-access": ">=2.2, <3.0.0-dev",
                 "symfony/routing": "*"
             },
             "suggest": {
@@ -2883,7 +2883,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2013-06-06 20:59:26"
+            "time": "2013-06-06 12:40:27"
         },
         {
             "name": "sonata-project/formatter-bundle",
