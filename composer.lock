@@ -351,12 +351,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "6924952026b77ff492da559b04ad166d25c611cb"
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/6924952026b77ff492da559b04ad166d25c611cb",
-                "reference": "6924952026b77ff492da559b04ad166d25c611cb",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/b4a135c7db56ecc4602b54a2184368f440cac33e",
+                "reference": "b4a135c7db56ecc4602b54a2184368f440cac33e",
                 "shasum": ""
             },
             "require": {
@@ -398,7 +398,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2013-04-11 23:14:04"
+            "time": "2013-07-10 17:04:07"
         },
         {
             "name": "doctrine/dbal",
@@ -907,12 +907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "5f29b798f1290dd994c4ca133dadf69cccb59a1f"
+                "reference": "b2e0ef9691f04c7097bac2183110764d005c39d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/5f29b798f1290dd994c4ca133dadf69cccb59a1f",
-                "reference": "5f29b798f1290dd994c4ca133dadf69cccb59a1f",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/b2e0ef9691f04c7097bac2183110764d005c39d8",
+                "reference": "b2e0ef9691f04c7097bac2183110764d005c39d8",
                 "shasum": ""
             },
             "require": {
@@ -979,7 +979,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-07-09 18:45:00"
+            "time": "2013-07-13 17:29:26"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -1075,17 +1075,17 @@
             "time": "2013-02-19 14:37:31"
         },
         {
-            "name": "imagine/Imagine",
+            "name": "imagine/imagine",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "v0.4.1"
+                "reference": "v0.5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/v0.4.1",
-                "reference": "v0.4.1",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/v0.5.0",
+                "reference": "v0.5.0",
                 "shasum": ""
             },
             "require": {
@@ -1093,6 +1093,11 @@
             },
             "require-dev": {
                 "sami/sami": "dev-master"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
             },
             "type": "library",
             "autoload": {
@@ -1119,7 +1124,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2012-12-13 18:31:18"
+            "time": "2013-07-10 17:25:36"
         },
         {
             "name": "jms/aop-bundle",
@@ -2240,12 +2245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "47d3d4317065f09a8fab2b4670f56851260dab70"
+                "reference": "9696e0e4e367c7e86f6de4518b081e948dc4e6ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/47d3d4317065f09a8fab2b4670f56851260dab70",
-                "reference": "47d3d4317065f09a8fab2b4670f56851260dab70",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/9696e0e4e367c7e86f6de4518b081e948dc4e6ab",
+                "reference": "9696e0e4e367c7e86f6de4518b081e948dc4e6ab",
                 "shasum": ""
             },
             "require": {
@@ -2290,7 +2295,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-07-10 12:17:10"
+            "time": "2013-07-10 13:45:44"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2539,12 +2544,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "8cd68dd548791e57b4e274858a3d49a83fbef8c0"
+                "reference": "61081297a4783a69740b53d3bb5f549a77138efa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/8cd68dd548791e57b4e274858a3d49a83fbef8c0",
-                "reference": "8cd68dd548791e57b4e274858a3d49a83fbef8c0",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/61081297a4783a69740b53d3bb5f549a77138efa",
+                "reference": "61081297a4783a69740b53d3bb5f549a77138efa",
                 "shasum": ""
             },
             "require": {
@@ -2606,7 +2611,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-06-27 18:32:34"
+            "time": "2013-07-12 18:21:08"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -3863,12 +3868,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "89007e5cc13011dbc063bd35aa6eb4d62754f727"
+                "reference": "c35d7f267ffed95060066a6edd610cb23e9e3e50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/89007e5cc13011dbc063bd35aa6eb4d62754f727",
-                "reference": "89007e5cc13011dbc063bd35aa6eb4d62754f727",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/c35d7f267ffed95060066a6edd610cb23e9e3e50",
+                "reference": "c35d7f267ffed95060066a6edd610cb23e9e3e50",
                 "shasum": ""
             },
             "require": {
@@ -3904,7 +3909,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-07-05 17:16:02"
+            "time": "2013-07-15 15:12:47"
         },
         {
             "name": "twitter/bootstrap",
