@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "13dc8dc1101a28b7914fc542d6cf2fac",
+    "hash": "1c947b350f6622864e0c5b4d5b78e65b",
     "packages": [
         {
             "name": "dflydev/markdown",
