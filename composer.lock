@@ -2255,12 +2255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "0645c2ca091b31271fe916d0fcc5ab28a3d1b338"
+                "reference": "386640824cd35ce41f944324dc2f44439c7f5f22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/0645c2ca091b31271fe916d0fcc5ab28a3d1b338",
-                "reference": "0645c2ca091b31271fe916d0fcc5ab28a3d1b338",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/386640824cd35ce41f944324dc2f44439c7f5f22",
+                "reference": "386640824cd35ce41f944324dc2f44439c7f5f22",
                 "shasum": ""
             },
             "require": {
@@ -2305,7 +2305,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-09-23 13:12:17"
+            "time": "2013-09-24 15:08:54"
         },
         {
             "name": "phpcollection/phpcollection",
