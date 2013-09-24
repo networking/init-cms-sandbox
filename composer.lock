@@ -273,16 +273,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "dev-master",
+            "version": "2.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "d9dea98243c733ff589aab10e321de4f14a63ab4"
+                "reference": "c94d6ff79e25418b1225e187c782bf4742f23a8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/d9dea98243c733ff589aab10e321de4f14a63ab4",
-                "reference": "d9dea98243c733ff589aab10e321de4f14a63ab4",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/c94d6ff79e25418b1225e187c782bf4742f23a8b",
+                "reference": "c94d6ff79e25418b1225e187c782bf4742f23a8b",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.4.x-dev"
                 }
             },
             "autoload": {
@@ -343,7 +343,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-09-16 09:32:54"
+            "time": "2013-09-07 10:20:35"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -3063,12 +3063,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMarkItUpBundle.git",
-                "reference": "7a85c61f46fbef591442062348555b2b59cb2ff2"
+                "reference": "f50ed2d543c25f0510962ac2e33d250ad8c5860c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMarkItUpBundle/zipball/7a85c61f46fbef591442062348555b2b59cb2ff2",
-                "reference": "7a85c61f46fbef591442062348555b2b59cb2ff2",
+                "url": "https://api.github.com/repos/sonata-project/SonataMarkItUpBundle/zipball/f50ed2d543c25f0510962ac2e33d250ad8c5860c",
+                "reference": "f50ed2d543c25f0510962ac2e33d250ad8c5860c",
                 "shasum": ""
             },
             "require": {
@@ -3119,7 +3119,7 @@
                 "textile",
                 "wiki"
             ],
-            "time": "2013-09-20 10:05:21"
+            "time": "2013-09-23 16:26:25"
         },
         {
             "name": "sonata-project/media-bundle",
