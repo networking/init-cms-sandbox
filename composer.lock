@@ -2255,12 +2255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "9da20a364fdcc385c6a270ea062ed4d5110dfd0c"
+                "reference": "8bc6f53e72a1481846db1b3114d8b26e3e3c81d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/9da20a364fdcc385c6a270ea062ed4d5110dfd0c",
-                "reference": "9da20a364fdcc385c6a270ea062ed4d5110dfd0c",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/8bc6f53e72a1481846db1b3114d8b26e3e3c81d7",
+                "reference": "8bc6f53e72a1481846db1b3114d8b26e3e3c81d7",
                 "shasum": ""
             },
             "require": {
@@ -2281,7 +2281,7 @@
                 "stof/doctrine-extensions-bundle": "dev-master",
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "symfony/symfony": "2.1.*",
-                "twitter/bootstrap": "master"
+                "twitter/bootstrap": "dev-master"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2305,7 +2305,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-09-25 08:58:13"
+            "time": "2013-09-25 15:12:29"
         },
         {
             "name": "phpcollection/phpcollection",
