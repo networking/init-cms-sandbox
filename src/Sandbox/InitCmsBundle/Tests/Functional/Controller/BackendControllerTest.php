@@ -1,8 +1,8 @@
 <?php
 
-namespace Sandbox\InitCmsBundle\Tests\Controller;
+namespace Sandbox\InitCmsBundle\Tests\Functional\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Sandbox\InitCmsBundle\Lib\WebTestCase;
 
 class BackendControllerTest extends WebTestCase
 {
@@ -19,7 +19,7 @@ class BackendControllerTest extends WebTestCase
 
     public function testWrongLogin()
     {
-        restoreDatabase();
+        $this->restoreDatabase();
         $client = static::createClient();
         $crawler = $client->request('GET', '/admin/login', array('admin/_locale' => 'en_US'));
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
@@ -39,7 +39,7 @@ class BackendControllerTest extends WebTestCase
 
     public function testLogin()
     {
-        restoreDatabase();
+        $this->restoreDatabase();
         $client = static::createClient();
         $crawler = $client->request('GET', '/admin/login', array('admin/_locale' => 'en_US'));
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
@@ -51,7 +51,6 @@ class BackendControllerTest extends WebTestCase
         $form['_password'] = 'bar';
         // submit the form
         $crawler = $client->submit($form);
-
         $this->assertTrue($client->getResponse()->isRedirect('http://localhost/admin/dashboard'), 'redirect to dashboard');
         $crawler = $client->followRedirect();
         $this->assertTrue($crawler->filter('html:contains("Dashboard")')->count() > 0, 'dashboard');
@@ -60,7 +59,7 @@ class BackendControllerTest extends WebTestCase
 
     public function testBackendLanguage()
     {
-        restoreDatabase();
+        $this->restoreDatabase();
         $client = static::createClient();
         $crawler = $client->request('GET', '/admin/login');
         // try login with correct user
@@ -106,7 +105,7 @@ class BackendControllerTest extends WebTestCase
 
     public function testBackendLanguage2()
     {
-        restoreDatabase();
+        $this->restoreDatabase();
         $client = static::createClient();
         $crawler = $client->request('GET', '/admin/login');
         // try login with correct user
