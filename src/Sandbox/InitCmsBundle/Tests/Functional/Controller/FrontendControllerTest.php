@@ -1,8 +1,8 @@
 <?php
 
-namespace Sandbox\InitCmsBundle\Tests\Controller;
+namespace Sandbox\InitCmsBundle\Tests\Functional\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use Sandbox\InitCmsBundle\Lib\WebTestCase;
 
 class FrontendControllerTest extends WebTestCase
 {

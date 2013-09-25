@@ -1,6 +1,6 @@
 <?php
 
-namespace Sandbox\InitCmsBundle\DataFixtures\ORM;
+namespace Sandbox\InitCmsBundle\Tests\Fixtures;
 
 /**
  * This file is part of the Networking package.

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "1c947b350f6622864e0c5b4d5b78e65b",
+    "hash": "382e0b3939c6450603b793274b4f1152",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2255,12 +2255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "eaa21679c97705660a3a0c9fd4b8fc47150aa8e3"
+                "reference": "a7249d49b3fced98209ab35880b02c918ea9f620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/eaa21679c97705660a3a0c9fd4b8fc47150aa8e3",
-                "reference": "eaa21679c97705660a3a0c9fd4b8fc47150aa8e3",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/a7249d49b3fced98209ab35880b02c918ea9f620",
+                "reference": "a7249d49b3fced98209ab35880b02c918ea9f620",
                 "shasum": ""
             },
             "require": {
@@ -2281,7 +2281,7 @@
                 "stof/doctrine-extensions-bundle": "dev-master",
                 "symfony-cmf/routing-extra-bundle": "dev-master",
                 "symfony/symfony": "2.1.*",
-                "twitter/bootstrap": "master"
+                "twitter/bootstrap": "dev-master"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2305,7 +2305,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-09-24 15:08:33"
+            "time": "2013-09-25 11:58:21"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3922,14 +3922,40 @@
         },
         {
             "name": "twitter/bootstrap",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "master"
+                "reference": "1a476b623ebea6b5f95161b865fb38ddd766fa84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/1a476b623ebea6b5f95161b865fb38ddd766fa84",
+                "reference": "1a476b623ebea6b5f95161b865fb38ddd766fa84",
+                "shasum": ""
             },
             "type": "library",
-            "time": "2013-09-22 23:53:01"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2013-09-25 02:27:49"
         }
     ],
     "packages-dev": [
