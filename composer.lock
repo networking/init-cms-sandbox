@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e41539704122a23be9086d615d73ef42",
+    "hash": "8c96bed55cd2faaedd1adea4aed1b209",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2255,12 +2255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "386640824cd35ce41f944324dc2f44439c7f5f22"
+                "reference": "9da20a364fdcc385c6a270ea062ed4d5110dfd0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/386640824cd35ce41f944324dc2f44439c7f5f22",
-                "reference": "386640824cd35ce41f944324dc2f44439c7f5f22",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/9da20a364fdcc385c6a270ea062ed4d5110dfd0c",
+                "reference": "9da20a364fdcc385c6a270ea062ed4d5110dfd0c",
                 "shasum": ""
             },
             "require": {
@@ -2305,7 +2305,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-09-24 15:08:54"
+            "time": "2013-09-25 08:58:13"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3922,14 +3922,40 @@
         },
         {
             "name": "twitter/bootstrap",
-            "version": "master",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "master"
+                "reference": "1a476b623ebea6b5f95161b865fb38ddd766fa84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/1a476b623ebea6b5f95161b865fb38ddd766fa84",
+                "reference": "1a476b623ebea6b5f95161b865fb38ddd766fa84",
+                "shasum": ""
             },
             "type": "library",
-            "time": "2013-09-22 23:53:01"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2013-09-25 02:27:49"
         }
     ],
     "packages-dev": [
