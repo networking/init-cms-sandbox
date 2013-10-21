@@ -15,7 +15,6 @@ framework:
     validation:      { enable_annotations: true }
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
-    trust_proxy_headers: false # Should Request object should trust proxy headers (X_FORWARDED_FOR/HTTP_CLIENT_IP)
     session: ~
 
 # Twig Configuration
@@ -112,8 +111,21 @@ swiftmailer:
     password:  %mailer_password%
     spool:     { type: memory }
 
+lexik_translation:
+    fallback_locale: 'en'      # (required) default locale to use
+    managed_locales: ['en', 'de']    # (required) locales that the bundle have to manage
+
+ibrows_sonata_translation:
+    editable:
+        mode: inline         # Mode of editable, can be popup or inline
+        type: textarea       # Type of input. Can be text|textarea|select|date|checklist and more
+        emptytext: Empty     # text to display on empty translations
+        placement: top       # ingnored for inline mode
 
 networking_init_cms:
+    class:
+        page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
+        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
     languages:
         - {label: English, locale: en_US}
         - {label: Deutsch, locale: de_CH}
@@ -141,3 +153,58 @@ networking_init_cms:
 
 sonata_admin:
     title:      Demo Sailing Club
+    options:
+        use_select2: false
+
+sonata_news:
+    title:        Sonata Project
+    link:         http://sonata-project.org
+    description:  Cool bundles on top of Symfony2
+    salt:         'secureToken'
+    permalink_generator: sonata.news.permalink.date # sonata.news.permalink.collection
+    class:
+        tag: Networking\InitCmsBundle\Entity\Tag
+        category: Networking\InitCmsBundle\Entity\NewsCategory
+        post: Networking\InitCmsBundle\Entity\NewsPost
+        comment: Networking\InitCmsBundle\Entity\NewsComment
+        media: Networking\InitCmsBundle\Entity\Media
+        user: Application\Networking\InitCmsBundle\Entity\User
+    comment:
+        notification:
+            emails:   [y.chadwick@networking.ch]
+            from:     info@networking.ch
+            template: 'SonataNewsBundle:Mail:comment_notification.txt.twig'
+
+sonata_formatter:
+    formatters:
+        markdown:
+            service: sonata.formatter.text.markdown
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+
+        text:
+            service: sonata.formatter.text.text
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+
+        rawhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+
+        richhtml:
+            service: sonata.formatter.text.raw
+            extensions:
+                - sonata.formatter.twig.control_flow
+                - sonata.formatter.twig.gist
+                - sonata.media.formatter.twig
+
+        twig:
+            service: sonata.formatter.text.twigengine
+            extensions: [] # Twig formatter cannot have extensions

@@ -17,11 +17,16 @@ file that was distributed with this source code.
 {% if galleryView is defined %}
     {# create a lightbox view #}
     {% if galleryView.galleryType == 'lightbox' %}
-        {{ lightbox(galleryView.mediaGallery) }}
-    {% endif %}
-
-    {# create a carousel view #}
-    {% if galleryView.galleryType == 'carousel' %}
-        {{ carousel(galleryView.mediaGallery, 'centerCarousel', null, 'medium', '300px') }}
+        {{ lightbox(galleryView.mediaGallery, null, null, 'medium') }}
+    {% elseif galleryView.galleryType == 'carousel' %}
+        {{ carousel(galleryView.mediaGallery, 'centerCarousel', null, 'big', '300px') }}
+    {% else %}
+        <ul>
+            {% for media in mediaItems %}
+                <li>
+                    {% media media.media, gallery.defaultFormat %}
+                </li>
+            {% endfor %}
+        </ul>
     {% endif %}
 {% endif %}
