@@ -1,0 +1,32 @@
+{#
+
+This file is part of the Networking package.
+
+(c) net working AG <info@networking.ch>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+{% from 'NetworkingInitCmsBundle:GalleryView:macro.html.twig' import lightbox, carousel %}
+
+{% if text is defined %}
+    {{ text | raw }}
+{% endif %}
+
+{% if galleryView is defined %}
+    {# create a lightbox view #}
+    {% if galleryView.galleryType == 'lightbox' %}
+        {{ lightbox(galleryView.mediaGallery, null, null, 'medium') }}
+    {% elseif galleryView.galleryType == 'carousel' %}
+        {{ carousel(galleryView.mediaGallery, 'centerCarousel', null, 'big', '300px') }}
+    {% else %}
+        <ul>
+            {% for media in mediaItems %}
+                <li>
+                    {% media media.media, gallery.defaultFormat %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endif %}

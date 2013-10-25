@@ -131,7 +131,7 @@ networking_init_cms:
         - {label: Deutsch, locale: de_CH}
     templates:
         'Sandbox_one_column_template':
-            template: "SandboxInitCmsBundle:Default:one_column.html.twig"
+            template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
             name: "Single Column"
             icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
             zones:
@@ -139,7 +139,7 @@ networking_init_cms:
                 - { name: main_content, span:12}
 #                - { name: bottom, span:12}
         'Sandbox_two_column_template':
-            template: "SandboxInitCmsBundle:Default:two_column.html.twig"
+            template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
             name: "Two Column"
             icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
             zones:
@@ -156,24 +156,6 @@ sonata_admin:
     options:
         use_select2: false
 
-sonata_news:
-    title:        Sonata Project
-    link:         http://sonata-project.org
-    description:  Cool bundles on top of Symfony2
-    salt:         'secureToken'
-    permalink_generator: sonata.news.permalink.date # sonata.news.permalink.collection
-    class:
-        tag: Networking\InitCmsBundle\Entity\Tag
-        category: Networking\InitCmsBundle\Entity\NewsCategory
-        post: Networking\InitCmsBundle\Entity\NewsPost
-        comment: Networking\InitCmsBundle\Entity\NewsComment
-        media: Networking\InitCmsBundle\Entity\Media
-        user: Application\Networking\InitCmsBundle\Entity\User
-    comment:
-        notification:
-            emails:   [y.chadwick@networking.ch]
-            from:     info@networking.ch
-            template: 'SonataNewsBundle:Mail:comment_notification.txt.twig'
 
 sonata_formatter:
     formatters:

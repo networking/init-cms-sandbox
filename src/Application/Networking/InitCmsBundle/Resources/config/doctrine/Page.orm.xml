@@ -25,10 +25,10 @@
         </id>
 
         <one-to-one target-entity="Networking\InitCmsBundle\Entity\ContentRoute" field="contentRoute">
-            <!--<cascade>-->
-                <!--<cascade-persist/>-->
-                <!--<cascade-remove/>-->
-            <!--</cascade>-->
+            <cascade>
+                <cascade-persist/>
+                <cascade-remove/>
+            </cascade>
             <join-column name="content_route_id" referenced-column-name="id"/>
         </one-to-one>
         <one-to-many target-entity="Networking\InitCmsBundle\Entity\LayoutBlock" field="layoutBlock" mapped-by="page"
