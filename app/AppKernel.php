@@ -38,11 +38,10 @@ class AppKernel extends Kernel
             new \Sonata\FormatterBundle\SonataFormatterBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-            new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
-            //new Sandbox\InitCmsBundle\SandboxInitCmsBundle(),
             new Ibrows\Bundle\SonataAdminAnnotationBundle\IbrowsSonataAdminAnnotationBundle(),
             new Lexik\Bundle\TranslationBundle\LexikTranslationBundle(),
             new Ibrows\SonataTranslationBundle\IbrowsSonataTranslationBundle(),
+            new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
         );
 

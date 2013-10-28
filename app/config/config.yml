@@ -1,6 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
+    - { resource: @ApplicationNetworkingInitCmsBundle/Resources/config/config.yml }
 
 
 framework:
@@ -112,12 +113,12 @@ swiftmailer:
     spool:     { type: memory }
 
 lexik_translation:
-    fallback_locale: 'en'      # (required) default locale to use
-    managed_locales: ['en', 'de']    # (required) locales that the bundle have to manage
+    fallback_locale: en      # (required) default locale to use
+    managed_locales: [en, de, fr]    # (required) locales that the bundle have to manage
 
 ibrows_sonata_translation:
     editable:
-        mode: inline         # Mode of editable, can be popup or inline
+        mode: popup         # Mode of editable, can be popup or inline
         type: textarea       # Type of input. Can be text|textarea|select|date|checklist and more
         emptytext: Empty     # text to display on empty translations
         placement: top       # ingnored for inline mode
