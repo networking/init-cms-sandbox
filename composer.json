@@ -29,7 +29,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "jms/security-extra-bundle":"master",
         "jms/serializer-bundle":"master",
-        "networking/init-cms-bundle":"dev-upgrade_2.3"
+        "networking/init-cms-bundle":"dev-master"
 
     },
     "scripts":{
@@ -47,19 +47,5 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ]
-    },
-    "repositories":[
-        {
-            "type":"package",
-            "package":{
-                "version":"master",
-                "name":"networking/init-cms-bundle",
-                "source":{
-                    "url":"https://github.com/networking/init-cms-bundle.git",
-                    "type":"git",
-                    "reference":"dev-upgrade_2.3"
-                }
-            }
-        }
-    ]
+    }
 }
