@@ -2,7 +2,14 @@ services:
     sandbox_init_cms.menu.frontend_menu_builder:
         class: Networking\InitCmsBundle\Component\Menu\FrontendMenuBuilder
         scope: request
-        arguments: [ '@knp_menu.factory', '@security.context', '@service_container' ]
+        arguments:
+            - @knp_menu.factory
+            - @security.context
+            - @request
+            - @router
+            - @networking_init_cms.menu_item_manager
+            - @translator
+
 
     # Create the left main menu and right main menu for the frontend
     sandbox_init_cms.menu.frontend_main_menu_left:

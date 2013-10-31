@@ -1,6 +1,3 @@
 NetworkingInitCmsBundle:
-    resource: "@NetworkingInitCmsBundle/Resources/config/routing.yml"
+    resource: "@NetworkingInitCmsBundle/Resources/config/routing/routing.yml"
     prefix:   /
-lexik_translation_edition:
-    resource: "@LexikTranslationBundle/Resources/config/routing.yml"
-    prefix:   /translation

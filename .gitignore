@@ -5,23 +5,30 @@ bin/
 composer.phar
 
 # Symfony directories
-vendor/*
-*/logs/*
-*/cache/*
+vendor
+app/cache
+app/logs
+app/*.cache
 web/uploads/*
 web/bundles/*
+web/sitemap*.xml
 web/css/
 web/js/
 web/uploads/
 
 # Configuration files
 app/config/parameters.ini
-app/config/parameters.yml
+app/config/parameters*.yml
 
+# Composer
+composer.phar
 
 #ignore php storm project files
 .idea/
 
+#ignore netbeans project files
+nbproject
+
 #ignore mac filesystem files
 .DS_Store
-/web/img/
+

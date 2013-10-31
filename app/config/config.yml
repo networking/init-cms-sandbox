@@ -39,7 +39,6 @@ assetic:
             apply_to: "\.css$|\.less$"
         yui_css:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
-            apply_to: "\.css_compile$"
         yui_js:
             jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
 
@@ -110,18 +109,6 @@ swiftmailer:
     host:      %mailer_host%
     username:  %mailer_user%
     password:  %mailer_password%
-    spool:     { type: memory }
-
-lexik_translation:
-    fallback_locale: en      # (required) default locale to use
-    managed_locales: [en, de, fr]    # (required) locales that the bundle have to manage
-
-ibrows_sonata_translation:
-    editable:
-        mode: popup         # Mode of editable, can be popup or inline
-        type: textarea       # Type of input. Can be text|textarea|select|date|checklist and more
-        emptytext: Empty     # text to display on empty translations
-        placement: top       # ingnored for inline mode
 
 networking_init_cms:
     class:
@@ -157,37 +144,8 @@ sonata_admin:
     options:
         use_select2: false
 
+lexik_translation:
+    fallback_locale: en      # (required) default locale to use
+    managed_locales: [en, de]    # (required) locales that the bundle have to manage
 
-sonata_formatter:
-    formatters:
-        markdown:
-            service: sonata.formatter.text.markdown
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-                - sonata.media.formatter.twig
 
-        text:
-            service: sonata.formatter.text.text
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-                - sonata.media.formatter.twig
-
-        rawhtml:
-            service: sonata.formatter.text.raw
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-                - sonata.media.formatter.twig
-
-        richhtml:
-            service: sonata.formatter.text.raw
-            extensions:
-                - sonata.formatter.twig.control_flow
-                - sonata.formatter.twig.gist
-                - sonata.media.formatter.twig
-
-        twig:
-            service: sonata.formatter.text.twigengine
-            extensions: [] # Twig formatter cannot have extensions
