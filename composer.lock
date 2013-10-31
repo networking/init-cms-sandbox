@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6930abb7d02e81b3de9648745ff3dafb",
+    "hash": "8132415c8e047795963f7cf2dc86ff85",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2462,7 +2462,7 @@
         },
         {
             "name": "networking/init-cms-bundle",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
