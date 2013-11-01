@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "cfb190849db705e474406d10245b332250112a95"
+                "reference": "5885cfc624580a9c987abed13c90f5d9129fcf67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/cfb190849db705e474406d10245b332250112a95",
-                "reference": "cfb190849db705e474406d10245b332250112a95",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/5885cfc624580a9c987abed13c90f5d9129fcf67",
+                "reference": "5885cfc624580a9c987abed13c90f5d9129fcf67",
                 "shasum": ""
             },
             "require": {
@@ -2522,7 +2522,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-10-31 15:43:35"
+            "time": "2013-11-01 09:32:04"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4077,12 +4077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "f69b8adacda79cbee7f91c18ebeb16669ef7a0eb"
+                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/f69b8adacda79cbee7f91c18ebeb16669ef7a0eb",
-                "reference": "f69b8adacda79cbee7f91c18ebeb16669ef7a0eb",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
+                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
                 "shasum": ""
             },
             "require": {
@@ -4126,7 +4126,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-10-28 17:40:51"
+            "time": "2013-11-01 09:24:47"
         },
         {
             "name": "symfony-cmf/routing-bundle",
