@@ -18,32 +18,32 @@ file that was distributed with this source code.
 {% endblock html_tag %}
 
 {% block head %}
-<head>
-    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8"/>
 
-    {% block head_style %}
-    {# Override this block to add your own files! #}
-    {% stylesheets filter='less,?yui_css'
-       '@ApplicationNetworkingInitCmsBundle/Resources/public/less/styles.less'
-       '@ApplicationNetworkingInitCmsBundle/Resources/public/css/prettyPhoto.css'
-        output='css/styles.css'
-    %}
-    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
-    {% endstylesheets %}
-        {{ block('admin_style') }}
-    {% endblock head_style %}
+        {% block head_style %}
+            {# Override this block to add your own files! #}
+            {% stylesheets filter='less,?yui_css'
+            '@MopaBootstrapBundle/Resources/public/less/eyecon-bootstrap-datepicker.less'
+            '@ApplicationNetworkingInitCmsBundle/Resources/public/less/styles.less'
+            '@ApplicationNetworkingInitCmsBundle/Resources/public/css/prettyPhoto.css'
+            output='css/styles.css' %}
+            <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen"/>
+            {% endstylesheets %}
+            {{ block('admin_style') }}
+        {% endblock head_style %}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% block head_script %}
-    {# Overwrite this block to add your own js here, to get them generated into final files #}
-    {% endblock head_script %}
+        {% block head_script %}
+            {# Overwrite this block to add your own js here, to get them generated into final files #}
+        {% endblock head_script %}
 
-    <title>{% block title %}{% endblock title %}</title>
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
-    {% block head_bottom %}
-    {% endblock head_bottom %}
-</head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"/>
+        {% block head_bottom %}
+        {% endblock head_bottom %}
+    </head>
 {% endblock head %}
 
 {% block body_tag %}
@@ -59,7 +59,7 @@ file that was distributed with this source code.
     {{ block('admin_navbar') }}
 
 
-    {% block container %}
+{% block container %}
     <div class="{% block container_class %}container-fluid{% endblock container_class %}">
 
         {% block navbar %}{% endblock navbar %}
@@ -68,30 +68,30 @@ file that was distributed with this source code.
         {% endblock header %}
 
         <div class="content">
-	        {% block page_header %}
-	        {% endblock page_header %}
+            {% block page_header %}
+            {% endblock page_header %}
 
             {% block flashes %}
-            {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
+                {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
                 {{ session_flash(null,true) }}
-            {% if app.session.flashbag.peekAll|length > 0 %}
-            <div class="row-fluid">
-                <div class="span12">
-                {{ session_flash()}}
-                </div>
-            </div>
-            {% endif %}
+                {% if app.session.flashbag.peekAll|length > 0 %}
+                    <div class="row-fluid">
+                        <div class="span12">
+                            {{ session_flash() }}
+                        </div>
+                    </div>
+                {% endif %}
             {% endblock flashes %}
 
             {% block content_row %}
-            <div class="row-fluid">
-                {% block content %}
-                    {% block content_sidebar %}
-                    {% endblock content_sidebar %}
-                {% endblock content %}
-                {% block fos_user_content %}
-                {% endblock fos_user_content %}
-            </div>
+                <div class="row-fluid">
+                    {% block content %}
+                        {% block content_sidebar %}
+                        {% endblock content_sidebar %}
+                    {% endblock content %}
+                    {% block fos_user_content %}
+                    {% endblock fos_user_content %}
+                </div>
             {% endblock content_row %}
         </div>
         <footer>
@@ -99,31 +99,33 @@ file that was distributed with this source code.
             {% endblock footer %}
         </footer>
     </div> <!-- /container -->
-    {% endblock container %}
-    {% block foot_script %}
+{% endblock container %}
+{% block foot_script %}
     {# To only use a subset or add more js overwrite and copy paste this block
     To speed up page loads save a copy of jQuery in your project and override this block to include the correct path
     Otherwise the regeneration is done on every load in dev more with use_controller: true
      #}
     {% javascripts
-        'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-transition.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-alert.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-modal.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-dropdown.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-scrollspy.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-tab.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-tooltip.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-popover.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-button.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-affix.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-collapse.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/bootstrap-carousel.js'
-        '@ApplicationNetworkingInitCmsBundle/Resources/public/js/jquery.prettyPhoto.js'
-    output='js/sandbox.js'
-    %}
-<script type="text/javascript" src="{{ asset_url }}"></script>
-{% endjavascripts %}
+    'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tooltip.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-affix.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-alert.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-button.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-carousel.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-collapse.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-dropdown.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-modal.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-popover.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-scrollspy.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tab.js'
+    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-transition.js'
+    '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
+    '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-subnav.js'
+    '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js'
+    '@ApplicationNetworkingInitCmsBundle/Resources/public/js/jquery.prettyPhoto.js'
+    output='js/sandbox.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 {% endblock foot_script %}
 {% endblock body %}
 </body>
