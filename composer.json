@@ -27,8 +27,7 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "jms/security-extra-bundle":"master",
-        "jms/serializer-bundle":"master",
+        "jms/security-extra-bundle": "1.5.1",
         "networking/init-cms-bundle":"dev-master"
 
     },
