@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8132415c8e047795963f7cf2dc86ff85",
+    "hash": "a48a09e58dd2d2295ae70402596df52d",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -1531,17 +1531,17 @@
         },
         {
             "name": "jms/security-extra-bundle",
-            "version": "dev-master",
+            "version": "1.5.1",
             "target-dir": "JMS/SecurityExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSecurityExtraBundle.git",
-                "reference": "aefac81c3814bf77e6b2d8027dc2f0039e185dea"
+                "reference": "f5f6c6df69ceae8b709e57b49fcc2a42d9280bcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/aefac81c3814bf77e6b2d8027dc2f0039e185dea",
-                "reference": "aefac81c3814bf77e6b2d8027dc2f0039e185dea",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSecurityExtraBundle/zipball/f5f6c6df69ceae8b709e57b49fcc2a42d9280bcc",
+                "reference": "f5f6c6df69ceae8b709e57b49fcc2a42d9280bcc",
                 "shasum": ""
             },
             "require": {
@@ -1569,7 +1569,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -1598,7 +1598,7 @@
                 "secure",
                 "security"
             ],
-            "time": "2013-08-06 07:00:17"
+            "time": "2013-06-09 10:29:54"
         },
         {
             "name": "jms/serializer",
@@ -2289,12 +2289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703"
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0f3c054dff866aa687ab07572b731fb2ba32e703",
-                "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7f99ac07d38fd367d1f5f85693ae8433738f7f94",
+                "reference": "7f99ac07d38fd367d1f5f85693ae8433738f7f94",
                 "shasum": ""
             },
             "require": {
@@ -2344,7 +2344,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-10-28 09:41:17"
+            "time": "2013-10-31 21:38:39"
         },
         {
             "name": "mopa/bootstrap-bundle",
@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "5885cfc624580a9c987abed13c90f5d9129fcf67"
+                "reference": "479cf4f982c628889863dca44a7aa105b839a1d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/5885cfc624580a9c987abed13c90f5d9129fcf67",
-                "reference": "5885cfc624580a9c987abed13c90f5d9129fcf67",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/479cf4f982c628889863dca44a7aa105b839a1d8",
+                "reference": "479cf4f982c628889863dca44a7aa105b839a1d8",
                 "shasum": ""
             },
             "require": {
@@ -2522,7 +2522,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-01 09:32:04"
+            "time": "2013-11-01 13:45:01"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4422,12 +4422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "61dd06ea2796059769c9374ffff7a04d98f062f3"
+                "reference": "cac4aaa4ee1286c2cdb68491f5a610457653b3ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/61dd06ea2796059769c9374ffff7a04d98f062f3",
-                "reference": "61dd06ea2796059769c9374ffff7a04d98f062f3",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/cac4aaa4ee1286c2cdb68491f5a610457653b3ea",
+                "reference": "cac4aaa4ee1286c2cdb68491f5a610457653b3ea",
                 "shasum": ""
             },
             "require": {
@@ -4522,7 +4522,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-10-30 08:30:20"
+            "time": "2013-10-31 15:59:00"
         },
         {
             "name": "twbs/bootstrap",
