@@ -919,12 +919,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/l3pp4rd/DoctrineExtensions.git",
-                "reference": "395d0f909facf2ba7937cfa9802d62ca729017d1"
+                "reference": "7f7b49f01093e10f0af99be3296a4d71b4058128"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/395d0f909facf2ba7937cfa9802d62ca729017d1",
-                "reference": "395d0f909facf2ba7937cfa9802d62ca729017d1",
+                "url": "https://api.github.com/repos/l3pp4rd/DoctrineExtensions/zipball/7f7b49f01093e10f0af99be3296a4d71b4058128",
+                "reference": "7f7b49f01093e10f0af99be3296a4d71b4058128",
                 "shasum": ""
             },
             "require": {
@@ -991,7 +991,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2013-10-29 14:22:34"
+            "time": "2013-11-03 12:09:29"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "dfdd80c2f96239825dce9e06513386bddc9d84d1"
+                "reference": "279b76dec3d9ac58c7f6fca7cad4fb171eea84cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/dfdd80c2f96239825dce9e06513386bddc9d84d1",
-                "reference": "dfdd80c2f96239825dce9e06513386bddc9d84d1",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/279b76dec3d9ac58c7f6fca7cad4fb171eea84cf",
+                "reference": "279b76dec3d9ac58c7f6fca7cad4fb171eea84cf",
                 "shasum": ""
             },
             "require": {
@@ -2522,7 +2522,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-01 13:44:45"
+            "time": "2013-11-04 08:38:15"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2809,12 +2809,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "902e23050119be51bae27c79bb47324dda3acff6"
+                "reference": "b794b728ae7ac50ec7b923e2ff273b2597affa2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/902e23050119be51bae27c79bb47324dda3acff6",
-                "reference": "902e23050119be51bae27c79bb47324dda3acff6",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/b794b728ae7ac50ec7b923e2ff273b2597affa2e",
+                "reference": "b794b728ae7ac50ec7b923e2ff273b2597affa2e",
                 "shasum": ""
             },
             "require": {
@@ -2879,7 +2879,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-10-29 18:18:52"
+            "time": "2013-11-01 17:10:12"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -4604,12 +4604,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "726a40a1b407c6f2ae675a25dcb24b8ce024559a"
+                "reference": "3a6ffbb0f09f4b6311d30947812f57906e285371"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/726a40a1b407c6f2ae675a25dcb24b8ce024559a",
-                "reference": "726a40a1b407c6f2ae675a25dcb24b8ce024559a",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/3a6ffbb0f09f4b6311d30947812f57906e285371",
+                "reference": "3a6ffbb0f09f4b6311d30947812f57906e285371",
                 "shasum": ""
             },
             "require": {
@@ -4645,7 +4645,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-10-31 12:37:55"
+            "time": "2013-11-03 19:14:49"
         }
     ],
     "packages-dev": [

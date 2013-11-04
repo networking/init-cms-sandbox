@@ -12,20 +12,20 @@ networking_init_cms:
         - {label: English, locale: en_US}
         - {label: Deutsch, locale: de_CH}
     templates:
-        'Sandbox_one_column_template':
-            template: "SandboxInitCmsBundle:Default:one_column.html.twig"
+        'sandbox_one_column':
+            template; "SandboxInitCmsBundle:Default:one_column.html.twig"
             name: "Single Column"
             icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
+            controller: MyBundle::index
             zones:
                 - { name: header, span:12 }
                 - { name: main_content, span:12}
-#                - { name: bottom, span:12}
-        'Sandbox_two_column_template':
+        'sandbox_two_column':
             template: "SandboxInitCmsBundle:Default:two_column.html.twig"
             name: "Two Column"
             icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
             zones:
-                - { name: header , span:12}
+                - { name: header , span:12, max_content_items: 1, restricted_types: Networking\InitCmsBundle\Entity\Gallery}
                 - { name: left , span:6}
                 - { name: right , span:6}
     content_types:
@@ -33,17 +33,21 @@ networking_init_cms:
         - { name: 'Gallery' , class: 'Networking\GalleryBundle\Entity\Gallery'}
 ```
 
+
+
+
 1) Configure the languages
 --------------------------
 The first parameter is an array of languages which configure the websites frontend language setup, each
 language consists of two parameters:
     1. The label, used for display in the frontend
-    2. the locale
+    2. The locale
+    3. The short_label, which can be used in a language switch navigation for example
 
 ```
 languages:
-        - {label: English, locale: en_US}
-        - {label: Deutsch, locale: de_CH}
+        - {label: English, locale: en_US, short_label: en}
+        - {label: Deutsch, locale: de_CH, short_label: de}
 ```
 
 2) Configure the frontend templates
@@ -63,16 +67,14 @@ The paremeters fo the template include:
 
 ```
 templates:
-    'Sandbox_one_column_template':
-        template: "SandboxInitCmsBundle:Default:one_column.html.twig"
+    'SandboxInitCmsBundle:Default:one_column.html.twig':
         name: "Single Column"
         icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
+        controller: MyBundle::index
         zones:
-            - { name: header, span:12 }
+            - { name: header, span:12, max_content_items: 1, restricted_types: Networking\InitCmsBundle\Entity\Gallery }
             - { name: main_content, span:12}
-#                - { name: bottom, span:12}
-    'Sandbox_two_column_template':
-        template: "SandboxInitCmsBundle:Default:two_column.html.twig"
+    'SandboxInitCmsBundle:Default:two_column.html.twig':
         name: "Two Column"
         icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
         zones:
@@ -81,8 +83,36 @@ templates:
             - { name: right , span:6}
 ```
 
+Special attention should be made to the parameter "controller", this allows you to override the default action that a route
+should be executed with. It is a good idea to extend the Networking\InitCmsBundle\Controller\FrontendController and use
+the indexAction of the class so as to get all the right published or draft attributes. Then you can add your own functionality
+afterwards e.g.
+
+```
+    use Networking\InitCmsBundle\Controller\FrontendController
+
+
+    class DefaultController extends FrontendController
+    {
+
+            public function indexAction(Request $request)
+            {
+                $params = parent::indexAction($request);
+
+
+                //do some extra stuff here, may be add some parameters etc
+
+                return $params;
+            }
+    }
+```
+
+Also it is possible to restrict certain content zones to a specific content type using the "restricted_types" param
+as well as limit the number of items allowed in a certain zone with the "max_content_items" parameter, the default is 0 which
+means unlimited.
+
 To learn more about templates see:
-[Creating Templates](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/templates.md)
+[Creating Templates](templates.md)
 
 3) Configure the content types
 ------------------------------
@@ -104,4 +134,4 @@ content_types:
 ```
 
 To learn more about templates see:
-[Creating content types](https://github.com/networking/init-cms-bundle/blob/master/Resources/doc/content_types.md)
+[Creating content types](content_types.md)
