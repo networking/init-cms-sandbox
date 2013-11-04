@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "4fd6accc83cd9516606979ff51f7e35d11d4d233"
+                "reference": "01654de37cf51791046511528b354ae6bf04b4e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/4fd6accc83cd9516606979ff51f7e35d11d4d233",
-                "reference": "4fd6accc83cd9516606979ff51f7e35d11d4d233",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/01654de37cf51791046511528b354ae6bf04b4e6",
+                "reference": "01654de37cf51791046511528b354ae6bf04b4e6",
                 "shasum": ""
             },
             "require": {
@@ -2482,6 +2482,7 @@
                 "ibrows/sonata-admin-annotation-bundle": "1.1.*",
                 "ibrows/sonata-translation-bundle": "dev-master",
                 "jms/serializer-bundle": "master",
+                "knplabs/knp-paginator-bundle": "dev-master",
                 "mopa/bootstrap-bundle": "2.3.*@dev",
                 "php": ">=5.3.3",
                 "sonata-project/block-bundle": "~2.2",
@@ -2519,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-04 11:13:33"
+            "time": "2013-11-04 11:34:05"
         },
         {
             "name": "phpcollection/phpcollection",
