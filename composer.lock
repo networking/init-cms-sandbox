@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/metadata.git",
-                "reference": "5dcd47c8b8ff98963663388a13cdb5f1b4cc2a5c"
+                "reference": "88ffa28bc987e4c26229fc84a2e541b6ed4e1459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/5dcd47c8b8ff98963663388a13cdb5f1b4cc2a5c",
-                "reference": "5dcd47c8b8ff98963663388a13cdb5f1b4cc2a5c",
+                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/88ffa28bc987e4c26229fc84a2e541b6ed4e1459",
+                "reference": "88ffa28bc987e4c26229fc84a2e541b6ed4e1459",
                 "shasum": ""
             },
             "require": {
@@ -1465,7 +1465,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
@@ -1492,7 +1492,7 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2013-10-28 16:45:34"
+            "time": "2013-11-05 23:02:36"
         },
         {
             "name": "jms/parser-lib",
@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "ecefb2d5c8c612e777c9e489db95c0905e1d00a8"
+                "reference": "caca0e68e031a5d4d605be3cdf34a6571a6ffc03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/ecefb2d5c8c612e777c9e489db95c0905e1d00a8",
-                "reference": "ecefb2d5c8c612e777c9e489db95c0905e1d00a8",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/caca0e68e031a5d4d605be3cdf34a6571a6ffc03",
+                "reference": "caca0e68e031a5d4d605be3cdf34a6571a6ffc03",
                 "shasum": ""
             },
             "require": {
@@ -2520,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-04 11:33:09"
+            "time": "2013-11-06 14:15:45"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2807,12 +2807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "b794b728ae7ac50ec7b923e2ff273b2597affa2e"
+                "reference": "afb14fad049c6e68d84ddc1cc4234f4772f0daf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/b794b728ae7ac50ec7b923e2ff273b2597affa2e",
-                "reference": "b794b728ae7ac50ec7b923e2ff273b2597affa2e",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/afb14fad049c6e68d84ddc1cc4234f4772f0daf9",
+                "reference": "afb14fad049c6e68d84ddc1cc4234f4772f0daf9",
                 "shasum": ""
             },
             "require": {
@@ -2877,7 +2877,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-11-01 17:10:12"
+            "time": "2013-11-06 09:53:39"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -3586,18 +3586,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataNotificationBundle.git",
-                "reference": "c29d4e610e5dff6c05541daf6d933db541fea379"
+                "reference": "122aef4aa85e693e5d10a3b456c85975a7f3f182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/c29d4e610e5dff6c05541daf6d933db541fea379",
-                "reference": "c29d4e610e5dff6c05541daf6d933db541fea379",
+                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/122aef4aa85e693e5d10a3b456c85975a7f3f182",
+                "reference": "122aef4aa85e693e5d10a3b456c85975a7f3f182",
                 "shasum": ""
             },
             "require": {
                 "sonata-project/doctrine-extensions": "1.*",
                 "sonata-project/easy-extends-bundle": "2.1.*",
-                "symfony/symfony": ">=2.1,<2.4-dev"
+                "symfony/symfony": "~2.1"
             },
             "require-dev": {
                 "guzzle/guzzle": "3.*",
@@ -3645,7 +3645,7 @@
                 "page",
                 "sonata"
             ],
-            "time": "2013-10-28 11:49:31"
+            "time": "2013-11-06 11:26:09"
         },
         {
             "name": "sonata-project/user-bundle",
@@ -4356,12 +4356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "3a6ffbb0f09f4b6311d30947812f57906e285371"
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/3a6ffbb0f09f4b6311d30947812f57906e285371",
-                "reference": "3a6ffbb0f09f4b6311d30947812f57906e285371",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/cf21274a00b402d9b54b7478bedb040ce6befc56",
+                "reference": "cf21274a00b402d9b54b7478bedb040ce6befc56",
                 "shasum": ""
             },
             "require": {
@@ -4397,7 +4397,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-11-03 19:14:49"
+            "time": "2013-11-06 10:15:23"
         }
     ],
     "packages-dev": [
