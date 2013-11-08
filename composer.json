@@ -10,7 +10,10 @@
     "description":"the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
     "extra":{
         "symfony-app-dir":"app",
-        "symfony-web-dir":"web"
+        "symfony-web-dir":"web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
     },
     "minimum-stability":"dev",
     "name":"networking/init-cms-sandbox",
@@ -33,6 +36,7 @@
     },
     "scripts":{
         "post-install-cmd":[
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
@@ -40,6 +44,7 @@
             "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ],
         "post-update-cmd":[
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",

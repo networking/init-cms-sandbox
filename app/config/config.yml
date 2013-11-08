@@ -120,7 +120,7 @@ networking_init_cms:
         'Sandbox_one_column_template':
             template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
             name: "Single Column"
-            icon: "bundles/sandboxinitcms/img/template_header_one_column.png"
+            icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
             zones:
                 - { name: header, span:12 }
                 - { name: main_content, span:12}
@@ -128,7 +128,7 @@ networking_init_cms:
         'Sandbox_two_column_template':
             template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
             name: "Two Column"
-            icon: "bundles/sandboxinitcms/img/template_header_two_column.png"
+            icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
             zones:
                 - { name: header , span:12}
                 - { name: left , span:6}
@@ -146,5 +146,35 @@ sonata_admin:
 lexik_translation:
     fallback_locale: en      # (required) default locale to use
     managed_locales: [en, de]    # (required) locales that the bundle have to manage
+
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb'
+    firewall_name:  main
+    user_class:     Application\Networking\InitCmsBundle\Entity\User
+    group:
+        group_class: Networking\InitCmsBundle\Entity\Group
+    from_email:
+            address:        webmaster@example.com
+            sender_name:    net working Team
+
+sonata_user:
+    security_acl: true
+    impersonating:
+        route:                networking_init_cms_admin
+        parameters:           { path: /}
+    class:
+        user: Application\Networking\InitCmsBundle\Entity\User
+        group: Networking\InitCmsBundle\Entity\Group
+    admin:                  # Admin Classes
+        user:
+            class:          Networking\InitCmsBundle\Admin\Entity\UserAdmin
+            controller:     NetworkingInitCmsBundle:CRUD
+            translation:    SonataUserBundle
+
+        group:
+            class:          Networking\InitCmsBundle\Admin\Entity\GroupAdmin
+            controller:     NetworkingInitCmsBundle:CRUD
+            translation:    SonataUserBundle
+
 
 

@@ -36,7 +36,7 @@ services:
         arguments:
             - { pageMenu: @sandbox_init_cms.menu.frontend_main_menu_left=, langMenu: @sandbox_init_cms.menu.frontend_main_menu_language=}
             - {}
-            - { logo: "bundles/sandboxinitcms/img/sailing_icon_grey.png", title: "Demo Sailing Club", titleRoute: "networking_init_cms_home", fixedTop: false, isFluid: false, template: ApplicationNetworkingInitCmsBundle:Navbar:navbar.html.twig }
+            - { logo: "bundles/applicationnetworkinginitcms/img/sailing_icon_grey.png", title: "Demo Sailing Club", titleRoute: "networking_init_cms_home", fixedTop: false, isFluid: false, template: ApplicationNetworkingInitCmsBundle:Navbar:navbar.html.twig }
         tags:
             - { name: mopa_bootstrap.navbar, alias: cmsNavbar }
 
