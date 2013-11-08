@@ -34,8 +34,6 @@ networking_init_cms:
 ```
 
 
-
-
 1) Configure the languages
 --------------------------
 The first parameter is an array of languages which configure the websites frontend language setup, each

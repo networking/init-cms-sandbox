@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "d39994d6187aa23f7a44c586cc3b50d353fe5539"
+                "reference": "c10560908f8e8d3ae98df4dcf98f97c3d01c0625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d39994d6187aa23f7a44c586cc3b50d353fe5539",
-                "reference": "d39994d6187aa23f7a44c586cc3b50d353fe5539",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/c10560908f8e8d3ae98df4dcf98f97c3d01c0625",
+                "reference": "c10560908f8e8d3ae98df4dcf98f97c3d01c0625",
                 "shasum": ""
             },
             "require": {
@@ -2520,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-08 08:25:36"
+            "time": "2013-11-08 16:38:29"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3654,12 +3654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "04a441cff942155cc0a18bf2dccaabd8be65c3ea"
+                "reference": "aa0fb0279f6a998ef98ebbc36fd18e875402b23b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/04a441cff942155cc0a18bf2dccaabd8be65c3ea",
-                "reference": "04a441cff942155cc0a18bf2dccaabd8be65c3ea",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/aa0fb0279f6a998ef98ebbc36fd18e875402b23b",
+                "reference": "aa0fb0279f6a998ef98ebbc36fd18e875402b23b",
                 "shasum": ""
             },
             "require": {
@@ -3709,7 +3709,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2013-11-07 16:04:37"
+            "time": "2013-11-08 15:57:42"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
