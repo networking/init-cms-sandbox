@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a48a09e58dd2d2295ae70402596df52d",
+    "hash": "482077cf705fa01d0206d85219ee4d3e",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "ea1abc62f9a2979d5a72c7a2ce49d68ed1ed9cc7"
+                "reference": "95093ae0ccde41af268f6e68877c92e1edb16d97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/ea1abc62f9a2979d5a72c7a2ce49d68ed1ed9cc7",
-                "reference": "ea1abc62f9a2979d5a72c7a2ce49d68ed1ed9cc7",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/95093ae0ccde41af268f6e68877c92e1edb16d97",
+                "reference": "95093ae0ccde41af268f6e68877c92e1edb16d97",
                 "shasum": ""
             },
             "require": {
@@ -2520,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-08 08:25:51"
+            "time": "2013-11-08 17:03:54"
         },
         {
             "name": "phpcollection/phpcollection",
