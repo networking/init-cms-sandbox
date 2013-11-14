@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "c10560908f8e8d3ae98df4dcf98f97c3d01c0625"
+                "reference": "44b517610f351bb11aaca28d9fb0d9fec6117adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/c10560908f8e8d3ae98df4dcf98f97c3d01c0625",
-                "reference": "c10560908f8e8d3ae98df4dcf98f97c3d01c0625",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/44b517610f351bb11aaca28d9fb0d9fec6117adf",
+                "reference": "44b517610f351bb11aaca28d9fb0d9fec6117adf",
                 "shasum": ""
             },
             "require": {
@@ -2520,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-08 16:38:29"
+            "time": "2013-11-14 10:00:04"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3229,12 +3229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataFormatterBundle.git",
-                "reference": "6f13e66b0cf9f1c58a626efb2cf7534cfe830083"
+                "reference": "a1cdf80fb8858c0559279075c2037cad5e9df62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/6f13e66b0cf9f1c58a626efb2cf7534cfe830083",
-                "reference": "6f13e66b0cf9f1c58a626efb2cf7534cfe830083",
+                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/a1cdf80fb8858c0559279075c2037cad5e9df62a",
+                "reference": "a1cdf80fb8858c0559279075c2037cad5e9df62a",
                 "shasum": ""
             },
             "require": {
@@ -3280,7 +3280,7 @@
                 "markitup",
                 "sonata"
             ],
-            "time": "2013-11-07 22:01:08"
+            "time": "2013-11-11 14:56:13"
         },
         {
             "name": "sonata-project/google-authenticator",
@@ -3511,12 +3511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "729d7dd305bbfe390b205248110c0ed2b944356e"
+                "reference": "88ef42cad4b1004d88d4750f816979233f2424cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/729d7dd305bbfe390b205248110c0ed2b944356e",
-                "reference": "729d7dd305bbfe390b205248110c0ed2b944356e",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/88ef42cad4b1004d88d4750f816979233f2424cd",
+                "reference": "88ef42cad4b1004d88d4750f816979233f2424cd",
                 "shasum": ""
             },
             "require": {
@@ -3577,7 +3577,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2013-10-28 08:53:47"
+            "time": "2013-11-12 17:12:23"
         },
         {
             "name": "sonata-project/notification-bundle",
@@ -3654,12 +3654,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "aa0fb0279f6a998ef98ebbc36fd18e875402b23b"
+                "reference": "778eeeca7e159a4c44a2a13a088778a1f180468a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/aa0fb0279f6a998ef98ebbc36fd18e875402b23b",
-                "reference": "aa0fb0279f6a998ef98ebbc36fd18e875402b23b",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/778eeeca7e159a4c44a2a13a088778a1f180468a",
+                "reference": "778eeeca7e159a4c44a2a13a088778a1f180468a",
                 "shasum": ""
             },
             "require": {
@@ -3709,7 +3709,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2013-11-08 15:57:42"
+            "time": "2013-11-13 07:40:22"
         },
         {
             "name": "stof/doctrine-extensions-bundle",
