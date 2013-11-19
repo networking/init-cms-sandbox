@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "0f9431013742e65359f0a6035e87893c9e119d13"
+                "reference": "1e6216049b39c63f827cbea8af33a9393507fe66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/0f9431013742e65359f0a6035e87893c9e119d13",
-                "reference": "0f9431013742e65359f0a6035e87893c9e119d13",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/1e6216049b39c63f827cbea8af33a9393507fe66",
+                "reference": "1e6216049b39c63f827cbea8af33a9393507fe66",
                 "shasum": ""
             },
             "require": {
@@ -2485,7 +2485,7 @@
                 "knplabs/knp-paginator-bundle": "2.3.3",
                 "mopa/bootstrap-bundle": "2.3.*@dev",
                 "php": ">=5.3.3",
-                "sonata-project/block-bundle": "~2.2",
+                "sonata-project/admin-bundle": "~2.2",
                 "sonata-project/cache-bundle": "2.1.4",
                 "sonata-project/doctrine-orm-admin-bundle": "2.2.4",
                 "sonata-project/formatter-bundle": "2.3.0",
@@ -2520,7 +2520,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2013-11-14 10:00:26"
+            "time": "2013-11-19 13:24:57"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -2807,12 +2807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "0b83f78589129d99afbfa1ac7b4b4a733c9c9870"
+                "reference": "9ad28b15339b212065d10e072f1b072bc2a51180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/0b83f78589129d99afbfa1ac7b4b4a733c9c9870",
-                "reference": "0b83f78589129d99afbfa1ac7b4b4a733c9c9870",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/9ad28b15339b212065d10e072f1b072bc2a51180",
+                "reference": "9ad28b15339b212065d10e072f1b072bc2a51180",
                 "shasum": ""
             },
             "require": {
@@ -2866,7 +2866,7 @@
                 },
                 {
                     "name": "Sonata Community",
-                    "homepage": "https://github.com/sonata-project/SonataDoctrineMongoDBAdminBundle/contributors"
+                    "homepage": "https://github.com/sonata-project/SonataAdminBundle/contributors"
                 }
             ],
             "description": "Symfony SonataAdminBundle",
@@ -2877,7 +2877,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2013-11-07 23:05:02"
+            "time": "2013-11-17 11:37:11"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2886,12 +2886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "ff56bb0135fbfe0d270a47049a7d35f8610c4776"
+                "reference": "863459ab2a9bfb19e38196c2d643c862901e623d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/ff56bb0135fbfe0d270a47049a7d35f8610c4776",
-                "reference": "ff56bb0135fbfe0d270a47049a7d35f8610c4776",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/863459ab2a9bfb19e38196c2d643c862901e623d",
+                "reference": "863459ab2a9bfb19e38196c2d643c862901e623d",
                 "shasum": ""
             },
             "require": {
@@ -2939,7 +2939,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-10-24 09:04:49"
+            "time": "2013-11-14 12:48:22"
         },
         {
             "name": "sonata-project/cache-bundle",
@@ -3338,20 +3338,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataIntlBundle.git",
-                "reference": "1ad1072764af20491fe60bfee0c9017e41c3ce29"
+                "reference": "72280516e3e6605cecfc65fd13497be44187f73f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataIntlBundle/zipball/1ad1072764af20491fe60bfee0c9017e41c3ce29",
-                "reference": "1ad1072764af20491fe60bfee0c9017e41c3ce29",
+                "url": "https://api.github.com/repos/sonata-project/SonataIntlBundle/zipball/72280516e3e6605cecfc65fd13497be44187f73f",
+                "reference": "72280516e3e6605cecfc65fd13497be44187f73f",
                 "shasum": ""
             },
             "require": {
                 "ext-intl": "*",
-                "symfony/dependency-injection": ">=2.2,<2.4-dev",
-                "symfony/http-kernel": ">=2.2,<2.4-dev",
-                "symfony/locale": ">=2.2,<2.4-dev",
-                "symfony/templating": ">=2.2,<2.4-dev",
+                "symfony/dependency-injection": "~2.2",
+                "symfony/http-kernel": "~2.2",
+                "symfony/locale": "~2.2",
+                "symfony/templating": "~2.2",
                 "twig/twig": "*"
             },
             "type": "symfony-bundle",
@@ -3389,7 +3389,7 @@
                 "sonata",
                 "time"
             ],
-            "time": "2013-09-27 07:52:07"
+            "time": "2013-11-14 20:02:07"
         },
         {
             "name": "sonata-project/jquery-bundle",
@@ -3586,12 +3586,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataNotificationBundle.git",
-                "reference": "a1cf1578185b56e4151888ba8d3465fed0b7a59c"
+                "reference": "98cd06afcf2ec2a22ed95444f8da4dbe930e5494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/a1cf1578185b56e4151888ba8d3465fed0b7a59c",
-                "reference": "a1cf1578185b56e4151888ba8d3465fed0b7a59c",
+                "url": "https://api.github.com/repos/sonata-project/SonataNotificationBundle/zipball/98cd06afcf2ec2a22ed95444f8da4dbe930e5494",
+                "reference": "98cd06afcf2ec2a22ed95444f8da4dbe930e5494",
                 "shasum": ""
             },
             "require": {
@@ -3645,7 +3645,7 @@
                 "page",
                 "sonata"
             ],
-            "time": "2013-11-07 08:26:16"
+            "time": "2013-11-14 08:17:02"
         },
         {
             "name": "sonata-project/user-bundle",
