@@ -17,14 +17,7 @@ require_once __DIR__.'/../app/AppCache.php';
 
 $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
-// wrap the default AppKernel with the AppCache one
-$kernel = new AppCache($kernel);
-$kernel->handle(Request::createFromGlobals())->send();
-error_log($kernel->getLog());
-//$kernel = new AppKernel('prod', false);
-//$kernel->loadClassCache();
-////$kernel = new AppCache($kernel);
-//$request = Request::createFromGlobals();
-//$response = $kernel->handle($request);
-//$response->send();
-//$kernel->terminate($request, $response);
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+$kernel->terminate($request, $response);
