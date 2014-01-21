@@ -88,9 +88,8 @@ Now we just need to create some folders for our media in the web root directory 
 	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
 
-Now we need some more folders and make it RW+
+Make cache and logs writeable
 
-	mkdir app/cache app/logs
 	chmod -R 777 app/cache app/logs
 
 
