@@ -132,16 +132,16 @@ Alternatively there is an install wizard which will get this done for you, just 
     
 Now you should be up and running.
 
+
+The installer also executes assetic, which gets your assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+
+    app/console assetic:dump
     
 Maybe you have to install less, if you do not have it already. On OS X get homebrew, get node, get less
 
     brew install npm
     sudo npm install less --global
 	
-
-This lets get our assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
-
-    app/console assetic:dump
 
 
 4) Login to the admin area
