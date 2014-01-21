@@ -88,9 +88,10 @@ Now we just need to create some folders for our media in the web root directory 
 	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
 
-Add lets get our assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+Now we need some more folders and make it RW+
 
-    app/console assetic:dump
+	mkdir app/cache app/logs
+	chmod -R 777 app/cache app/logs
 
 
 2) Checking your System Configuration
@@ -131,6 +132,11 @@ you will be prompted to enter a username, email address and password, these will
 	php app/console networking:initcms:install
 
 Now you should be up and running.
+
+Add lets get our assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+
+    app/console assetic:dump
+
 
 4) Login to the admin area
 --------------------------
