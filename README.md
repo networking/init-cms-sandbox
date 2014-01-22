@@ -52,7 +52,7 @@ the create-project command.
 
 ### Download an Archive File
 
-First [download][2] and unpack the archive of the sandbox in your preferred location
+First [download][2] and unpack the archive of the sandbox in your preferred location. (Make sure to grab the latest stable version and not the master version, which is the latest development version)
 
 	https://github.com/networking/init-cms-sandbox/archive/master.zip
 
