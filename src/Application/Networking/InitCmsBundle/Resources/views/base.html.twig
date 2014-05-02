@@ -9,7 +9,6 @@ file that was distributed with this source code.
 
 #}
 {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
-{% use "NetworkingInitCmsBundle:Navbar:admin_navbar.html.twig" %}
 
 <!DOCTYPE html>
 
@@ -30,7 +29,6 @@ file that was distributed with this source code.
             output='css/styles.css' %}
             <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen"/>
             {% endstylesheets %}
-            {{ block('admin_style') }}
         {% endblock head_style %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,9 +53,6 @@ file that was distributed with this source code.
 {% endblock body_start %}
 
 {% block body %}
-
-    {{ block('admin_navbar') }}
-
 
 {% block container %}
     <div class="{% block container_class %}container-fluid{% endblock container_class %}">
@@ -106,7 +101,7 @@ file that was distributed with this source code.
     Otherwise the regeneration is done on every load in dev more with use_controller: true
      #}
     {% javascripts
-    'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'
+    'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'
     '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tooltip.js'
     '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-affix.js'
     '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-alert.js'
