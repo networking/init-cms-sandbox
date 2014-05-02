@@ -88,9 +88,9 @@ Now we just need to create some folders for our media in the web root directory 
 	mkdir web/uploads web/uploads/media
 	chmod -R 777 web/uploads
 
-Add lets get our assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+Make cache and logs writeable
 
-    app/console assetic:dump
+	chmod -R 777 app/cache app/logs
 
 
 2) Checking your System Configuration
@@ -120,17 +120,29 @@ file directly
 Now that the symfony application is more or less setup, it is time to load the CMS DBs and
 fixtures, as well as create an admin user.
 
-There is an install wizard which will get this done for you, just go to the following URL and follow the instructions:
-
-    http://localhost//app_dev.php/cms_install
-
-
-Alternatively you can run the install process on the command line,
+You can run the install process on the command line,
 you will be prompted to enter a username, email address and password, these will get you into the backend.
 
 	php app/console networking:initcms:install
+	
+	
+Alternatively there is an install wizard which will get this done for you, just go to the following URL and follow the instructions:
 
+    http://localhost//app_dev.php/cms_install
+    
 Now you should be up and running.
+
+
+The installer also executes assetic, which gets your assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
+
+    app/console assetic:dump
+    
+Maybe you have to install less, if you do not have it already. On OS X get homebrew, get node, get less
+
+    brew install npm
+    sudo npm install less --global
+	
+
 
 4) Login to the admin area
 --------------------------
