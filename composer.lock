@@ -2467,12 +2467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "d136d58ea68e17bdf2db9fc94fb6f64a9514dbeb"
+                "reference": "d53733c78c01ff5215cf958fd67941908f4a9625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d136d58ea68e17bdf2db9fc94fb6f64a9514dbeb",
-                "reference": "d136d58ea68e17bdf2db9fc94fb6f64a9514dbeb",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d53733c78c01ff5215cf958fd67941908f4a9625",
+                "reference": "d53733c78c01ff5215cf958fd67941908f4a9625",
                 "shasum": ""
             },
             "require": {
