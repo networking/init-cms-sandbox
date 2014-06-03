@@ -68,7 +68,8 @@ class LoadPages extends AbstractFixture implements OrderedFixtureInterface, Cont
         $homePage->setStatus(PageInterface::STATUS_PUBLISHED);
         $homePage->setIsHome(true);
         $homePage->setTemplateName($this->getFirstTemplate());
-        $homePage->setActiveFrom(new \DateTime('now'));
+        $homePage->setActiveFrom(new \DateTime('-1 day'));
+        $homePage->setActiveTo(new \DateTime('+1 day'));
 
         // set original for translations
         if($key > 0)
