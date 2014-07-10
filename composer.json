@@ -32,8 +32,8 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "jms/security-extra-bundle": "1.5.1",
-        "networking/init-cms-bundle":"dev-master"
-
+        "networking/init-cms-bundle":"dev-master",
+        "knplabs/knp-paginator-bundle": "dev-master"
     },
     "scripts":{
         "post-install-cmd":[
