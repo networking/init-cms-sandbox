@@ -2774,12 +2774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "6fa4c690b88613f52d8b2aaa9b30df56da69a3a4"
+                "reference": "667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/6fa4c690b88613f52d8b2aaa9b30df56da69a3a4",
-                "reference": "6fa4c690b88613f52d8b2aaa9b30df56da69a3a4",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3",
+                "reference": "667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3",
                 "shasum": ""
             },
             "require": {
@@ -2825,7 +2825,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2014-07-10 20:42:46"
+            "time": "2014-07-10 22:03:45"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3019,17 +3019,17 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "2.3.x-dev",
+            "version": "dev-master",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "f9e4c9794fb2624bcdee302109896d990bacddec"
+                "reference": "403e13e384d8a81c9c8a1adfe89356e9849c14ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/f9e4c9794fb2624bcdee302109896d990bacddec",
-                "reference": "f9e4c9794fb2624bcdee302109896d990bacddec",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/403e13e384d8a81c9c8a1adfe89356e9849c14ff",
+                "reference": "403e13e384d8a81c9c8a1adfe89356e9849c14ff",
                 "shasum": ""
             },
             "require": {
@@ -3054,9 +3054,7 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -3064,7 +3062,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2014-03-14 07:43:23"
+            "time": "2013-09-23 10:28:44"
         },
         {
             "name": "sensio/generator-bundle",
@@ -4242,17 +4240,17 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "1.1.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Cmf/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "a70ba68b6bdc2b2a6c75082a365488ff53bed494"
+                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/a70ba68b6bdc2b2a6c75082a365488ff53bed494",
-                "reference": "a70ba68b6bdc2b2a6c75082a365488ff53bed494",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
+                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
                 "shasum": ""
             },
             "require": {
@@ -4296,7 +4294,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2014-01-09 18:56:30"
+            "time": "2013-11-01 09:24:47"
         },
         {
             "name": "symfony-cmf/routing-bundle",
