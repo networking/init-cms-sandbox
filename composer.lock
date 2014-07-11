@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12efa0dbf92ad59711a028b53b7b0b73",
+    "hash": "cc75f20930233f042dd10a4ebf923ec9",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -2774,12 +2774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3"
+                "reference": "21687407bf39e19e55bb126969d517f418f1fb9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3",
-                "reference": "667d14a6dbd410e8a7d72e8b69cda1ed5af1dfa3",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/21687407bf39e19e55bb126969d517f418f1fb9f",
+                "reference": "21687407bf39e19e55bb126969d517f418f1fb9f",
                 "shasum": ""
             },
             "require": {
@@ -2789,6 +2789,7 @@
                 "ibrows/sonata-admin-annotation-bundle": "1.1.*",
                 "ibrows/sonata-translation-bundle": "1.0.3",
                 "jms/serializer-bundle": "0.13.*@dev",
+                "knplabs/knp-paginator-bundle": "dev-master",
                 "mopa/bootstrap-bundle": "2.3.*@dev",
                 "php": ">=5.3.3",
                 "sonata-project/admin-bundle": ">=2.2,<2.3-dev",
@@ -2825,7 +2826,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2014-07-10 22:03:45"
+            "time": "2014-07-11 11:01:07"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4932,8 +4933,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "networking/init-cms-bundle": 20,
-        "knplabs/knp-paginator-bundle": 20
+        "networking/init-cms-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
