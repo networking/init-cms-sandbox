@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cc75f20930233f042dd10a4ebf923ec9",
+    "hash": "6f1b5578d75797feb4af4b56a7d4cd55",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -817,12 +817,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/egeloen/IvoryCKEditorBundle.git",
-                "reference": "2a91d41157632470a9e2c6cfb01a67f4cd2acb4b"
+                "reference": "de3d2e0170ed4c73035887ef4f1fcea4884aa36b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/2a91d41157632470a9e2c6cfb01a67f4cd2acb4b",
-                "reference": "2a91d41157632470a9e2c6cfb01a67f4cd2acb4b",
+                "url": "https://api.github.com/repos/egeloen/IvoryCKEditorBundle/zipball/de3d2e0170ed4c73035887ef4f1fcea4884aa36b",
+                "reference": "de3d2e0170ed4c73035887ef4f1fcea4884aa36b",
                 "shasum": ""
             },
             "require": {
@@ -864,7 +864,7 @@
             "keywords": [
                 "CKEditor"
             ],
-            "time": "2014-06-25 18:51:04"
+            "time": "2014-07-15 15:45:25"
         },
         {
             "name": "egeloen/json-builder",
@@ -925,12 +925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "1ca8cbef698c295ba4e5e60c1c448aaab613d9fe"
+                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/1ca8cbef698c295ba4e5e60c1c448aaab613d9fe",
-                "reference": "1ca8cbef698c295ba4e5e60c1c448aaab613d9fe",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/e3a28ebf74724a51a31d6142b002c0c9652f71a4",
+                "reference": "e3a28ebf74724a51a31d6142b002c0c9652f71a4",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +995,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-07-09 08:01:04"
+            "time": "2014-07-11 21:09:03"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1608,12 +1608,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/metadata.git",
-                "reference": "72091ba2666d6d1fef8bd04281e0afa00b97621b"
+                "reference": "22b72455559a25777cfd28c4ffda81ff7639f353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/72091ba2666d6d1fef8bd04281e0afa00b97621b",
-                "reference": "72091ba2666d6d1fef8bd04281e0afa00b97621b",
+                "url": "https://api.github.com/repos/schmittjoh/metadata/zipball/22b72455559a25777cfd28c4ffda81ff7639f353",
+                "reference": "22b72455559a25777cfd28c4ffda81ff7639f353",
                 "shasum": ""
             },
             "require": {
@@ -1652,7 +1652,7 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2014-07-08 16:40:08"
+            "time": "2014-07-12 07:13:19"
         },
         {
             "name": "jms/parser-lib",
@@ -2405,12 +2405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexik/LexikTranslationBundle.git",
-                "reference": "08ec6cd825d0f485dc5730931d9b43ea810273e6"
+                "reference": "d31cff468859b6002633e3a76e767d02c9d096aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexik/LexikTranslationBundle/zipball/08ec6cd825d0f485dc5730931d9b43ea810273e6",
-                "reference": "08ec6cd825d0f485dc5730931d9b43ea810273e6",
+                "url": "https://api.github.com/repos/lexik/LexikTranslationBundle/zipball/d31cff468859b6002633e3a76e767d02c9d096aa",
+                "reference": "d31cff468859b6002633e3a76e767d02c9d096aa",
                 "shasum": ""
             },
             "require": {
@@ -2454,7 +2454,7 @@
                 "i18n",
                 "translation"
             ],
-            "time": "2014-06-23 15:38:56"
+            "time": "2014-07-11 15:44:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -2774,12 +2774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "1c4f11e773e432e1ba72d947c30c8f75ff3967e3"
+                "reference": "095bae824719e5b3219e9b4306c20f16bba4057b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/1c4f11e773e432e1ba72d947c30c8f75ff3967e3",
-                "reference": "1c4f11e773e432e1ba72d947c30c8f75ff3967e3",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/095bae824719e5b3219e9b4306c20f16bba4057b",
+                "reference": "095bae824719e5b3219e9b4306c20f16bba4057b",
                 "shasum": ""
             },
             "require": {
@@ -2826,7 +2826,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2014-07-11 11:01:07"
+            "time": "2014-07-17 13:27:14"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3020,17 +3020,17 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "403e13e384d8a81c9c8a1adfe89356e9849c14ff"
+                "reference": "f9e4c9794fb2624bcdee302109896d990bacddec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/403e13e384d8a81c9c8a1adfe89356e9849c14ff",
-                "reference": "403e13e384d8a81c9c8a1adfe89356e9849c14ff",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/f9e4c9794fb2624bcdee302109896d990bacddec",
+                "reference": "f9e4c9794fb2624bcdee302109896d990bacddec",
                 "shasum": ""
             },
             "require": {
@@ -3055,7 +3055,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
             "description": "This bundle provides a way to configure your controllers with annotations",
@@ -3063,7 +3065,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2013-09-23 10:28:44"
+            "time": "2014-03-14 07:43:23"
         },
         {
             "name": "sensio/generator-bundle",
@@ -3072,12 +3074,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "80f2946ede8275fa86358d28e8b3fcf453525062"
+                "reference": "2799cd07c721660c9e1067d6d79ecc7e74dfb5a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/80f2946ede8275fa86358d28e8b3fcf453525062",
-                "reference": "80f2946ede8275fa86358d28e8b3fcf453525062",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/2799cd07c721660c9e1067d6d79ecc7e74dfb5a4",
+                "reference": "2799cd07c721660c9e1067d6d79ecc7e74dfb5a4",
                 "shasum": ""
             },
             "require": {
@@ -3113,7 +3115,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2014-07-07 09:25:53"
+            "time": "2014-07-09 09:39:28"
         },
         {
             "name": "sonata-project/admin-bundle",
@@ -4241,17 +4243,17 @@
         },
         {
             "name": "symfony-cmf/routing",
-            "version": "dev-master",
+            "version": "1.1.x-dev",
             "target-dir": "Symfony/Cmf/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968"
+                "reference": "a70ba68b6bdc2b2a6c75082a365488ff53bed494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
-                "reference": "dc1ea2694ab209e67f1c471a3a1ba8ab4fa5a968",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/a70ba68b6bdc2b2a6c75082a365488ff53bed494",
+                "reference": "a70ba68b6bdc2b2a6c75082a365488ff53bed494",
                 "shasum": ""
             },
             "require": {
@@ -4295,7 +4297,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-11-01 09:24:47"
+            "time": "2014-01-09 18:56:30"
         },
         {
             "name": "symfony-cmf/routing-bundle",
@@ -4538,12 +4540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "8555303e89445133442d4f687d2773b21751d101"
+                "reference": "bff639d4cbe9787272967f4cb3e3accdfbb2653c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/8555303e89445133442d4f687d2773b21751d101",
-                "reference": "8555303e89445133442d4f687d2773b21751d101",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/bff639d4cbe9787272967f4cb3e3accdfbb2653c",
+                "reference": "bff639d4cbe9787272967f4cb3e3accdfbb2653c",
                 "shasum": ""
             },
             "require": {
@@ -4589,7 +4591,7 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2014-06-21 16:10:01"
+            "time": "2014-07-09 09:12:30"
         },
         {
             "name": "symfony/symfony",
@@ -4597,12 +4599,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "ca69dbba43c3240f808c968771f7ad673c499118"
+                "reference": "91e32f810bc9bb39f4fd104abc1de7c0b9cafd8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/ca69dbba43c3240f808c968771f7ad673c499118",
-                "reference": "ca69dbba43c3240f808c968771f7ad673c499118",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/91e32f810bc9bb39f4fd104abc1de7c0b9cafd8f",
+                "reference": "91e32f810bc9bb39f4fd104abc1de7c0b9cafd8f",
                 "shasum": ""
             },
             "require": {
@@ -4699,7 +4701,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-10 09:13:00"
+            "time": "2014-07-16 13:02:06"
         },
         {
             "name": "twbs/bootstrap",
