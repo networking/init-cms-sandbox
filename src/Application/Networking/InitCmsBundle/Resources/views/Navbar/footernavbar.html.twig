@@ -8,13 +8,13 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
 #}
-{% block navbar %}
+{% block menu %}
     <div class="footer">
-        {{ navbar.getMenu('menu') ?
+        {{ menu.getMenu('menu') ?
             knp_menu_render(navbar.getMenu('menu'), {
                 'currentClass': 'active',
                 'ancestorClass': 'active',
                 'allow_safe_labels': true})
         : '-' }}
     </div>
-{% endblock navbar %}
+{% endblock menu %}

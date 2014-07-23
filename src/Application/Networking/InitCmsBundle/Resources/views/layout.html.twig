@@ -15,10 +15,8 @@ file that was distributed with this source code.
 {% block container_class %}container-narrow{% endblock container_class %}
 
 {% block navbar %}
-    {{ mopa_bootstrap_navbar('cmsNavbar' ) }}
+    {% include 'ApplicationNetworkingInitCmsBundle:Navbar:navbar.html.twig' %}
 {% endblock navbar %}
-
-
 
 {% block content_row %}
     {{ parent() }}
@@ -27,7 +25,7 @@ file that was distributed with this source code.
 {% block footer %}
     <hr />
     <div class="footer">
-        {{ mopa_bootstrap_navbar('footerNavbar') }}
+        {{ mopa_bootstrap_menu('footerMenu') }}
     </div>
 {% endblock footer %}
 

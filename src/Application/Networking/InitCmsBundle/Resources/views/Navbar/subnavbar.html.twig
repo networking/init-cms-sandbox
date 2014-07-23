@@ -9,10 +9,10 @@ file that was distributed with this source code.
 
 #}
 {# Currently subnavbar block does not support collapsing #}
-{% block navbar %}
-{% if navbar.getMenu('menu') is not empty %}
-    {{ navbar.getMenu('menu') ?
-        knp_menu_render(navbar.getMenu('menu'), {
+{% block menu %}
+{% if menu.getMenu('menu') is not empty %}
+    {{ menu.getMenu('menu') ?
+        knp_menu_render(menu.getMenu('menu'), {
             'currentClass': 'active',
             'ancestorClass': 'active',
             'allow_safe_labels': true}) : '' }}

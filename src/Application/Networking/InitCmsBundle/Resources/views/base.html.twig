@@ -23,7 +23,6 @@ file that was distributed with this source code.
         {% block head_style %}
             {# Override this block to add your own files! #}
             {% stylesheets filter='less,?yui_css'
-            '@MopaBootstrapBundle/Resources/public/less/eyecon-bootstrap-datepicker.less'
             '@ApplicationNetworkingInitCmsBundle/Resources/public/less/styles.less'
             '@ApplicationNetworkingInitCmsBundle/Resources/public/css/prettyPhoto.css'
             output='css/styles.css' %}
@@ -102,21 +101,11 @@ file that was distributed with this source code.
      #}
     {% javascripts
     'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tooltip.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-affix.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-alert.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-button.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-carousel.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-collapse.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-dropdown.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-modal.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-popover.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-scrollspy.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tab.js'
-    '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-transition.js'
+    '@MopaBootstrapBundle/Resources/public/bootstrap/js/tooltip.js'
+    '@MopaBootstrapBundle/Resources/public/bootstrap/js/*.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-subnav.js'
-    '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js'
+    '@NetworkingInitCmsBundle/Resources/public/js/bootstrap-datepicker.js'
     '@ApplicationNetworkingInitCmsBundle/Resources/public/js/jquery.prettyPhoto.js'
     output='js/sandbox.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
