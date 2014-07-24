@@ -54,7 +54,7 @@ file that was distributed with this source code.
 {% block body %}
 
 {% block container %}
-    <div class="{% block container_class %}container-fluid{% endblock container_class %}">
+    <div class="container {% block container_class %}container-fluid{% endblock container_class %}">
 
         {% block navbar %}{% endblock navbar %}
 
@@ -69,8 +69,8 @@ file that was distributed with this source code.
                 {% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
                 {{ session_flash(null,true) }}
                 {% if app.session.flashbag.peekAll|length > 0 %}
-                    <div class="row-fluid">
-                        <div class="span12">
+                    <div class="row">
+                        <div class="col-md-12">
                             {{ session_flash() }}
                         </div>
                     </div>
@@ -78,7 +78,7 @@ file that was distributed with this source code.
             {% endblock flashes %}
 
             {% block content_row %}
-                <div class="row-fluid">
+                <div class="row">
                     {% block content %}
                         {% block content_sidebar %}
                         {% endblock content_sidebar %}
@@ -105,7 +105,7 @@ file that was distributed with this source code.
     '@MopaBootstrapBundle/Resources/public/bootstrap/js/*.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
     '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-subnav.js'
-    '@NetworkingInitCmsBundle/Resources/public/js/bootstrap-datepicker.js'
+    '@MopaBootstrapBundle/Resources/public/components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.js'
     '@ApplicationNetworkingInitCmsBundle/Resources/public/js/jquery.prettyPhoto.js'
     output='js/sandbox.js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>

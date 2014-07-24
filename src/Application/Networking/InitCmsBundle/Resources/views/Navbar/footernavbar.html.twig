@@ -10,11 +10,6 @@ file that was distributed with this source code.
 #}
 {% block menu %}
     <div class="footer">
-        {{ menu.getMenu('menu') ?
-            knp_menu_render(navbar.getMenu('menu'), {
-                'currentClass': 'active',
-                'ancestorClass': 'active',
-                'allow_safe_labels': true})
-        : '-' }}
+        {{ mopa_bootstrap_menu('footerMenu') }}
     </div>
 {% endblock menu %}

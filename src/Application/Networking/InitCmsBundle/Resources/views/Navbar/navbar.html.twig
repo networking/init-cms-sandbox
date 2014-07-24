@@ -17,8 +17,8 @@ file that was distributed with this source code.
             </div>
         <div class="clearfix"></div>
     </div>
-    <div class="row-fluid nav-main-container">
-    {{ knp_menu_render('mainMenu', {'depth':1, 'currentClass': 'active', 'ancestorClass': 'active', 'allow_safe_labels': 'true'})}}
+    <div class="row nav-main-container">
+        {{ mopa_bootstrap_menu('mainMenu', {'depth':1, 'currentClass': 'active', 'ancestorClass': 'active', 'allow_safe_labels': 'true'})}}
         {{ mopa_bootstrap_menu('subMenu') }}
     </div>
 {% endblock menu %}
