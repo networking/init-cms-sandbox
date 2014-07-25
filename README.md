@@ -1,7 +1,7 @@
-Development version used to migrate to bootstrap 3
+Networking init CMS sandbox based on the networking init CMS and the Symfony Standard Edition
 =============================================================================================
 
-[![Build Status](https://travis-ci.org/networking/init-cms-sandbox.png?branch=bootstrap3)](https://travis-ci.org/networking/init-cms-sandbox)
+[![Build Status](https://travis-ci.org/networking/init-cms-sandbox.png?branch=master)](https://travis-ci.org/networking/init-cms-sandbox)
 
 
 
