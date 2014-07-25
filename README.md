@@ -1,7 +1,8 @@
-Networking init CMS sandbox based on the networking init CMS and the Symfony Standard Edition
+Development version used to migrate to bootstrap 3
 =============================================================================================
 
-[![Build Status](https://travis-ci.org/networking/init-cms-sandbox.png?branch=master)](https://travis-ci.org/networking/init-cms-sandbox)
+[![Build Status](https://travis-ci.org/networking/init-cms-sandbox.png?branch=bootstrap3)](https://travis-ci.org/networking/init-cms-sandbox)
+
 
 
 Welcome to the init CMS Sandbox. This will get you started with a working CMS based

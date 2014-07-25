@@ -8,10 +8,10 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
 #}
-{% block navbar %}
-   {{ navbar.getMenu('menu') ?
+{% block menu %}
+   {{ menu.getMenu('menu') ?
             knp_menu_render(navbar.getMenu('menu'), {
                 'currentClass': 'active',
                 'ancestorClass': 'active',
                 'allow_safe_labels': true}) : '' }}
-{% endblock navbar %}
+{% endblock menu %}

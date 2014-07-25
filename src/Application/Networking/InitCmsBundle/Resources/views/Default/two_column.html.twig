@@ -15,8 +15,8 @@ file that was distributed with this source code.
 {% block content %}
     <div class="span12">
         {% if page.layoutBlock('header') is not empty %}
-            <div class="hero-unit">
-                   <div class="row-fluid">
+            <div class="jumbotron">
+                   <div class="row">
                        {% set headerBlockCount = page.layoutBlock('header')|length %}
 
                        {% for layoutBlock in page.layoutBlock('header') %}
@@ -28,9 +28,9 @@ file that was distributed with this source code.
                 <div class="clearfix"></div>
             </div>
         {% endif %}
-        <div class="row-fluid">
+        <div class="row">
 
-                <div class="span6">
+                <div class="col-md-6">
                     <div class="middle">
                         {% for layoutBlock in page.layoutBlock('left') %}
                             {{ render_initcms_block('ApplicationNetworkingInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
@@ -38,7 +38,7 @@ file that was distributed with this source code.
                     </div>
                 </div>
 
-                <div class="span6">
+                <div class="col-md-6">
                     {% block content_sidebar %}
                         <div class="middle">
                             {% for layoutBlock in page.layoutBlock('right') %}
