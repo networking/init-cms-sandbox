@@ -129,7 +129,7 @@ you will be prompted to enter a username, email address and password, these will
 	
 Alternatively there is an install wizard which will get this done for you, just go to the following URL and follow the instructions:
 
-    http://localhost//app_dev.php/cms_install
+    http://localhost/app_dev.php/cms_install
     
 Now you should be up and running.
 
@@ -235,6 +235,12 @@ It comes pre-configured with the following bundles:
   * [**SensioGeneratorBundle**][16] (in dev/test env) - Adds code generation
     capabilities
 
+  * [**IbrowsSonataTranslationBundle**][18] - Adds a DB based UI for working with translations,
+    integrated with in a SonataAdmin setup.
+
+  * [**IbrowsSonataAdminAnnotationBundle**][19] - Adds the ability to defined form fields via annotations
+    to be used in conjuction with the SonataAdminBundle
+
 
 [1]:  http://web.networking.ch
 [2]:  https://github.com/networking/init-cms-sandbox/archive/master.zip
@@ -242,14 +248,16 @@ It comes pre-configured with the following bundles:
 [4]:  http://sonata-project.org/bundles/admin
 [5]:  http://symfony.com/doc/master/cmf/bundles/routing-extra.html
 [6]:  http://symfony.com/doc/master/cmf/bundles/routing-extra.html
-[7]:  http://symfony.com/doc/2.1/bundles/SensioFrameworkExtraBundle/index.html
-[8]:  http://symfony.com/doc/2.1/book/doctrine.html
-[9]:  http://symfony.com/doc/2.1/book/templating.html
-[10]:  http://symfony.com/doc/2.1/book/security.html
-[11]: http://symfony.com/doc/2.1/cookbook/email.html
-[12]: http://symfony.com/doc/2.1/cookbook/logging/monolog.html
-[13]: http://symfony.com/doc/2.1/cookbook/assetic/asset_management.html
+[7]:  http://symfony.com/doc/2.5/bundles/SensioFrameworkExtraBundle/index.html
+[8]:  http://symfony.com/doc/2.5/book/doctrine.html
+[9]:  http://symfony.com/doc/2.5/book/templating.html
+[10]:  http://symfony.com/doc/2.5/book/security.html
+[11]: http://symfony.com/doc/2.5/cookbook/email.html
+[12]: http://symfony.com/doc/2.5/cookbook/logging/monolog.html
+[13]: http://symfony.com/doc/2.5/cookbook/assetic/asset_management.html
 [14]: http://jmsyst.com/bundles/JMSSecurityExtraBundle/1.1
 [15]: http://jmsyst.com/bundles/JMSDiExtraBundle/1.0
-[16]: http://symfony.com/doc/2.1/bundles/SensioGeneratorBundle/index.html
+[16]: http://symfony.com/doc/2.5/bundles/SensioGeneratorBundle/index.html
 [17]: https://github.com/symfony/symfony#installation
+[18]: https://github.com/ibrows/IbrowsSonataTranslationBundle
+[19]: https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle
