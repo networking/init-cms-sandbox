@@ -121,17 +121,18 @@ networking_init_cms:
             name: "Single Column"
             icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
             zones:
-                - { name: header, span:12 }
-                - { name: main_content, span:12}
+                - { name: header, class: 'col-md-12' }
+                - { name: main_content, class: 'col-md-12'}
 #                - { name: bottom, span:12}
         'Sandbox_two_column_template':
             template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
             name: "Two Column"
             icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
             zones:
-                - { name: header , span:12}
-                - { name: left , span:6}
-                - { name: right , span:6}
+                - { name: header , class: 'col-md-12'}
+                - { name: advertising , class: 'col-md-12', max_content_items: -1 }
+                - { name: left , class: 'col-md-3'}
+                - { name: right , class: 'col-md-9'}
 
     content_types:
         - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}

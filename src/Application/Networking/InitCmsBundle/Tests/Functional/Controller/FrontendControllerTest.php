@@ -21,7 +21,7 @@ class FrontendControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
         $this->assertTrue(
-            $crawler->filter('.hero-unit p:contains("The locale of this page is de_CH")')->count() == 1,
+            $crawler->filter('div.jumbotron p:contains("The locale of this page is de_CH")')->count() == 1,
             'Language is switched'
         );
         $this->assertTrue(
@@ -48,7 +48,7 @@ class FrontendControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
         $this->assertTrue(
-            $crawler->filter('.hero-unit p:contains("The locale of this page is en_US")')->count() == 1,
+            $crawler->filter('.jumbotron p:contains("The locale of this page is en_US")')->count() == 1,
             'Language is switched'
         );
         $this->assertTrue(

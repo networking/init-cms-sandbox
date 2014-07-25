@@ -89,8 +89,9 @@ class BackendControllerTest extends WebTestCase
         $form = $crawler->filter('form')->form();
         // get the unique key
         $key = array_keys($form->getPhpValues());
+
         // set some values
-        $form[$key[0].'[locale]'] = 'de_CH';
+        $form[$key[0].'[locale]']->select('de_DE');
         // submit the form
         $crawler = $client->submit($form);
         // logout
@@ -110,8 +111,8 @@ class BackendControllerTest extends WebTestCase
         $crawler = $client->followRedirect();
 
         // is the locale de?
-//        $this->assertTrue($crawler->filter('a:contains("abmelden")')->count() > 0, 'Abmelden is German');
-        $this->assertTrue($crawler->filter('html:contains("Benutzer")')->count() > 0, 'Benutzer is German');
+        $this->assertGreaterThan(0, $crawler->filter('a:contains("abmelden")')->count(), 'Abmelden is German');
+//        $this->assertTrue($crawler->filter('html:contains("Benutzer")')->count() > 0, 'Benutzer is German');
 
     }
 
@@ -137,7 +138,7 @@ class BackendControllerTest extends WebTestCase
         // get form unique key
         $key = array_keys($form->getPhpValues());
         // set some values
-        $form[$key[0].'[locale]'] = 'en_US';
+        $form[$key[0].'[locale]']->select('en_US');
         // submit the form
         $crawler = $client->submit($form);
 
