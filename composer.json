@@ -34,12 +34,6 @@
         "jms/security-extra-bundle": "1.5.1",
         "networking/init-cms-bundle": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/networking/init-cms-bundle"
-        }
-    ],
     "scripts":{
         "post-install-cmd":[
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
