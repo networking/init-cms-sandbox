@@ -125,16 +125,16 @@ abstract class WebTestCase extends BaseWebTestCase
     public function backupDatabase()
     {
         copy(
-            $this->getPhpUnitCliConfigArgument() . '/cache/test/test.db',
-            $this->getPhpUnitCliConfigArgument() . '/cache/test/test.db.bk'
+            $this->getPhpUnitCliConfigArgument() . '/cache/test/symfony.db',
+            $this->getPhpUnitCliConfigArgument() . '/cache/test/symfony.db.bk'
         );
     }
 
     public function restoreDatabase()
     {
         copy(
-            $this->getPhpUnitCliConfigArgument() . '/cache/test/test.db.bk',
-            $this->getPhpUnitCliConfigArgument() . '/cache/test/test.db'
+            $this->getPhpUnitCliConfigArgument() . '/cache/test/symfony.db.bk',
+            $this->getPhpUnitCliConfigArgument() . '/cache/test/symfony.db'
         );
     }
 }
