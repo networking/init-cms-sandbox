@@ -137,6 +137,8 @@ networking_init_cms:
     content_types:
         - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
         - { name: 'Gallery' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
+        - { name: 'Bild' , class: 'Application\Networking\InitCmsBundle\Entity\ImageContent'}
+        - { name: 'Download' , class: 'Application\Networking\InitCmsBundle\Entity\DownloadContent'}
 
 sonata_admin:
     title:      Demo Sailing Club

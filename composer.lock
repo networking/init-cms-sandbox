@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed293c56bb38642cc82c98476ce30a32",
+    "hash": "a673b1d6ae25554114bbe2c02faa7009",
     "packages": [
         {
             "name": "dflydev/markdown",
@@ -1486,12 +1486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jdorn/sql-formatter.git",
-                "reference": "017b6628e7a3a96cfd9f96ec1531b974d1dea2b7"
+                "reference": "ff0515fa8ce7d97d6cba279e8ed9d51d3eaa0316"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/017b6628e7a3a96cfd9f96ec1531b974d1dea2b7",
-                "reference": "017b6628e7a3a96cfd9f96ec1531b974d1dea2b7",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/ff0515fa8ce7d97d6cba279e8ed9d51d3eaa0316",
+                "reference": "ff0515fa8ce7d97d6cba279e8ed9d51d3eaa0316",
                 "shasum": ""
             },
             "require": {
@@ -1531,7 +1531,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2014-07-08 22:36:13"
+            "time": "2014-07-28 13:45:38"
         },
         {
             "name": "jms/aop-bundle",
@@ -2609,12 +2609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "40dda4876d45602d7b9b0b5109027f51e291d64b"
+                "reference": "997222d25ec7eb53b7e0d864cee424c01fe27c32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/40dda4876d45602d7b9b0b5109027f51e291d64b",
-                "reference": "40dda4876d45602d7b9b0b5109027f51e291d64b",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/997222d25ec7eb53b7e0d864cee424c01fe27c32",
+                "reference": "997222d25ec7eb53b7e0d864cee424c01fe27c32",
                 "shasum": ""
             },
             "require": {
@@ -2630,7 +2630,8 @@
                 "graylog2/gelf-php": "~1.0",
                 "phpunit/phpunit": "~3.7.0",
                 "raven/raven": "~0.5",
-                "ruflin/elastica": "0.90.*"
+                "ruflin/elastica": "0.90.*",
+                "videlalvaro/php-amqplib": "~2.4"
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
@@ -2640,7 +2641,8 @@
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
             },
             "type": "library",
             "extra": {
@@ -2671,7 +2673,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-07-28 11:23:37"
+            "time": "2014-07-28 20:11:00"
         },
         {
             "name": "mopa/bootstrap-bundle",
@@ -2872,12 +2874,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "ddfcbc1ed138807a5865d850d2847af2fbe253a6"
+                "reference": "92f4935f3b685277b43e7a45565666ac54267612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/ddfcbc1ed138807a5865d850d2847af2fbe253a6",
-                "reference": "ddfcbc1ed138807a5865d850d2847af2fbe253a6",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/92f4935f3b685277b43e7a45565666ac54267612",
+                "reference": "92f4935f3b685277b43e7a45565666ac54267612",
                 "shasum": ""
             },
             "require": {
@@ -2908,14 +2910,15 @@
                     "Networking\\InitCmsBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Yorkie Chadwick",
-                    "homepage": "http://web.networking.ch",
-                    "email": "y.chadwick@networking.ch"
+                    "email": "y.chadwick@networking.ch",
+                    "homepage": "http://web.networking.ch"
                 }
             ],
             "description": "This Bundle is a basic cms based on symfony",
@@ -2923,11 +2926,7 @@
                 "cms",
                 "symfony"
             ],
-            "support": {
-                "source": "https://github.com/networking/init-cms-bundle/tree/master",
-                "issues": "https://github.com/networking/init-cms-bundle/issues"
-            },
-            "time": "2014-07-28 11:45:32"
+            "time": "2014-07-29 08:47:01"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4751,12 +4750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "e8b53e9c2130a220fd1d60f4f053b386af68bd97"
+                "reference": "cd29962dc010e8dd29fc5bd18576f3d38883328f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/e8b53e9c2130a220fd1d60f4f053b386af68bd97",
-                "reference": "e8b53e9c2130a220fd1d60f4f053b386af68bd97",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/cd29962dc010e8dd29fc5bd18576f3d38883328f",
+                "reference": "cd29962dc010e8dd29fc5bd18576f3d38883328f",
                 "shasum": ""
             },
             "require": {
@@ -4857,7 +4856,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-28 10:07:02"
+            "time": "2014-07-28 14:51:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -4968,12 +4967,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "5fd428ed7603ea63998716995c123c99648aab26"
+                "reference": "7d1577ff3c563aff7c447302d57756fd40fc675b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/5fd428ed7603ea63998716995c123c99648aab26",
-                "reference": "5fd428ed7603ea63998716995c123c99648aab26",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7d1577ff3c563aff7c447302d57756fd40fc675b",
+                "reference": "7d1577ff3c563aff7c447302d57756fd40fc675b",
                 "shasum": ""
             },
             "require": {
@@ -5017,7 +5016,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-08 13:46:25"
+            "time": "2014-07-28 13:12:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
