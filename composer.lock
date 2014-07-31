@@ -208,12 +208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "bbe35735af4a826c1f86b04f2fd885ff5fc0f82b"
+                "reference": "432240f56fbc9a811dbf1ff8a45c1a1047ba1c0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/bbe35735af4a826c1f86b04f2fd885ff5fc0f82b",
-                "reference": "bbe35735af4a826c1f86b04f2fd885ff5fc0f82b",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/432240f56fbc9a811dbf1ff8a45c1a1047ba1c0a",
+                "reference": "432240f56fbc9a811dbf1ff8a45c1a1047ba1c0a",
                 "shasum": ""
             },
             "require": {
@@ -239,17 +239,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -258,10 +247,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Collections Abstraction library",
@@ -271,7 +266,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2014-06-17 17:31:49"
+            "time": "2014-07-29 20:07:28"
         },
         {
             "name": "doctrine/common",
@@ -566,12 +561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
-                "reference": "ec984dd37d1b0096deeb0cc8165e7c6ca10273f4"
+                "reference": "03b4890d61580d1bee710445abdf158bb224b251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/ec984dd37d1b0096deeb0cc8165e7c6ca10273f4",
-                "reference": "ec984dd37d1b0096deeb0cc8165e7c6ca10273f4",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/03b4890d61580d1bee710445abdf158bb224b251",
+                "reference": "03b4890d61580d1bee710445abdf158bb224b251",
                 "shasum": ""
             },
             "require": {
@@ -609,12 +604,6 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
                 },
@@ -633,6 +622,10 @@
                 {
                     "name": "Doctrine Project",
                     "homepage": "http://www.doctrine-project.org/"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony2 Bundle for Doctrine Cache",
@@ -641,7 +634,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2014-05-19 14:53:37"
+            "time": "2014-07-30 14:46:58"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -836,12 +829,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "089cca636e0e44a70dd9167b7d813762ea80daca"
+                "reference": "0650bb954f5e8d05776f99abd04c81948413299f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/089cca636e0e44a70dd9167b7d813762ea80daca",
-                "reference": "089cca636e0e44a70dd9167b7d813762ea80daca",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/0650bb954f5e8d05776f99abd04c81948413299f",
+                "reference": "0650bb954f5e8d05776f99abd04c81948413299f",
                 "shasum": ""
             },
             "require": {
@@ -902,7 +895,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2014-07-24 15:34:21"
+            "time": "2014-07-30 22:06:05"
         },
         {
             "name": "egeloen/ckeditor-bundle",
@@ -1855,16 +1848,16 @@
         },
         {
             "name": "jms/serializer",
-            "version": "0.16.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/serializer.git",
-                "reference": "c8a171357ca92b6706e395c757f334902d430ea9"
+                "reference": "da8623410dc1bb6d532ad4218e306574efd1a5b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/c8a171357ca92b6706e395c757f334902d430ea9",
-                "reference": "c8a171357ca92b6706e395c757f334902d430ea9",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/da8623410dc1bb6d532ad4218e306574efd1a5b5",
+                "reference": "da8623410dc1bb6d532ad4218e306574efd1a5b5",
                 "shasum": ""
             },
             "require": {
@@ -1892,7 +1885,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.15-dev"
+                    "dev-master": "0.17-dev"
                 }
             },
             "autoload": {
@@ -1907,9 +1900,7 @@
             "authors": [
                 {
                     "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Library for (de-)serializing data of any complexity; supports XML, JSON, and YAML.",
@@ -1921,7 +1912,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2014-03-18 08:39:00"
+            "time": "2014-07-29 21:41:51"
         },
         {
             "name": "jms/serializer-bundle",
@@ -2794,17 +2785,17 @@
         },
         {
             "name": "nelmio/api-doc-bundle",
-            "version": "2.6.0",
+            "version": "dev-master",
             "target-dir": "Nelmio/ApiDocBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/NelmioApiDocBundle.git",
-                "reference": "b48650a9e020d43ec5a3c0f4345714ef724344d7"
+                "reference": "7a364db5717e5dfd7d3565ccee5f97f9cfead187"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/b48650a9e020d43ec5a3c0f4345714ef724344d7",
-                "reference": "b48650a9e020d43ec5a3c0f4345714ef724344d7",
+                "url": "https://api.github.com/repos/nelmio/NelmioApiDocBundle/zipball/7a364db5717e5dfd7d3565ccee5f97f9cfead187",
+                "reference": "7a364db5717e5dfd7d3565ccee5f97f9cfead187",
                 "shasum": ""
             },
             "require": {
@@ -2836,7 +2827,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -2865,7 +2856,7 @@
                 "documentation",
                 "rest"
             ],
-            "time": "2014-06-25 06:52:01"
+            "time": "2014-07-31 07:44:46"
         },
         {
             "name": "networking/init-cms-bundle",
@@ -2874,12 +2865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "e8e94d12c07922ad6ae6055dd1378c74dc845f5e"
+                "reference": "d923d07f27a0b486b71d155fe0ac98ff7007e77d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e8e94d12c07922ad6ae6055dd1378c74dc845f5e",
-                "reference": "e8e94d12c07922ad6ae6055dd1378c74dc845f5e",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d923d07f27a0b486b71d155fe0ac98ff7007e77d",
+                "reference": "d923d07f27a0b486b71d155fe0ac98ff7007e77d",
                 "shasum": ""
             },
             "require": {
@@ -2926,7 +2917,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2014-07-29 08:47:01"
+            "time": "2014-07-31 07:34:41"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -4750,12 +4741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "cd29962dc010e8dd29fc5bd18576f3d38883328f"
+                "reference": "3ee327c5db3eb08d683c2526cc0df4cb4127f7bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/cd29962dc010e8dd29fc5bd18576f3d38883328f",
-                "reference": "cd29962dc010e8dd29fc5bd18576f3d38883328f",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/3ee327c5db3eb08d683c2526cc0df4cb4127f7bd",
+                "reference": "3ee327c5db3eb08d683c2526cc0df4cb4127f7bd",
                 "shasum": ""
             },
             "require": {
@@ -4856,7 +4847,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-07-28 14:51:00"
+            "time": "2014-07-29 11:56:02"
         },
         {
             "name": "twbs/bootstrap",
@@ -4967,12 +4958,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7d1577ff3c563aff7c447302d57756fd40fc675b"
+                "reference": "4134169b67e692107b385af857b526e6013361ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7d1577ff3c563aff7c447302d57756fd40fc675b",
-                "reference": "7d1577ff3c563aff7c447302d57756fd40fc675b",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4134169b67e692107b385af857b526e6013361ce",
+                "reference": "4134169b67e692107b385af857b526e6013361ce",
                 "shasum": ""
             },
             "require": {
@@ -5016,7 +5007,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-28 13:12:00"
+            "time": "2014-07-29 11:54:16"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
