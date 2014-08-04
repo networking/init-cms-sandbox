@@ -2865,12 +2865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "4c9e6ee3f9767562a2ae9b5aad03a03dc2dc4b44"
+                "reference": "d3753c71461749f704c032ed3ea35dd8f2e77dda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/4c9e6ee3f9767562a2ae9b5aad03a03dc2dc4b44",
-                "reference": "4c9e6ee3f9767562a2ae9b5aad03a03dc2dc4b44",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/d3753c71461749f704c032ed3ea35dd8f2e77dda",
+                "reference": "d3753c71461749f704c032ed3ea35dd8f2e77dda",
                 "shasum": ""
             },
             "require": {
@@ -2918,7 +2918,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2014-07-31 14:37:47"
+            "time": "2014-08-04 08:11:34"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -3474,12 +3474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "8164161404603cedffae2d3b2c0205170e4f256e"
+                "reference": "d0519c3f0d26d68df1c2c38196ab735d898a73ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/8164161404603cedffae2d3b2c0205170e4f256e",
-                "reference": "8164161404603cedffae2d3b2c0205170e4f256e",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/d0519c3f0d26d68df1c2c38196ab735d898a73ca",
+                "reference": "d0519c3f0d26d68df1c2c38196ab735d898a73ca",
                 "shasum": ""
             },
             "require": {
@@ -3528,7 +3528,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-07-31 10:10:47"
+            "time": "2014-07-23 07:47:18"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -3766,12 +3766,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataFormatterBundle.git",
-                "reference": "c59a570bdfd6937be38ac930fa86b51abb898d9d"
+                "reference": "b7f5c28caecf8e6ad0032f87b5e7b567b250f803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/c59a570bdfd6937be38ac930fa86b51abb898d9d",
-                "reference": "c59a570bdfd6937be38ac930fa86b51abb898d9d",
+                "url": "https://api.github.com/repos/sonata-project/SonataFormatterBundle/zipball/b7f5c28caecf8e6ad0032f87b5e7b567b250f803",
+                "reference": "b7f5c28caecf8e6ad0032f87b5e7b567b250f803",
                 "shasum": ""
             },
             "require": {
@@ -3818,7 +3818,7 @@
                 "markitup",
                 "sonata"
             ],
-            "time": "2014-07-31 08:59:29"
+            "time": "2014-07-24 12:59:21"
         },
         {
             "name": "sonata-project/google-authenticator",
@@ -4959,12 +4959,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "72aa82b9a260b823325eec9b37bf6106a0137fb2"
+                "reference": "4134169b67e692107b385af857b526e6013361ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/72aa82b9a260b823325eec9b37bf6106a0137fb2",
-                "reference": "72aa82b9a260b823325eec9b37bf6106a0137fb2",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4134169b67e692107b385af857b526e6013361ce",
+                "reference": "4134169b67e692107b385af857b526e6013361ce",
                 "shasum": ""
             },
             "require": {
@@ -5008,7 +5008,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-07-31 13:21:40"
+            "time": "2014-07-29 11:54:16"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
