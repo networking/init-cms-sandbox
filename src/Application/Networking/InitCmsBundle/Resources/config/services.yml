@@ -53,7 +53,3 @@ services:
         tags:
             - { name: knp_menu.menu, alias: footerMenu }
 
-    ubs.form.type.download:
-        class: Application\Networking\InitCmsBundle\Form\DownloadType
-        tags:
-            - {name: "form.type", alias: "download_content_type"}
