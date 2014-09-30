@@ -55,7 +55,7 @@ the create-project command.
 
 First [download][2] and unpack the archive of the sandbox in your preferred location
 
-	https://github.com/networking/init-cms-sandbox/archive/master.zip
+	https://github.com/networking/init-cms-sandbox/archive/2.5.zip
 
 Then change into the project directory
 
@@ -243,7 +243,7 @@ It comes pre-configured with the following bundles:
 
 
 [1]:  http://web.networking.ch
-[2]:  https://github.com/networking/init-cms-sandbox/archive/master.zip
+[2]:  https://github.com/networking/init-cms-sandbox/archive/2.5.zip
 [3]:  http://getcomposer.org/
 [4]:  http://sonata-project.org/bundles/admin
 [5]:  http://symfony.com/doc/master/cmf/bundles/routing-extra.html
