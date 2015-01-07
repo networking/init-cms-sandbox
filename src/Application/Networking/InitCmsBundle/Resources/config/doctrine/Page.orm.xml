@@ -32,10 +32,6 @@
             <join-column name="content_route_id" referenced-column-name="id"/>
         </one-to-one>
 
-        <many-to-one target-entity="Application\Networking\InitCmsBundle\Entity\Page" field="alias">
-            <join-column name="alias_id" referenced-column-name="id" on-delete="SET NULL"/>
-        </many-to-one>
-
         <one-to-many target-entity="Networking\InitCmsBundle\Entity\LayoutBlock" field="layoutBlock" mapped-by="page"
                      orphan-removal="true">
             <cascade>
@@ -61,6 +57,12 @@
 
         <one-to-many target-entity="Application\Networking\InitCmsBundle\Entity\Page" field="children"
                      mapped-by="parent"/>
+
+
+        <many-to-one target-entity="Application\Networking\InitCmsBundle\Entity\Page" field="alias">
+            <join-column name="alias_id" referenced-column-name="id" on-delete="SET NULL"/>
+        </many-to-one>
+
         <many-to-one target-entity="Application\Networking\InitCmsBundle\Entity\Page" field="parent"
                      orphan-removal="false"
                      inversed-by="children">
