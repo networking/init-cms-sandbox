@@ -109,6 +109,11 @@ swiftmailer:
     password:  %mailer_password%
 
 networking_init_cms:
+#    Activate the simple phpFastCache implementation to cache frontend files if in prod mode not logged in
+#    cache:
+#        activate: true #default false
+#        cache_time: 86400 #default value
+#        cache_service_class: Networking\InitCmsBundle\Lib\PhpCache #default value
     class:
         page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
         user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
@@ -140,8 +145,6 @@ networking_init_cms:
 
 sonata_admin:
     title:      Demo Sailing Club
-    options:
-        use_select2: false
 
 lexik_translation:
     fallback_locale: en      # (required) default locale to use
@@ -155,7 +158,7 @@ fos_user:
         group_class: Networking\InitCmsBundle\Entity\Group
     from_email:
             address:        webmaster@example.com
-            sender_name:    net working Team
+            sender_name:    web project
 
 sonata_user:
     security_acl: true
