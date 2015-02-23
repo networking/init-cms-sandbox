@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2018436bd6c503b0041dc79c4c1bb303",
+    "hash": "689b094d10ba76f0ca3c704ee1556c8e",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2895,7 +2895,7 @@
         },
         {
             "name": "networking/init-cms-bundle",
-            "version": "dev-master",
+            "version": "2.5.x-dev",
             "target-dir": "Networking/InitCmsBundle",
             "source": {
                 "type": "git",
@@ -2954,7 +2954,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2015-02-20 14:27:09"
+            "time": "2015-02-23 12:26:58"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -5096,9 +5096,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "networking/init-cms-bundle": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
