@@ -17,10 +17,11 @@
     },
     "minimum-stability":"dev",
     "name":"networking/init-cms-sandbox",
+    "prefer-stable":true,
     "license": "MIT",
     "require":{
         "php":">=5.3.3",
-        "symfony/symfony": ">=2.3,<2.6-dev",
+        "symfony/symfony": ">=2.3,<2.6",
         "doctrine/orm": ">=2.2.4,2.4",
         "doctrine/doctrine-bundle": "~1.2",
         "twig/extensions": "~1.0",
@@ -32,8 +33,7 @@
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
         "jms/security-extra-bundle": "1.5.1",
-        "networking/init-cms-bundle": "dev-master",
-        "sonata-project/easy-extends-bundle": "2.1.*"
+        "networking/init-cms-bundle":"~2.5"
     },
     "scripts":{
         "post-install-cmd":[
