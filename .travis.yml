@@ -7,6 +7,6 @@ php:
 before_script:
     - composer self-update
     - cp app/config/parameters.yml.test app/config/parameters.yml
-    - composer install
+    - php -d memory_limit=-1 composer install
 
 script: phpunit -c app
