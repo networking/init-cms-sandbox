@@ -32,3 +32,4 @@ nbproject
 #ignore mac filesystem files
 .DS_Store
 
+composer.lock
