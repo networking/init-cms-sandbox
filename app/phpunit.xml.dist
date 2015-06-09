@@ -14,7 +14,7 @@
     bootstrap                   = "functional_tests_bootstrap.php" >
 
     <testsuites>
-        <testsuite name="Project Test Suite">
+        <testsuite name="init cms Sandbox bundle">
             <directory>../src/*/*Bundle/Tests</directory>
             <directory>../src/*/Bundle/*Bundle/Tests</directory>
             <directory>../src/*/*/*Bundle/Tests</directory>
