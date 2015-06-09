@@ -28,6 +28,7 @@ abstract class WebTestCase extends BaseWebTestCase
         $client = static::createClient();
 
         $this->deleteDatabase();
+        $this->runCommand($client, 'doctrine:database:create');
         $this->runCommand($client, 'doctrine:schema:create');
         $this->runCommand(
             $client,
