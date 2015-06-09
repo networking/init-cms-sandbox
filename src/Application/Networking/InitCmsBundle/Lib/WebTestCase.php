@@ -34,6 +34,18 @@ abstract class WebTestCase extends BaseWebTestCase
             $client,
             'doctrine:fixtures:load --append --fixtures="' . dirname(__FILE__) . '/../Tests/Fixtures"'
         );
+            /** @var \Networking\InitCmsBundle\Entity\PageManager $modelManager */
+        $modelManager = $client->getContainer()->get('networking_init_cms.page_manager');
+        $selectedModels = $modelManager->findAll();
+
+        foreach ($selectedModels as $selectedModel) {
+            /** @var \Networking\InitCmsBundle\Model\PageInterface $selectedModel */
+            $selectedModel->setStatus(\Networking\InitCmsBundle\Model\PageInterface::STATUS_PUBLISHED);
+            $modelManager->save($selectedModel);
+            /** @var $pageHelper \Networking\InitCmsBundle\Helper\PageHelper */
+            $pageHelper = $client->getContainer()->get('networking_init_cms.helper.page_helper');
+            $pageHelper->makePageSnapshot($selectedModel);
+        }
         $this->backupDatabase();
     }
 
