@@ -24,25 +24,20 @@ Other Features:
 - Based on the SonataAdminBundle so you can easily create your own admin modules
 
 
+Find more information about the init CMS on [www.initcms.com](http://www.initcms.com).
 
-The project is being developed by the
-small hard working team at [net working AG][1] in Zürich.
+A demo of the CMS can be found at demo.initcms.com The Demo is reset every 24 hours
 
-
-A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com)
-
-The administration is located at [demo.initcms.com/admin](http://demo.initcms.com/admin)
-The login is:
-User: admin
-Password: initcms
-
-The Demo is reset every 24 hours.
+A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com). The Demo is reset every 24 hours.
 
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
 
 This document contains information on how to download, install, and start
 using the networking init CMS sandbox. For a more detailed explanation on install Symfony, see the [Installation][17]
 chapter of the Symfony Documentation.
+
+The project is being developed by the
+small hard working team at [net working AG][1] in Zürich.
 
 1) Installing the networking init CMS sandbox
 ---------------------------------------------
