@@ -234,7 +234,7 @@ It comes pre-configured with the following bundles:
     integrated with in a SonataAdmin setup.
 
   * [**IbrowsSonataAdminAnnotationBundle**][19] - Adds the ability to defined form fields via annotations
-    to be used in conjuction with the SonataAdminBundle
+    to be used in conjunction with the SonataAdminBundle
 
 
 [1]:  http://web.networking.ch
