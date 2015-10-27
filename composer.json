@@ -21,7 +21,7 @@
     "prefer-stable": true,
     "license": "MIT",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.3.9",
         "symfony/symfony": "2.7.*",
         "doctrine/orm": "2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
@@ -34,14 +34,8 @@
         "twig/extensions": "~1.0",
         "sensio/generator-bundle": "2.3.*",
         "jms/security-extra-bundle": "1.5.1",
-        "networking/init-cms-bundle": "dev-master"
+        "networking/init-cms-bundle": "~2.7"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/networking/init-cms-bundle.git"
-        }
-    ],
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"
