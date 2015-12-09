@@ -140,8 +140,8 @@ networking_init_cms:
                 - { name: right , class: 'col-md-9'}
 
     content_types:
-        - { name: 'Text' , class: 'Networking\\InitCmsBundle\\Entity\\Text'}
-        - { name: 'Gallery' , class: 'Networking\\InitCmsBundle\\Entity\\GalleryView'}
+        - { name: 'Text' , class: "Networking\\InitCmsBundle\\Entity\\Text"}
+        - { name: 'Gallery' , class: "Networking\\InitCmsBundle\\Entity\\GalleryView"}
 
 sonata_admin:
     title:      "Demo Sailing Club"
