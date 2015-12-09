@@ -51,7 +51,7 @@ doctrine:
         password: %database_password%
         charset:  UTF8
         types:
-            json: Sonata\Doctrine\Types\JsonType
+            json: "Sonata\\Doctrine\\Types\\JsonType"
         mapping_types:
             enum: string
 
@@ -65,36 +65,36 @@ doctrine:
                 connection:       default
                 filters:
                     softdeleteable:
-                        class: Gedmo\SoftDeleteable\Filter\SoftDeleteableFilter
+                        class: "Gedmo\\SoftDeleteable\\Filter\\SoftDeleteableFilter"
                         enabled: true
                 mappings:
                     gedmo_translatable:
                         type: annotation
-                        prefix: Gedmo\Translatable\Entity
+                        prefix: "Gedmo\\Translatable\\Entity"
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
                         alias: GedmoTranslatable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     gedmo_translator:
                         type: annotation
-                        prefix: Gedmo\Translator\Entity
+                        prefix: "Gedmo\\Translator\\Entity"
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translator/Entity"
                         alias: GedmoTranslator # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     gedmo_loggable:
                         type: annotation
-                        prefix: Gedmo\Loggable\Entity
+                        prefix: "Gedmo\\Loggable\\Entity"
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity"
                         alias: GedmoLoggable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     gedmo_tree:
                         type: annotation
-                        prefix: Gedmo\Tree\Entity
+                        prefix: "Gedmo\\Tree\\Entity"
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
                         alias: GedmoTree # this one is optional and will default to the name set for the mapping
                         is_bundle: false
                     gedmo_sortable:
                         type: annotation
-                        prefix: Gedmo\Sortable\Entity
+                        prefix: "Gedmo\\Sortable\\Entity"
                         dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Sortable/Entity"
                         alias: GedmoSortable # this one is optional and will default to the name set for the mapping
                         is_bundle: false
@@ -110,10 +110,10 @@ swiftmailer:
 
 networking_init_cms:
 #    Activate the simple phpFastCache implementation to cache frontend files if in prod mode not logged in
-#    cache:
-#        activate: true #default false
-#        cache_time: 86400 #default value
-#        cache_service_class: Networking\InitCmsBundle\Lib\PhpCache #default value
+    cache:
+        activate: true #default false
+        cache_time: 86400 #default value
+        cache_service_class: "Networking\\InitCmsBundle\\Lib\\PhpCache" #default value
     class:
         page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
         user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
@@ -140,11 +140,11 @@ networking_init_cms:
                 - { name: right , class: 'col-md-9'}
 
     content_types:
-        - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
-        - { name: 'Gallery' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
+        - { name: 'Text' , class: 'Networking\\InitCmsBundle\\Entity\\Text'}
+        - { name: 'Gallery' , class: 'Networking\\InitCmsBundle\\Entity\\GalleryView'}
 
 sonata_admin:
-    title:      Demo Sailing Club
+    title:      "Demo Sailing Club"
 
 lexik_translation:
     fallback_locale: en      # (required) default locale to use
@@ -153,12 +153,12 @@ lexik_translation:
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb'
     firewall_name:  main
-    user_class:     Application\Networking\InitCmsBundle\Entity\User
+    user_class:     "Application\\Networking\\InitCmsBundle\\Entity\\User"
     group:
-        group_class: Networking\InitCmsBundle\Entity\Group
+        group_class: "Networking\\InitCmsBundle\\Entity\\Group"
     from_email:
-            address:        webmaster@example.com
-            sender_name:    web project
+            address:        "webmaster@example.com"
+            sender_name:    "web project"
 
 sonata_user:
     security_acl: true
@@ -166,18 +166,18 @@ sonata_user:
         route:                networking_init_cms_admin
         parameters:           { path: /}
     class:
-        user: Application\Networking\InitCmsBundle\Entity\User
-        group: Networking\InitCmsBundle\Entity\Group
+        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
+        group: "Networking\\InitCmsBundle\\Entity\\Group"
     admin:                  # Admin Classes
         user:
-            class:          Networking\InitCmsBundle\Admin\Entity\UserAdmin
-            controller:     NetworkingInitCmsBundle:CRUD
-            translation:    SonataUserBundle
+            class:          "Networking\\InitCmsBundle\\Admin\\Entity\\UserAdmin"
+            controller:     "NetworkingInitCmsBundle:CRUD"
+            translation:    "SonataUserBundle"
 
         group:
-            class:          Networking\InitCmsBundle\Admin\Entity\GroupAdmin
-            controller:     NetworkingInitCmsBundle:CRUD
-            translation:    SonataUserBundle
+            class:          "Networking\\InitCmsBundle\\Admin\\Entity\\GroupAdmin"
+            controller:     "NetworkingInitCmsBundle:CRUD"
 
+            translation:    "SonataUserBundle"
 
 

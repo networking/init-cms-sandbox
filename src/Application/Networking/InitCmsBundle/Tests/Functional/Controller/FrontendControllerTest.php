@@ -16,7 +16,7 @@ class FrontendControllerTest extends WebTestCase
         $this->assertTrue($crawler->filter('a:contains("Deutsch")')->count() == 1, 'there is a link for deutsch');
 
         $link = $crawler->selectLink('Deutsch')->link();
-        $crawler = $client->click($link);
+        $client->click($link);
         $this->assertTrue($client->getResponse()->isRedirect('/'), 'language switch does a redirect');
         $crawler = $client->followRedirect();
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
