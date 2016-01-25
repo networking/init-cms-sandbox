@@ -44,6 +44,7 @@ class AppKernel extends Kernel
             new Ibrows\SonataTranslationBundle\IbrowsSonataTranslationBundle(),
             new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
+            new Oneup\UploaderBundle\OneupUploaderBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
