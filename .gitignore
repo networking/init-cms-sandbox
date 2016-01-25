@@ -2,7 +2,6 @@
 app/bootstrap*
 
 bin/
-composer.phar
 
 # Symfony directories
 vendor
@@ -12,9 +11,9 @@ app/*.cache
 web/uploads/*
 web/bundles/*
 web/sitemap*.xml
-web/css/
-web/js/
-web/uploads/
+web/css/*
+web/js/*
+web/fonts/*
 
 # Configuration files
 app/config/parameters.ini
