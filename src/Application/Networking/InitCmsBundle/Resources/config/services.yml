@@ -4,6 +4,7 @@ services:
         arguments:
             - "@knp_menu.factory"
             - "@security.context"
+            - "@security.authorization_checker"
             - "@request_stack"
             - "@router"
             - "@networking_init_cms.menu_item_manager"
