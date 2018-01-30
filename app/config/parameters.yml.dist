@@ -11,4 +11,7 @@ parameters:
     mailer_password:   ~
     locale:            en_US
     secret:            ThisTokenIsNotSoSecretChangeIt
+    admin_email:       admin@some-website.com
+    elastic_search_host: localhost
+    elastic_search_index: sandbox
 

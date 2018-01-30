@@ -1,20 +1,27 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: @NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml }
+    - { resource: "@NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml"}
+    - { resource: fos_user.yml }
+    - { resource: fos_elastica.yml }
+    - { resource: lexik_translation.yml }
+    - { resource: networking_init_cms.yml }
+    - { resource: sonata_user.yml }
+    - { resource: sonata_admin.yml }
+    - { resource: networking_form_generator.yml }
 
 
 framework:
     #esi:             ~
     translator:      { fallback: 'en'}
-    secret:          %secret%
+    secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
-        strict_requirements: %kernel.debug%
+        strict_requirements: "%kernel.debug%"
     form:            true
-    csrf_protection: true
+    csrf_protection: ~
     validation:      { enable_annotations: true }
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
-    default_locale:  %locale%
+    default_locale:  "%locale%"
     session: ~
 
 # Twig Configuration
@@ -25,30 +32,30 @@ twig:
 
 # Assetic Configuration
 assetic:
-    debug:          %kernel.debug%
+    debug:          "%kernel.debug%"
     use_controller: false
     filters:
         less:
             node: /usr/local/bin/node
             node_paths: [/usr/local/lib/node_modules/]
-            apply_to: "\.less$"
+            apply_to: '\.less$'
         cssrewrite: ~
         cssembed:
-            jar: %kernel.root_dir%/Resources/java/cssembed-0.3.6.jar
+            jar: "%kernel.root_dir%/Resources/java/cssembed-0.3.6.jar"
         yui_css:
-            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar"
         yui_js:
-            jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar
+            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar"
 
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   %database_driver%
-        host:     %database_host%
-        port:     %database_port%
-        dbname:   %database_name%
-        user:     %database_user%
-        password: %database_password%
+        driver:   "%database_driver%"
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
         charset:  UTF8
         types:
             json: "Sonata\\Doctrine\\Types\\JsonType"
@@ -57,7 +64,7 @@ doctrine:
 
 
     orm:
-        auto_generate_proxy_classes: %kernel.debug%
+        auto_generate_proxy_classes: "%kernel.debug%"
         default_entity_manager:   default
         entity_managers:
             default:
@@ -103,81 +110,9 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: %mailer_transport%
-    host:      %mailer_host%
-    username:  %mailer_user%
-    password:  %mailer_password%
-
-networking_init_cms:
-#    Activate the simple phpFastCache implementation to cache frontend files if in prod mode not logged in
-    cache:
-        activate: true #default false
-        cache_time: 86400 #default value
-        cache_service_class: "Networking\\InitCmsBundle\\Lib\\PhpCache" #default value
-    class:
-        page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
-        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
-    languages:
-        - {label: English, locale: en_US}
-        - {label: Deutsch, locale: de_CH}
-    templates:
-        'Sandbox_one_column_template':
-            template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
-            name: "Single Column"
-            icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
-            zones:
-                - { name: header, class: 'col-md-12' }
-                - { name: main_content, class: 'col-md-12'}
-#                - { name: bottom, span:12}
-        'Sandbox_two_column_template':
-            template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
-            name: "Two Column"
-            icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
-            zones:
-                - { name: header , class: 'col-md-12'}
-                - { name: advertising , class: 'col-md-12', max_content_items: -1 }
-                - { name: left , class: 'col-md-3'}
-                - { name: right , class: 'col-md-9'}
-
-    content_types:
-        - { name: 'Text' , class: "Networking\\InitCmsBundle\\Entity\\Text"}
-        - { name: 'Gallery' , class: "Networking\\InitCmsBundle\\Entity\\GalleryView"}
-
-sonata_admin:
-    title:      "Demo Sailing Club"
-
-lexik_translation:
-    fallback_locale: en      # (required) default locale to use
-    managed_locales: [en, de]    # (required) locales that the bundle have to manage
-
-fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb'
-    firewall_name:  main
-    user_class:     "Application\\Networking\\InitCmsBundle\\Entity\\User"
-    group:
-        group_class: "Networking\\InitCmsBundle\\Entity\\Group"
-    from_email:
-            address:        "webmaster@example.com"
-            sender_name:    "web project"
-
-sonata_user:
-    security_acl: true
-    impersonating:
-        route:                networking_init_cms_admin
-        parameters:           { path: /}
-    class:
-        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
-        group: "Networking\\InitCmsBundle\\Entity\\Group"
-    admin:                  # Admin Classes
-        user:
-            class:          "Networking\\InitCmsBundle\\Admin\\Entity\\UserAdmin"
-            controller:     "NetworkingInitCmsBundle:CRUD"
-            translation:    "SonataUserBundle"
-
-        group:
-            class:          "Networking\\InitCmsBundle\\Admin\\Entity\\GroupAdmin"
-            controller:     "NetworkingInitCmsBundle:CRUD"
-
-            translation:    "SonataUserBundle"
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
 
 

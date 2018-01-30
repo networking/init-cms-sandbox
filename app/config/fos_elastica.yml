@@ -1,0 +1,59 @@
+parameters:
+    fos_elastica.use_v5_api: true
+
+fos_elastica:
+    clients:
+        default: { host: '%elastic_search_host%', port: 9200 }
+    indexes:
+        app:
+            index_name: '%elastic_search_index%'
+            client: default
+            finder: ~
+            settings:
+                index:
+                    analysis:
+                        analyzer:
+                            my_search_analyzer:
+                                type: custom
+                                tokenizer: standard
+                                filter: [standard, lowercase, deu_snowball]
+                            deu_snowball:
+                                type: snowball
+                                language: German2
+                        filter:
+                             deu_snowball:
+                                type: snowball
+                                language: German2
+
+            types:
+                page:
+                    properties:
+                        name: {type: 'string',boost: 30, analyzer: my_search_analyzer}
+                        metaTitle:  {type: 'string', "index" : "no"}
+                        locale: { type: 'string', store: false}
+                        content: {type: 'string',boost: 30, analyzer: my_search_analyzer}
+                        url: {type: 'string',"index" : "no"}
+                    persistence:
+                        model: Networking\InitCmsBundle\Entity\PageSnapshot
+                        provider:
+                            service: 'Networking\ElasticSearchBundle\Provider\PageSnapshotProvider'
+                        model_to_elastica_transformer:
+                            service: 'Networking\ElasticSearchBundle\Transformer\PageSnapshotToElasticaTransformer'
+                media:
+                    properties:
+                        name: {boost: 30, analyzer: my_search_analyzer}
+                        metaTitle:  {"index" : "no"}
+                        locale: { type: 'string', store: false}
+                        content: {boost: 30, analyzer: my_search_analyzer}
+                        url: {"index" : "no"}
+                    persistence:
+                        driver: orm # orm, mongodb, propel are available
+                        model: Networking\InitCmsBundle\Entity\Media
+                        provider:
+                            service: 'Networking\ElasticSearchBundle\Provider\MediaProvider'
+                        model_to_elastica_transformer:
+                            service: 'Networking\ElasticSearchBundle\Transformer\MediaToElasticaTransformer'
+                        listener:
+                            insert: false
+                            update: true
+                            delete: true

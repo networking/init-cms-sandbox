@@ -1,0 +1,47 @@
+networking_init_cms:
+#    Activate the simple phpFastCache implementation to cache frontend files if in prod mode not logged in
+    cache:
+        activate: true #default false
+        cache_time: 86400 #default value
+        cache_service_class: "Networking\\InitCmsBundle\\Lib\\PhpCache" #default value
+    admin_toolbar: ~
+    translation_fallback_route: 'initcms_no_translation'
+    no_translation_template: 'NetworkingInitCmsBundle::no_translation_found.html.twig'
+    404_template: 'NetworkingInitCmsBundle::error_404.html.twig'
+    multiple_media_tags: true
+    languages:
+        - {label: English, locale: en_US}
+        - {label: Deutsch, locale: de_CH}
+    content_types:
+        - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
+        - { name: 'Gallery' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
+    admin_menu_groups:
+        big:
+          items: [pages, menu, form_generator, media]
+        small:
+          items: [users, help_text, translation]
+    class:
+        page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
+        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
+
+    templates:
+        'Sandbox_one_column_template':
+            template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
+            name: "Single Column"
+            icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
+            zones:
+                - { name: header, class: 'col-md-12' }
+                - { name: main_content, class: 'col-md-12'}
+#                - { name: bottom, span:12}
+        'Sandbox_two_column_template':
+            template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
+            name: "Two Column"
+            icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
+            zones:
+                - { name: header , class: 'col-md-12'}
+                - { name: advertising , class: 'col-md-12', max_content_items: -1 }
+                - { name: left , class: 'col-md-3'}
+                - { name: right , class: 'col-md-9'}
+
+    xml_sitemap:
+        sitemap_url: http://sandbox.dev

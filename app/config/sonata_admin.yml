@@ -1,0 +1,7 @@
+sonata_admin:
+    title:     Sandbox
+    dashboard:
+        groups:
+            form_generator:
+                label: "form.admin.menu_label"
+                items: ['Networking\FormGeneratorBundle\Admin\FormAdmin']

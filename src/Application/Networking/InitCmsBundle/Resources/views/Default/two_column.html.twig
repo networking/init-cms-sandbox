@@ -35,6 +35,10 @@ file that was distributed with this source code.
                         {% for layoutBlock in page.layoutBlock('left') %}
                             {{ render_initcms_block('ApplicationNetworkingInitCmsBundle:Content:cms_block.html.twig', layoutBlock) }}
                         {% endfor %}
+
+                        {% if form_page_content is defined %}
+                            {{ render(controller('NetworkingFormGeneratorBundle:FrontendForm:renderForm', {'form': form_page_content})) }}
+                        {% endif %}
                     </div>
                 </div>
 

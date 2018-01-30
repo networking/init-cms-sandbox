@@ -53,3 +53,7 @@ file that was distributed with this source code.
         </div>
     </article>
 {% endif %}
+
+ {% if form_page_content is defined %}
+     {{ render(controller('NetworkingFormGeneratorBundle:FrontendForm:renderForm', {'form': form_page_content})) }}
+ {% endif %}

@@ -13,17 +13,16 @@ monolog:
     handlers:
         main:
             type:  stream
-            path:  %kernel.logs_dir%/%kernel.environment%.log
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
 
 assetic:
-    debug:          %kernel.debug%
+    debug:          "%kernel.debug%"
     use_controller: false
 
-services:
-    twig.extension.debug:
-        class: Twig_Extension_Debug
-        tags: [{ name: 'twig.extension' }]
 
-#swiftmailer:
-#    delivery_address: me@example.com
+
+swiftmailer:
+    delivery_address: "%admin_email%"
+    spool:
+        type: file

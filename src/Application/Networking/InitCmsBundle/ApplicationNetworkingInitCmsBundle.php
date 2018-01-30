@@ -22,11 +22,5 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class ApplicationNetworkingInitCmsBundle extends Bundle
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function getParent()
-    {
-        return 'NetworkingInitCmsBundle';
-    }
+
 }

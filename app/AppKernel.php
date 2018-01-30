@@ -17,48 +17,67 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             // these are the bundles for the CMS
-            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
-            new JMS\AopBundle\JMSAopBundle(),
-            new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle($this),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
-            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new JMS\AopBundle\JMSAopBundle(),
+            new Sonata\UserBundle\SonataUserBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\CoreBundle\SonataCoreBundle(),
-            new Sonata\FormatterBundle\SonataFormatterBundle(),
-            new \Sonata\IntlBundle\SonataIntlBundle(),
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Sonata\FormatterBundle\SonataFormatterBundle(),
+            new \Sonata\IntlBundle\SonataIntlBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
             new Ibrows\Bundle\SonataAdminAnnotationBundle\IbrowsSonataAdminAnnotationBundle(),
             new Lexik\Bundle\TranslationBundle\LexikTranslationBundle(),
             new Ibrows\SonataTranslationBundle\IbrowsSonataTranslationBundle(),
+            new Oneup\UploaderBundle\OneupUploaderBundle(),
             new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
+            new Networking\FormGeneratorBundle\NetworkingFormGeneratorBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
-            new Oneup\UploaderBundle\OneupUploaderBundle()
+            new FOS\ElasticaBundle\FOSElasticaBundle(),
+            new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle(),
         );
 
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
+            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
+            $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
         }
 
         return $bundles;
     }
 
+    public function getRootDir()
+    {
+        return __DIR__;
+    }
+
+    public function getCacheDir()
+    {
+        return dirname(__DIR__).'/var/cache/'.$this->getEnvironment();
+    }
+
+    public function getLogDir()
+    {
+        return dirname(__DIR__).'/var/logs';
+    }
+
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
+        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
 }

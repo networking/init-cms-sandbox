@@ -8,39 +8,42 @@
       "app/AppCache.php"
     ]
   },
-  "config": {
-    "bin-dir": "bin"
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    },
+    "files": [
+      "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+    ]
   },
   "description": "the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
-  "extra": {
-    "symfony-app-dir": "app",
-    "symfony-web-dir": "web",
-    "symfony-assets-install": "relative",
-    "incenteev-parameters": {
-      "file": "app/config/parameters.yml"
-    }
-  },
   "minimum-stability": "dev",
   "name": "networking/init-cms-sandbox",
-  "prefer-stable": true,
   "license": "MIT",
   "require": {
-    "php": ">=5.4",
-    "symfony/symfony": "~2.8",
-    "doctrine/orm": "2.4.8",
-    "doctrine/doctrine-bundle": "~1.4",
+    "php": ">=5.5.9",
+    "symfony/symfony": "3.4.*",
+    "doctrine/orm": "^2.5",
+    "doctrine/doctrine-bundle": "^1.6",
     "symfony/assetic-bundle": "~2.3",
-    "symfony/swiftmailer-bundle": "~2.3",
-    "symfony/monolog-bundle": "~2.4",
-    "sensio/distribution-bundle": "~4.0",
-    "sensio/framework-extra-bundle": "^3.0.2",
+    "symfony/swiftmailer-bundle": "^2.6.4",
+    "symfony/monolog-bundle": "^3.1.0",
+    "symfony/polyfill-apcu": "^1.0",
+    "sensio/distribution-bundle": "^5.0.19",
+    "sensio/framework-extra-bundle": "^5.0.0",
     "incenteev/composer-parameter-handler": "~2.0",
     "twig/extensions": "~1.0",
-    "sensio/generator-bundle": "2.3.*",
-    "jms/security-extra-bundle": "1.5.1",
-    "networking/init-cms-bundle": "dev-master"
+    "twig/twig": "^1.0||^2.0",
+    "jms/security-extra-bundle": "^1.6",
+    "networking/init-cms-bundle": "3.x-dev",
+    "networking/form-generator-bundle": "3.x-dev",
+    "networking/elasticsearch-bundle": "3.x-dev",
+    "friendsofsymfony/rest-bundle": "2.3.*"
   },
   "require-dev": {
+    "doctrine/doctrine-fixtures-bundle": "^2.3",
+    "sensio/generator-bundle": "^3.0",
+    "symfony/phpunit-bridge": "^3.0",
     "behat/behat": "^3.0",
     "behat/symfony2-extension": "^2.1",
     "behat/mink-extension": "^2.1",
@@ -50,32 +53,43 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/networking/init-cms-bundle.git"
+      "url": "git@github.com:networking/elasticsearch-bundle.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:networking/form-generator-bundle.git"
     }
   ],
   "scripts": {
-    "post-root-package-install": [
-      "SymfonyStandard\\Composer::hookRootPackageInstall"
+    "symfony-scripts": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+      "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
     ],
     "post-install-cmd": [
-      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
-      "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+      "@symfony-scripts"
     ],
     "post-update-cmd": [
-      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::removeSymfonyStandardFiles",
-      "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
-      "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
+      "@symfony-scripts"
     ]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "symfony-app-dir": "app",
+    "symfony-bin-dir": "bin",
+    "symfony-var-dir": "var",
+    "symfony-web-dir": "web",
+    "symfony-tests-dir": "tests",
+    "symfony-assets-install": "relative",
+    "incenteev-parameters": {
+      "file": "app/config/parameters.yml"
+    },
+    "branch-alias": null
   }
 }
