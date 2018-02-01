@@ -46,7 +46,7 @@ class BackendControllerTest extends WebTestCase
 
         $this->assertTrue($client->getResponse()->isRedirect('http://localhost/admin/login'), 'redirect to login page');
         $crawler = $client->followRedirect();
-        $this->assertTrue($crawler->filter('div .alert:contains("Bad credentials")')->count() == 1);
+        $this->assertTrue($crawler->filter('div .alert:contains("Invalid credentials")')->count() == 1);
     }
 
     public function testLogin()

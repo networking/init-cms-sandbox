@@ -84,7 +84,7 @@ abstract class WebTestCase extends BaseWebTestCase
     private static function getPhpUnitCliConfigArgument()
     {
 
-        return dirname(__FILE__) . '/../../../../../app';
+        return dirname(__FILE__) . '/../../../../../var';
     }
 
     /**
