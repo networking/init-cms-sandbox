@@ -4,9 +4,11 @@ php:
   - 7.1
 
 before-install:
-    # Additional PHP config
+    - phpenv config-rm xdebug.ini
     - phpenv config-add travis.php.ini
     - cp app/config/parameters.yml.test app/config/parameters.yml
+
+install:
     - composer install
 
 script: phpunit -c app
