@@ -3454,12 +3454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/elasticsearch-bundle.git",
-                "reference": "305320eaaed432cdf08e500f871296e057e24ca8"
+                "reference": "8112d28d80cba4c97a9cf4be3a61807ad8137249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/elasticsearch-bundle/zipball/305320eaaed432cdf08e500f871296e057e24ca8",
-                "reference": "305320eaaed432cdf08e500f871296e057e24ca8",
+                "url": "https://api.github.com/repos/networking/elasticsearch-bundle/zipball/8112d28d80cba4c97a9cf4be3a61807ad8137249",
+                "reference": "8112d28d80cba4c97a9cf4be3a61807ad8137249",
                 "shasum": ""
             },
             "require": {
@@ -3499,23 +3499,24 @@
                 "source": "https://github.com/networking/elasticsearch-bundle/tree/3.x",
                 "issues": "https://github.com/networking/elasticsearch-bundle/issues"
             },
-            "time": "2018-01-18 09:04:08"
+            "time": "2018-01-30 09:02:46"
         },
         {
             "name": "networking/form-generator-bundle",
-            "version": "3.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/form-generator-bundle.git",
-                "reference": "e421b72e8f05875342f388c94c4c5da166948e5a"
+                "reference": "3c052b6742f49ce8ec0456cbdfc0cc16b44f39c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/form-generator-bundle/zipball/e421b72e8f05875342f388c94c4c5da166948e5a",
-                "reference": "e421b72e8f05875342f388c94c4c5da166948e5a",
+                "url": "https://api.github.com/repos/networking/form-generator-bundle/zipball/3c052b6742f49ce8ec0456cbdfc0cc16b44f39c1",
+                "reference": "3c052b6742f49ce8ec0456cbdfc0cc16b44f39c1",
                 "shasum": ""
             },
             "require": {
+                "friendsofsymfony/rest-bundle": "2.3.*",
                 "liuggio/excelbundle": "dev-master",
                 "networking/init-cms-bundle": "3.*",
                 "php": ">=5.4"
@@ -3547,10 +3548,10 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/networking/form-generator-bundle/tree/3.x",
+                "source": "https://github.com/networking/form-generator-bundle/tree/master",
                 "issues": "https://github.com/networking/form-generator-bundle/issues"
             },
-            "time": "2018-01-08 12:51:21"
+            "time": "2018-01-30 09:21:02"
         },
         {
             "name": "networking/init-cms-bundle",
@@ -3558,12 +3559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "aba6431d66c49807fee4061ac4cbe5b455fca097"
+                "reference": "2f3b6edbee4ad110ac0b99aba1f19f54a5c49000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/aba6431d66c49807fee4061ac4cbe5b455fca097",
-                "reference": "aba6431d66c49807fee4061ac4cbe5b455fca097",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/2f3b6edbee4ad110ac0b99aba1f19f54a5c49000",
+                "reference": "2f3b6edbee4ad110ac0b99aba1f19f54a5c49000",
                 "shasum": ""
             },
             "require": {
@@ -3572,12 +3573,14 @@
                 "doctrine/orm": "^2.5",
                 "ibrows/sonata-admin-annotation-bundle": "2.*",
                 "ibrows/sonata-translation-bundle": "1.*",
+                "incenteev/composer-parameter-handler": "^2.0",
                 "jms/serializer-bundle": "^2.0",
                 "knplabs/knp-paginator-bundle": "^2.7",
                 "mopa/bootstrap-bundle": "^3.2",
                 "oneup/uploader-bundle": "^1.9",
-                "php": "^5.5.9|>=7.0.8",
-                "phpfastcache/phpfastcache": "3.0.*",
+                "php": "^7.1",
+                "phpfastcache/phpfastcache": "^3.0",
+                "sensio/distribution-bundle": "^5.0.19",
                 "sensio/framework-extra-bundle": "^5.0.0",
                 "sonata-project/admin-bundle": "^3.0",
                 "sonata-project/doctrine-orm-admin-bundle": "^3.2",
@@ -3589,10 +3592,19 @@
                 "sonata-project/user-bundle": "^4.0",
                 "stof/doctrine-extensions-bundle": "~1.1",
                 "symfony-cmf/routing-bundle": "^2.0",
+                "symfony/monolog-bundle": "^3.1.0",
+                "symfony/polyfill-apcu": "^1.0",
+                "symfony/swiftmailer-bundle": "^2.6.4",
                 "symfony/symfony": "3.4.*",
-                "twbs/bootstrap": ">2.0,<4.0-dev"
+                "twbs/bootstrap": ">2.0,<4.0-dev",
+                "twig/twig": "^1.0||^2.0"
             },
             "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Networking\\InitCmsBundle\\": "src"
@@ -3614,7 +3626,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2017-12-21 09:53:42"
+            "time": "2018-02-15 13:53:20"
         },
         {
             "name": "oneup/uploader-bundle",
@@ -3973,6 +3985,7 @@
                 "xls",
                 "xlsx"
             ],
+            "abandoned": "phpoffice/phpspreadsheet",
             "time": "2017-12-25 02:39:38"
         },
         {
