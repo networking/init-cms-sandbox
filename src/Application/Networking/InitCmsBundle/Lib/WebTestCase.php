@@ -25,15 +25,6 @@ abstract class WebTestCase extends BaseWebTestCase
 
     public function setUp()
     {
-        $client = static::createClient();
-
-        $this->deleteDatabase();
-        $this->runCommand($client, 'doctrine:database:create--env=test');
-        $this->runCommand($client, 'doctrine:schema:create --env=test');
-        $this->runCommand(
-            $client,
-            'doctrine:fixtures:load -n --fixtures="' . dirname(__FILE__) . '/../Tests/Fixtures" --env=test'
-        );
         $this->backupDatabase();
     }
 

@@ -22,6 +22,9 @@ before_script:
 install:
   - composer install
   - cp app/config/parameters.yml.test app/config/parameters.yml
+  - php bin/console doctrine:database:create --env=test
+  - php bin/console doctrine:schema:create --env=test
+  - php bin/console doctrine:fixtures:load --fixtures="src/Application/Networking/InitCmsBundle/Tests/Fixtures" -n --env=test
 
 
 script: phpunit  --verbose -c app/phpunit.xml
