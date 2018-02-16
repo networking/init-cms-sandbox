@@ -56,9 +56,9 @@ file that was distributed with this source code.
 {% block container %}
     <div class="container {% block container_class %}container-fluid{% endblock container_class %}">
         {% block search %}
-        <form action="{{ path('site_search') }}" method="get">
-            <input type="search" name="search">
-        </form>
+        {#<form action="{{ path('site_search') }}" method="get">#}
+            {#<input type="search" name="search">#}
+        {#</form>#}
         {% endblock %}
         {% block navbar %}{% endblock navbar %}
 

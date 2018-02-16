@@ -2,7 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: "@NetworkingInitCmsBundle/Resources/config/cms/cms_config.yml"}
     - { resource: fos_user.yml }
-    - { resource: fos_elastica.yml }
+#    - { resource: fos_elastica.yml }
     - { resource: lexik_translation.yml }
     - { resource: networking_init_cms.yml }
     - { resource: sonata_user.yml }
