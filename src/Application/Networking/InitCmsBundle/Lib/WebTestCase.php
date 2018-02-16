@@ -28,10 +28,11 @@ abstract class WebTestCase extends BaseWebTestCase
         $client = static::createClient();
 
         $this->deleteDatabase();
-        $this->runCommand($client, 'doctrine:schema:create');
+        $this->runCommand($client, 'doctrine:database:create--env=test');
+        $this->runCommand($client, 'doctrine:schema:create --env=test');
         $this->runCommand(
             $client,
-            'doctrine:fixtures:load --append --fixtures="' . dirname(__FILE__) . '/../Tests/Fixtures"'
+            'doctrine:fixtures:load -n --fixtures="' . dirname(__FILE__) . '/../Tests/Fixtures" --env=test'
         );
         $this->backupDatabase();
     }
@@ -115,7 +116,7 @@ abstract class WebTestCase extends BaseWebTestCase
     public function deleteDatabase()
     {
         $folder = $this->getPhpUnitCliConfigArgument() . '/cache/test/';
-        foreach (array('test.db', 'test.db.bk') AS $file) {
+        foreach (['symfony.db', 'symfony.db.bk'] as $file) {
             if (file_exists($folder . $file)) {
                 unlink($folder . $file);
             }

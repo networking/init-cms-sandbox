@@ -1,12 +1,27 @@
 language: php
 
+# Allows use container-based infrastructure
+sudo: false
+
+
+# Cache composer packages so "composer install" is faster
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
 php:
   - 7.1
 
 before_script:
-    - phpenv config-rm xdebug.ini
-    - phpenv config-add travis.php.ini
-    - cp app/config/parameters.yml.test app/config/parameters.yml
-    - composer install
+  - phpenv config-rm xdebug.ini
+  - phpenv config-add travis.php.ini
+
+
+# Install composer dependencies,
+# Create database, schema and fixtures
+install:
+  - composer install
+  - cp app/config/parameters.yml.test app/config/parameters.yml
+
 
 script: phpunit  --verbose -c app/phpunit.xml
