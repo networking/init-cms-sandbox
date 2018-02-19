@@ -3556,12 +3556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "c1e292e22fb14291a617e7946a6b8911071e4e1d"
+                "reference": "0f1f8a9e17a8494f4315251bff54ed87fddcbed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/c1e292e22fb14291a617e7946a6b8911071e4e1d",
-                "reference": "c1e292e22fb14291a617e7946a6b8911071e4e1d",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/0f1f8a9e17a8494f4315251bff54ed87fddcbed0",
+                "reference": "0f1f8a9e17a8494f4315251bff54ed87fddcbed0",
                 "shasum": ""
             },
             "require": {
@@ -3623,7 +3623,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2018-02-19 10:12:37"
+            "time": "2018-02-19 16:28:33"
         },
         {
             "name": "oneup/uploader-bundle",
