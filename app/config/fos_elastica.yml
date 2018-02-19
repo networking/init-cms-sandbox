@@ -34,10 +34,12 @@ fos_elastica:
                         content: {type: 'string',boost: 30, analyzer: my_search_analyzer}
                         url: {type: 'string',"index" : "no"}
                     persistence:
+                        identifier: resourceId
                         model: Networking\InitCmsBundle\Entity\PageSnapshot
                         model_to_elastica_transformer:
                             service: 'Networking\ElasticSearchBundle\Transformer\PageSnapshotToElasticaTransformer'
                 media:
+                    indexable_callback: [ 'Networking\ElasticSearchBundle\Transformer\IndexableChecker', 'isIndexable' ]
                     properties:
                         name: {boost: 30, analyzer: my_search_analyzer}
                         metaTitle:  {"index" : "no"}
@@ -49,7 +51,3 @@ fos_elastica:
                         model: Networking\InitCmsBundle\Entity\Media
                         model_to_elastica_transformer:
                             service: 'Networking\ElasticSearchBundle\Transformer\MediaToElasticaTransformer'
-                        listener:
-                            insert: false
-                            update: true
-                            delete: true
