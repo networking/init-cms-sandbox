@@ -1597,12 +1597,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "cb27a67904ff43d883e31edb01db025fb65f310a"
+                "reference": "32c2eed036dd85620cc5229fa482a7ae9455ded9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/cb27a67904ff43d883e31edb01db025fb65f310a",
-                "reference": "cb27a67904ff43d883e31edb01db025fb65f310a",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/32c2eed036dd85620cc5229fa482a7ae9455ded9",
+                "reference": "32c2eed036dd85620cc5229fa482a7ae9455ded9",
                 "shasum": ""
             },
             "require": {
@@ -1665,7 +1665,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2018-02-16 15:15:38"
+            "time": "2018-02-20 09:19:29"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -1744,6 +1744,71 @@
                 "uploadable"
             ],
             "time": "2018-01-30 18:41:46"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d2537c86fa8b004c29e9b9f5e10028f0a29df101",
+                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-10-07 03:19:56"
         },
         {
             "name": "ibrows/annotation-reader",
@@ -1883,12 +1948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "1cb2a075fff74e196b5fa9cd23b824bbeb16514a"
+                "reference": "f2919909f5c43ddf0aea373f460d86f1ea45811c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/1cb2a075fff74e196b5fa9cd23b824bbeb16514a",
-                "reference": "1cb2a075fff74e196b5fa9cd23b824bbeb16514a",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/f2919909f5c43ddf0aea373f460d86f1ea45811c",
+                "reference": "f2919909f5c43ddf0aea373f460d86f1ea45811c",
                 "shasum": ""
             },
             "require": {
@@ -1933,7 +1998,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2018-02-11 22:31:40"
+            "time": "2018-02-12 12:28:52"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -3556,12 +3621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "65263ec6892468a83e146eafb0bc6218ece9d8ac"
+                "reference": "e9353ed0edba45145c112a79be199681d6eaee7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/65263ec6892468a83e146eafb0bc6218ece9d8ac",
-                "reference": "65263ec6892468a83e146eafb0bc6218ece9d8ac",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/e9353ed0edba45145c112a79be199681d6eaee7e",
+                "reference": "e9353ed0edba45145c112a79be199681d6eaee7e",
                 "shasum": ""
             },
             "require": {
@@ -3624,7 +3689,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2018-02-20 10:06:04"
+            "time": "2018-02-20 14:08:14"
         },
         {
             "name": "oneup/uploader-bundle",
@@ -4133,6 +4198,56 @@
             "time": "2017-06-28 15:35:32"
         },
         {
+            "name": "psr/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
             "name": "psr/link",
             "version": "dev-master",
             "source": {
@@ -4587,12 +4702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "9ba0ddcd15652eb0b5e908402a447a05b269501c"
+                "reference": "1a46603f9d4cf44edab5b73d49751f1848630fb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/9ba0ddcd15652eb0b5e908402a447a05b269501c",
-                "reference": "9ba0ddcd15652eb0b5e908402a447a05b269501c",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/1a46603f9d4cf44edab5b73d49751f1848630fb0",
+                "reference": "1a46603f9d4cf44edab5b73d49751f1848630fb0",
                 "shasum": ""
             },
             "require": {
@@ -4678,7 +4793,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2018-02-17 13:40:22"
+            "time": "2018-02-19 22:25:19"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -4772,12 +4887,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/cache.git",
-                "reference": "c152fc70f1ac8c2a838024a7cfe2f480c507d70f"
+                "reference": "b26ddf6fbdd7d45073f42f4403e68ba8ab33a537"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/cache/zipball/c152fc70f1ac8c2a838024a7cfe2f480c507d70f",
-                "reference": "c152fc70f1ac8c2a838024a7cfe2f480c507d70f",
+                "url": "https://api.github.com/repos/sonata-project/cache/zipball/b26ddf6fbdd7d45073f42f4403e68ba8ab33a537",
+                "reference": "b26ddf6fbdd7d45073f42f4403e68ba8ab33a537",
                 "shasum": ""
             },
             "require": {
@@ -4794,8 +4909,7 @@
                 "doctrine/phpcr-odm": "^1.4",
                 "jackalope/jackalope-doctrine-dbal": "^1.2",
                 "predis/predis": "^1.1",
-                "sllh/php-cs-fixer-styleci-bridge": "^2.1",
-                "symfony/phpunit-bridge": "^3.3"
+                "symfony/phpunit-bridge": "^4.0"
             },
             "suggest": {
                 "doctrine/orm": "ORM support",
@@ -4838,7 +4952,7 @@
                 "mongodb",
                 "redis"
             ],
-            "time": "2018-01-22 07:21:19"
+            "time": "2018-02-20 07:49:09"
         },
         {
             "name": "sonata-project/core-bundle",
@@ -4923,22 +5037,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDatagridBundle.git",
-                "reference": "84807e5c143f632cc02ac47f65f89950da813719"
+                "reference": "2ed370198abacc6048415ab1c29242154f6c883d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/84807e5c143f632cc02ac47f65f89950da813719",
-                "reference": "84807e5c143f632cc02ac47f65f89950da813719",
+                "url": "https://api.github.com/repos/sonata-project/SonataDatagridBundle/zipball/2ed370198abacc6048415ab1c29242154f6c883d",
+                "reference": "2ed370198abacc6048415ab1c29242154f6c883d",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
+                "symfony/config": "^2.8 || ^3.2 || ^4.0",
                 "symfony/dependency-injection": "^2.8 || ^3.2 || ^4.0",
-                "symfony/form": "^2.8 || ^3.2 || ^4.0"
+                "symfony/form": "^2.8 || ^3.2 || ^4.0",
+                "symfony/http-kernel": "^2.8 || ^3.2 || ^4.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.4",
-                "symfony/phpunit-bridge": "^3.3"
+                "symfony/phpunit-bridge": "^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -4972,7 +5088,7 @@
                 "datagrid",
                 "sonata"
             ],
-            "time": "2018-01-28 18:21:10"
+            "time": "2018-02-20 09:45:44"
         },
         {
             "name": "sonata-project/doctrine-extensions",
@@ -5417,15 +5533,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "73e80e1c51a4d68e9f8488c183ff5892ad56b54b"
+                "reference": "36b9f311b905b40e0231d68521180290622ee10e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/73e80e1c51a4d68e9f8488c183ff5892ad56b54b",
-                "reference": "73e80e1c51a4d68e9f8488c183ff5892ad56b54b",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/36b9f311b905b40e0231d68521180290622ee10e",
+                "reference": "36b9f311b905b40e0231d68521180290622ee10e",
                 "shasum": ""
             },
             "require": {
+                "guzzlehttp/psr7": "^1.0",
                 "imagine/imagine": "^0.6 || ^0.7",
                 "jms/serializer-bundle": "^0.13 || ^1.0 || ^2.0",
                 "knplabs/gaufrette": "^0.1.6 || ^0.2 || ^0.3",
@@ -5524,7 +5641,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2018-02-11 21:44:38"
+            "time": "2018-02-20 12:58:29"
         },
         {
             "name": "sonata-project/notification-bundle",
@@ -5897,19 +6014,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/routing-bundle.git",
-                "reference": "dddf1856f05302d2500731ffb78b956d80b6e4da"
+                "reference": "bf20a1fbe3ab5cebdd81ecfc43fcafe3cd5a713a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/dddf1856f05302d2500731ffb78b956d80b6e4da",
-                "reference": "dddf1856f05302d2500731ffb78b956d80b6e4da",
+                "url": "https://api.github.com/repos/symfony-cmf/routing-bundle/zipball/bf20a1fbe3ab5cebdd81ecfc43fcafe3cd5a713a",
+                "reference": "bf20a1fbe3ab5cebdd81ecfc43fcafe3cd5a713a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
                 "symfony-cmf/routing": "^2.0",
                 "symfony/framework-bundle": "^2.8 || ^3.3 || ^4.0",
-                "symfony/twig-bundle": "^2.8 || ^3.3 || ^4.0"
+                "twig/twig": "^1.35 || ^2.4.4"
             },
             "conflict": {
                 "doctrine/phpcr-odm": "<1.4",
@@ -5957,7 +6074,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2018-01-23 07:21:03"
+            "time": "2018-02-20 06:05:06"
         },
         {
             "name": "symfony/acl-bundle",
@@ -6619,12 +6736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "fcca14105941e2fdbf55a97aa2c93bbfc6f4afee"
+                "reference": "349f7049ec40c75521c9e2769e0c05009f0c7dd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/fcca14105941e2fdbf55a97aa2c93bbfc6f4afee",
-                "reference": "fcca14105941e2fdbf55a97aa2c93bbfc6f4afee",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/349f7049ec40c75521c9e2769e0c05009f0c7dd8",
+                "reference": "349f7049ec40c75521c9e2769e0c05009f0c7dd8",
                 "shasum": ""
             },
             "require": {
@@ -6765,7 +6882,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-02-19 07:06:32"
+            "time": "2018-02-19 20:29:03"
         },
         {
             "name": "twbs/bootstrap",
@@ -7791,71 +7908,6 @@
             "time": "2017-12-07 21:04:15"
         },
         {
-            "name": "guzzlehttp/psr7",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/d2537c86fa8b004c29e9b9f5e10028f0a29df101",
-                "reference": "d2537c86fa8b004c29e9b9f5e10028f0a29df101",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "homepage": "https://github.com/Tobion"
-                }
-            ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "time": "2017-10-07 03:19:56"
-        },
-        {
             "name": "instaclick/php-webdriver",
             "version": "1.4.5",
             "source": {
@@ -7913,56 +7965,6 @@
                 "webtest"
             ],
             "time": "2017-06-30T04:02:48+00:00"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "sensio/generator-bundle",
