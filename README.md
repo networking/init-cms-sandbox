@@ -52,6 +52,10 @@ First [download][2] and unpack the archive of the sandbox in your preferred loca
 
 	https://github.com/networking/init-cms-sandbox/archive/master.zip
 
+Or use composer to create the project
+    
+    composer create-project	networking/init-cms-sandbox project_folder 3.4.*
+
 Then change into the project directory
 
 	cd path/to/install
@@ -86,7 +90,7 @@ Now we just need to create some folders for our media in the web root directory 
 
 Make cache and logs writeable
 
-	chmod -R 777 app/cache app/logs
+	chmod -R 777 var/cache var/logs
 
 
 2) Checking your System Configuration
@@ -95,9 +99,9 @@ Make cache and logs writeable
 Before starting coding, make sure that your local system is properly
 configured for Symfony.
 
-Execute the `check.php` script from the command line:
+Execute the `symfony_requirements` script from the command line:
 
-    php app/check.php
+    php bin/symfony_requirements
 
 Access the `config.php` script from a browser:
 
@@ -119,7 +123,7 @@ fixtures, as well as create an admin user.
 You can run the install process on the command line,
 you will be prompted to enter a username, email address and password, these will get you into the backend.
 
-	php app/console networking:initcms:install
+	php bin/console networking:initcms:install
 	
 	
 Alternatively there is an install wizard which will get this done for you, just go to the following URL and follow the instructions:
@@ -131,7 +135,7 @@ Now you should be up and running.
 
 The installer also executes assetic, which gets your assetic assets organised by doing an assetic dump (we use less so please check you have it setup already)
 
-    app/console assetic:dump
+    bin/console assetic:dump
     
 Maybe you have to install less, if you do not have it already. On OS X get homebrew, get node, get less
 

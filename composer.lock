@@ -3556,12 +3556,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "0f1f8a9e17a8494f4315251bff54ed87fddcbed0"
+                "reference": "65263ec6892468a83e146eafb0bc6218ece9d8ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/0f1f8a9e17a8494f4315251bff54ed87fddcbed0",
-                "reference": "0f1f8a9e17a8494f4315251bff54ed87fddcbed0",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/65263ec6892468a83e146eafb0bc6218ece9d8ac",
+                "reference": "65263ec6892468a83e146eafb0bc6218ece9d8ac",
                 "shasum": ""
             },
             "require": {
@@ -3589,6 +3589,7 @@
                 "sonata-project/user-bundle": "^4.0",
                 "stof/doctrine-extensions-bundle": "~1.1",
                 "symfony-cmf/routing-bundle": "^2.0",
+                "symfony/acl-bundle": "^1.0",
                 "symfony/monolog-bundle": "^3.1.0",
                 "symfony/polyfill-apcu": "^1.0",
                 "symfony/swiftmailer-bundle": "^2.6.4",
@@ -3623,7 +3624,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2018-02-19 16:28:33"
+            "time": "2018-02-20 10:06:04"
         },
         {
             "name": "oneup/uploader-bundle",
@@ -5957,6 +5958,67 @@
                 "routing"
             ],
             "time": "2018-01-23 07:21:03"
+        },
+        {
+            "name": "symfony/acl-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/acl-bundle.git",
+                "reference": "c8f02870c632aec30077ecd0c50ff6c7a35f21ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/acl-bundle/zipball/c8f02870c632aec30077ecd0c50ff6c7a35f21ce",
+                "reference": "c8f02870c632aec30077ecd0c50ff6c7a35f21ce",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0",
+                "symfony/security-acl": "~2.7|~3.0",
+                "symfony/security-bundle": "~3.4|~4.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "^1.6.12",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/framework-bundle": "~3.4|~4.0",
+                "symfony/phpunit-bridge": "~3.4|~4.0",
+                "symfony/yaml": "~3.4|~4.0"
+            },
+            "suggest": {
+                "doctrine/doctrine-bundle": "To use the default dbal configuration"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\AclBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony AclBundle",
+            "homepage": "https://symfony.com",
+            "time": "2018-01-25 06:21:44"
         },
         {
             "name": "symfony/assetic-bundle",
