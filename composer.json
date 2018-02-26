@@ -18,27 +18,30 @@
   },
   "description": "the \"Symfony Standard Edition\" distribution with the networking init CMS bundle configured",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "name": "networking/init-cms-sandbox",
   "license": "MIT",
   "require": {
     "php": ">=5.5.9",
-    "symfony/symfony": "3.4.*",
-    "doctrine/orm": "^2.5",
     "doctrine/doctrine-bundle": "^1.6",
-    "symfony/assetic-bundle": "~2.3",
-    "symfony/swiftmailer-bundle": "^2.6.4",
-    "symfony/monolog-bundle": "^3.1.0",
-    "symfony/polyfill-apcu": "^1.0",
+    "doctrine/orm": "^2.5",
+    "friendsofsymfony/rest-bundle": "2.3.*",
+    "incenteev/composer-parameter-handler": "~2.0",
+    "jms/security-extra-bundle": "^1.6",
+    "networking/elasticsearch-bundle": "^3.4",
+    "networking/form-generator-bundle": "^3.4",
+    "networking/init-cms-bundle": "^3.4",
+    "pagerfanta/pagerfanta": "^1.0.5",
     "sensio/distribution-bundle": "^5.0.19",
     "sensio/framework-extra-bundle": "^5.0.0",
-    "incenteev/composer-parameter-handler": "~2.0",
+    "sonata-project/core-bundle": "^3.6",
+    "symfony/assetic-bundle": "~2.3",
+    "symfony/monolog-bundle": "^3.1.0",
+    "symfony/polyfill-apcu": "^1.0",
+    "symfony/swiftmailer-bundle": "^2.6.4",
+    "symfony/symfony": "3.4.*",
     "twig/extensions": "~1.0",
-    "twig/twig": "^1.0||^2.0",
-    "jms/security-extra-bundle": "^1.6",
-    "networking/init-cms-bundle": "3.x-dev",
-    "networking/form-generator-bundle": "3.x-dev",
-    "networking/elasticsearch-bundle": "3.x-dev",
-    "friendsofsymfony/rest-bundle": "2.3.*"
+    "twig/twig": "^1.0||^2.0"
   },
   "require-dev": {
     "doctrine/doctrine-fixtures-bundle": "^2.3",
@@ -90,8 +93,6 @@
     "incenteev-parameters": {
       "file": "app/config/parameters.yml"
     },
-    "branch-alias": {
-      "dev-master": "3.x-dev"
-    }
+    "branch-alias": null
   }
 }
