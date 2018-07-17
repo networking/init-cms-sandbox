@@ -60,7 +60,7 @@ class LoadLayoutBlocks extends AbstractFixture implements OrderedFixtureInterfac
 
         $contentTypes = $this->container->getParameter('networking_init_cms.page.content_types');
         foreach($contentTypes as $type){
-            if($type['name'] == 'Text'){
+            if($type['name'] == 'Text Block'){
                 $textClass = $type['class'];
                 break;
             }

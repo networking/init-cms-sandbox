@@ -1,4 +1,7 @@
 services:
+    Symfony\Bundle\AsseticBundle\AsseticBundle:
+        public: true
+
     Networking\InitCmsBundle\Menu\FrontendMenuBuilder:
         autowire: true
 

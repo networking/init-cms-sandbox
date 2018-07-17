@@ -10,6 +10,10 @@ imports:
     - { resource: networking_form_generator.yml }
 
 
+sensio_framework_extra:
+    router:
+        annotations: false
+
 framework:
     #esi:             ~
     translator:      { fallback: 'en'}

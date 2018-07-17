@@ -8,13 +8,14 @@ networking_init_cms:
     translation_fallback_route: 'initcms_no_translation'
     no_translation_template: 'NetworkingInitCmsBundle::no_translation_found.html.twig'
     404_template: 'NetworkingInitCmsBundle::error_404.html.twig'
-    multiple_media_tags: true
+    multiple_media_tags: false
+    show_tag_tree: true
     languages:
         - {label: English, locale: en_US}
         - {label: Deutsch, locale: de_CH}
     content_types:
-        - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
-        - { name: 'Gallery' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
+        - { name: 'Text Block' , class: 'Networking\InitCmsBundle\Entity\Text'}
+        - { name: 'Gallery Viewer' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
     admin_menu_groups:
         big:
           items: [pages, menu, form_generator, media]
@@ -26,7 +27,7 @@ networking_init_cms:
 
     templates:
         'Sandbox_one_column_template':
-            template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
+            template: "@ApplicationNetworkingInitCms/Default/one_column.html.twig"
             name: "Single Column"
             icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
             zones:
@@ -34,7 +35,7 @@ networking_init_cms:
                 - { name: main_content, class: 'col-md-12'}
 #                - { name: bottom, span:12}
         'Sandbox_two_column_template':
-            template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
+            template: "@ApplicationNetworkingInitCms/Default/two_column.html.twig"
             name: "Two Column"
             icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
             zones:
