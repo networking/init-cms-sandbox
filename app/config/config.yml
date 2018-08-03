@@ -26,7 +26,9 @@ framework:
     validation:      { enable_annotations: true }
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
-    session: ~
+    session:
+       handler_id: session.handler.native_file
+       save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
 
 # Twig Configuration
 twig:
@@ -34,22 +36,6 @@ twig:
     strict_variables: "%kernel.debug%"
 
 
-# Assetic Configuration
-assetic:
-    debug:          "%kernel.debug%"
-    use_controller: false
-    filters:
-        less:
-            node: /usr/local/bin/node
-            node_paths: [/usr/local/lib/node_modules/]
-            apply_to: '\.less$'
-        cssrewrite: ~
-        cssembed:
-            jar: "%kernel.root_dir%/Resources/java/cssembed-0.3.6.jar"
-        yui_css:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar"
-        yui_js:
-            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.6.jar"
 
 # Doctrine Configuration
 doctrine:

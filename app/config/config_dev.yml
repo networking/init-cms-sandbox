@@ -16,12 +16,6 @@ monolog:
             path: "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
 
-assetic:
-    debug:          "%kernel.debug%"
-    use_controller: false
-
-
-
 swiftmailer:
     delivery_address: "%admin_email%"
     spool:

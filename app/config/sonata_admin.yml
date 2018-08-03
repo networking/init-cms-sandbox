@@ -3,5 +3,7 @@ sonata_admin:
     dashboard:
         groups:
             form_generator:
+                on_top:               true
                 label: "form.admin.menu_label"
+                label_catalogue: "formGenerator"
                 items: ['Networking\FormGeneratorBundle\Admin\FormAdmin']
