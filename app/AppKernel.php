@@ -45,9 +45,15 @@ class AppKernel extends Kernel
             new Networking\FormGeneratorBundle\NetworkingFormGeneratorBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
-            new FOS\ElasticaBundle\FOSElasticaBundle(),
-            new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle(),
         );
+
+	    if ($this->getEnvironment() !== 'test') {
+
+		    $bundles[] = new FOS\ElasticaBundle\FOSElasticaBundle();
+			$bundles[] = new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle();
+	    }
+
+
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
@@ -56,6 +62,8 @@ class AppKernel extends Kernel
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
             $bundles[] = new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle();
         }
+
+
 
         return $bundles;
     }
