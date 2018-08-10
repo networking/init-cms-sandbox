@@ -45,8 +45,8 @@ class AppKernel extends Kernel
             new Networking\FormGeneratorBundle\NetworkingFormGeneratorBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
-//            new FOS\ElasticaBundle\FOSElasticaBundle(),
-//            new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle(),
+            new FOS\ElasticaBundle\FOSElasticaBundle(),
+            new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle(),
         );
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
