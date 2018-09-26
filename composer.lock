@@ -3719,16 +3719,16 @@
         },
         {
             "name": "networking/form-generator-bundle",
-            "version": "v3.4.1.3",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/form-generator-bundle.git",
-                "reference": "9f36db56079e64e400b6e3ede501bde1dbfaff88"
+                "reference": "7c58a6122861747a3a97c750b520a1a22aa74c5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/form-generator-bundle/zipball/9f36db56079e64e400b6e3ede501bde1dbfaff88",
-                "reference": "9f36db56079e64e400b6e3ede501bde1dbfaff88",
+                "url": "https://api.github.com/repos/networking/form-generator-bundle/zipball/7c58a6122861747a3a97c750b520a1a22aa74c5f",
+                "reference": "7c58a6122861747a3a97c750b520a1a22aa74c5f",
                 "shasum": ""
             },
             "require": {
@@ -3764,23 +3764,23 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/networking/form-generator-bundle/tree/v3.4.1.3",
+                "source": "https://github.com/networking/form-generator-bundle/tree/v3.4.2",
                 "issues": "https://github.com/networking/form-generator-bundle/issues"
             },
-            "time": "2018-08-10T11:16:53+00:00"
+            "time": "2018-09-26T08:14:45+00:00"
         },
         {
             "name": "networking/init-cms-bundle",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/networking/init-cms-bundle.git",
-                "reference": "dbd4ac7aefd505333bfaa15f86bc295764a20906"
+                "reference": "32c88b186da83ffe820298d5c7f21bc4d0744b18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/dbd4ac7aefd505333bfaa15f86bc295764a20906",
-                "reference": "dbd4ac7aefd505333bfaa15f86bc295764a20906",
+                "url": "https://api.github.com/repos/networking/init-cms-bundle/zipball/32c88b186da83ffe820298d5c7f21bc4d0744b18",
+                "reference": "32c88b186da83ffe820298d5c7f21bc4d0744b18",
                 "shasum": ""
             },
             "require": {
@@ -3845,7 +3845,7 @@
                 "cms",
                 "symfony"
             ],
-            "time": "2018-08-14T13:57:02+00:00"
+            "time": "2018-08-24T13:20:49+00:00"
         },
         {
             "name": "oneup/uploader-bundle",
