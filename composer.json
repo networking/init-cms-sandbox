@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "Application\\Networking\\InitCmsBundle\\": "src/Application/Networking/InitCmsBundle"
     },
     "classmap": [
       "app/AppKernel.php",
