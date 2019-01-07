@@ -4,7 +4,7 @@ services:
 
     Networking\InitCmsBundle\Menu\FrontendMenuBuilder:
         autowire: true
-
+        $allowLocaleCookies: '%networking_init_cms.allow_locale_cookie%'
 
     # Create the left main menu and right main menu for the frontend
     sandbox_init_cms.menu.frontend_main_menu_left:

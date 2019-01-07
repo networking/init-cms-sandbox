@@ -1,18 +1,19 @@
 networking_init_cms:
 #    Activate the simple phpFastCache implementation to cache frontend files if in prod mode not logged in
+    allow_locale_cookie: true
     cache:
         activate: true #default false
         cache_time: 86400 #default value
         cache_service_class: "Networking\\InitCmsBundle\\Lib\\PhpCache" #default value
     admin_toolbar: ~
-    translation_fallback_route: 'initcms_no_translation'
+    translation_fallback_route: 'networking_init_cms_default'
     no_translation_template: 'NetworkingInitCmsBundle::no_translation_found.html.twig'
     404_template: 'NetworkingInitCmsBundle::error_404.html.twig'
     multiple_media_tags: false
     show_tag_tree: true
     languages:
-        - {label: English, locale: en_US}
         - {label: Deutsch, locale: de_CH}
+        - {label: English, locale: en_US}
     content_types:
         - { name: 'Text Block' , class: 'Networking\InitCmsBundle\Entity\Text'}
         - { name: 'Gallery Viewer' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}

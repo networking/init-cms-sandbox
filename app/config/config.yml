@@ -4,6 +4,7 @@ imports:
     - { resource: fos_user.yml }
     - { resource: lexik_translation.yml }
     - { resource: networking_init_cms.yml }
+    - { resource: security.yml }
     - { resource: sonata_user.yml }
     - { resource: sonata_admin.yml }
     - { resource: networking_form_generator.yml }
