@@ -52,6 +52,9 @@ nbproject
 # Build data
 /build/
 
+# Composer Lock file
+/composer.lock
+
 # Composer PHAR
 /composer.phar
 
