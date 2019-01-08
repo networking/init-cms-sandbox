@@ -58,10 +58,6 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:networking/elasticsearch-bundle.git"
-    },
-    {
-      "type": "vcs",
       "url": "git@github.com:networking/form-generator-bundle.git"
     }
   ],
