@@ -6,6 +6,6 @@ networking_form_generator:
     resource: "@NetworkingFormGeneratorBundle/Resources/config/routing.yml"
     prefix:   /
 
-networking_elastic_search:
-    resource: "@NetworkingElasticSearchBundle/Resources/config/routing.yml"
-    prefix:   /
+#networking_elastic_search:
+#    resource: "@NetworkingElasticSearchBundle/Resources/config/routing.yml"
+#    prefix:   /
