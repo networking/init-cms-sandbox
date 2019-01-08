@@ -59,11 +59,13 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/networking/elasticsearch-bundle.git"
+      "url": "https://github.com/networking/elasticsearch-bundle.git",
+      "no-api": true
     },
     {
       "type": "vcs",
-      "url": "https://github.com/networking/form-generator-bundle.git"
+      "url": "https://github.com/networking/form-generator-bundle.git",
+      "no-api": true
     }
   ],
   "scripts": {
