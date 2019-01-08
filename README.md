@@ -26,8 +26,6 @@ Other Features:
 
 Find more information about the init CMS on [www.initcms.com](http://www.initcms.com).
 
-A demo of the CMS can be found at demo.initcms.com The Demo is reset every 24 hours
-
 A demo of the CMS can be found at [demo.initcms.com](http://demo.initcms.com). The Demo is reset every 24 hours.
 
 The installation of the sandbox is pretty much the same as a normal installation of Symfony project.
