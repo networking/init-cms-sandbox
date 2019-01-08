@@ -1,6 +1,6 @@
 imports:
     - { resource: config.yml }
-    - { resource: fos_elastica.yml }
+#    - { resource: fos_elastica.yml }
 
 framework:
     router:   { resource: "%kernel.root_dir%/config/routing_dev.yml" }

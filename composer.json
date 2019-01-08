@@ -30,6 +30,7 @@
     "incenteev/composer-parameter-handler": "~2.0",
     "jms/security-extra-bundle": "^1.6",
     "networking/form-generator-bundle": "^3.4",
+    "networking/elasticsearch-bundle": "^3.4",
     "networking/init-cms-bundle": "^3.4",
     "pagerfanta/pagerfanta": "^1.0.5",
     "sensio/distribution-bundle": "^5.0.19",
@@ -58,7 +59,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:networking/form-generator-bundle.git"
+      "url": "https://github.com/networking/elasticsearch-bundle.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/networking/form-generator-bundle.git"
     }
   ],
   "scripts": {
