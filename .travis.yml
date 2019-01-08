@@ -20,6 +20,7 @@ before_script:
 # Install composer dependencies,
 # Create database, schema and fixtures
 install:
+  - composer clearcache
   - composer install --prefer-dist
   - cp app/config/parameters.yml.test app/config/parameters.yml
   - php bin/console doctrine:database:create --env=test
