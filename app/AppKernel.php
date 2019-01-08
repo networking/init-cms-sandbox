@@ -47,11 +47,10 @@ class AppKernel extends Kernel
             new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
         );
 
-	    if ($this->getEnvironment() !== 'test') {
-
-		    $bundles[] = new FOS\ElasticaBundle\FOSElasticaBundle();
-			$bundles[] = new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle();
-	    }
+//	    if ($this->getEnvironment() !== 'test') {
+//		    $bundles[] = new FOS\ElasticaBundle\FOSElasticaBundle();
+//			$bundles[] = new Networking\ElasticSearchBundle\NetworkingElasticSearchBundle();
+//	    }
 
 
 
