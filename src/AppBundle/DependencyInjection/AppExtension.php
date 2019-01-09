@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Networking\InitCmsBundle\DependencyInjection;
+namespace AppBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -13,7 +13,7 @@ use Symfony\Component\Yaml\Yaml;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ApplicationNetworkingInitCmsExtension extends Extension
+class AppExtension extends Extension
 {
     /**
      * {@inheritDoc}

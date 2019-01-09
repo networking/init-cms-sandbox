@@ -44,7 +44,7 @@ class AppKernel extends Kernel
             new Networking\InitCmsBundle\NetworkingInitCmsBundle(),
             new Networking\FormGeneratorBundle\NetworkingFormGeneratorBundle(),
             new FOS\RestBundle\FOSRestBundle(),
-            new Application\Networking\InitCmsBundle\ApplicationNetworkingInitCmsBundle(),
+            new AppBundle\AppBundle(),
         );
 
 //	    if ($this->getEnvironment() !== 'test') {

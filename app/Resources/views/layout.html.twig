@@ -8,14 +8,14 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 
 #}
-{% extends 'ApplicationNetworkingInitCmsBundle::base.html.twig' %}
+{% extends '::base.html.twig' %}
 
 
 {% block title %}{% endblock title %}
 {% block container_class %}container-narrow{% endblock container_class %}
 
 {% block navbar %}
-    {% include 'ApplicationNetworkingInitCmsBundle:Navbar:navbar.html.twig' %}
+    {% include ':Navbar:navbar.html.twig' %}
 {% endblock navbar %}
 
 {% block content_row %}

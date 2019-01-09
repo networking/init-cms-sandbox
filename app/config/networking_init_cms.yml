@@ -15,7 +15,7 @@ networking_init_cms:
         - {label: Deutsch, locale: de_CH}
         - {label: English, locale: en_US}
     content_types:
-        - { name: 'Text Block' , class: 'Networking\InitCmsBundle\Entity\Text'}
+        - { name: 'Text' , class: 'Networking\InitCmsBundle\Entity\Text'}
         - { name: 'Gallery Viewer' , class: 'Networking\InitCmsBundle\Entity\GalleryView'}
     admin_menu_groups:
         big:
@@ -23,22 +23,22 @@ networking_init_cms:
         small:
           items: [users, help_text, translation]
     class:
-        page: "Application\\Networking\\InitCmsBundle\\Entity\\Page"
-        user: "Application\\Networking\\InitCmsBundle\\Entity\\User"
+        page: "AppBundle\\Entity\\Page"
+        user: "AppBundle\\Entity\\User"
 
     templates:
         'Sandbox_one_column_template':
-            template: "@ApplicationNetworkingInitCms/Default/one_column.html.twig"
+            template: ":Default:one_column.html.twig"
             name: "Single Column"
-            icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
+            icon: "bundles/app/img/template_header_one_column.png"
             zones:
                 - { name: header, class: 'col-md-12' }
                 - { name: main_content, class: 'col-md-12'}
 #                - { name: bottom, span:12}
         'Sandbox_two_column_template':
-            template: "@ApplicationNetworkingInitCms/Default/two_column.html.twig"
+            template: ":Default:two_column.html.twig"
             name: "Two Column"
-            icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
+            icon: "bundles/app/img/template_header_two_column.png"
             zones:
                 - { name: header , class: 'col-md-12'}
                 - { name: advertising , class: 'col-md-12', max_content_items: -1 }

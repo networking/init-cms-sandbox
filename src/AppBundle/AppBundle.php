@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Application\Networking\InitCmsBundle;
+namespace AppBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -20,7 +20,13 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  *
  * @author <yourname> <youremail>
  */
-class ApplicationNetworkingInitCmsBundle extends Bundle
+class AppBundle extends Bundle
 {
-
+    /**
+     * {@inheritdoc}
+     */
+    public function getParent()
+    {
+        return 'NetworkingInitCmsBundle';
+    }
 }

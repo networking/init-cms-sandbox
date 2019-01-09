@@ -1,4 +1,4 @@
-Application\Networking\InitCmsBundle\Entity\Page:
+AppBundle\Entity\Page:
     properties:
         id:
             type: integer

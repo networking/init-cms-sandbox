@@ -4,7 +4,7 @@ sonata_user:
         route:                networking_init_cms_admin
         parameters:           { path: /}
     class:
-        user: 'Application\Networking\InitCmsBundle\Entity\User'
+        user: 'AppBundle\Entity\User'
         group: 'Networking\InitCmsBundle\Entity\Group'
     admin:                  # Admin Classes
         user:
