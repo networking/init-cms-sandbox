@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Application\Networking\InitCmsBundle\Tests\Fixtures;
+namespace AppBundle\Tests\Fixtures;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -20,7 +20,7 @@ use Networking\InitCmsBundle\Model\TextInterface;
 
 /**
  * Class LoadLayoutBlocks
- * @package Application\Networking\InitCmsBundle\Tests\Fixtures
+ * @package AppBundle\Tests\Fixtures
  * @author Yorkie Chadwick <y.chadwick@networking.ch>
  */
 class LoadLayoutBlocks extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface
@@ -60,7 +60,7 @@ class LoadLayoutBlocks extends AbstractFixture implements OrderedFixtureInterfac
 
         $contentTypes = $this->container->getParameter('networking_init_cms.page.content_types');
         foreach($contentTypes as $type){
-            if($type['name'] == 'Text Block'){
+            if($type['name'] == 'Text'){
                 $textClass = $type['class'];
                 break;
             }

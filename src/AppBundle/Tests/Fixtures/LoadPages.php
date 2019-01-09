@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Application\Networking\InitCmsBundle\Tests\Fixtures;
+namespace AppBundle\Tests\Fixtures;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -18,7 +18,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Networking\InitCmsBundle\Model\PageInterface;
 /**
  * Class LoadPages
- * @package Application\Networking\InitCmsBundle\Tests\Fixtures
+ * @package AppBundle\Tests\Fixtures
  * @author Yorkie Chadwick <y.chadwick@networking.ch>
  */
 class LoadPages extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface

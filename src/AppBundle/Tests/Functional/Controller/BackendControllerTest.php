@@ -7,13 +7,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Application\Networking\InitCmsBundle\Tests\Functional\Controller;
+namespace AppBundle\Tests\Functional\Controller;
 
-use Application\Networking\InitCmsBundle\Lib\WebTestCase;
+use AppBundle\Lib\WebTestCase;
 
 /**
  * Class BackendControllerTest
- * @package Application\Networking\InitCmsBundle\Tests\Functional\Controller
+ * @package AppBundle\Tests\Functional\Controller
  * @author Yorkie Chadwick <y.chadwick@networking.ch>
  */
 class BackendControllerTest extends WebTestCase

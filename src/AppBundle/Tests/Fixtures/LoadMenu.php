@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Application\Networking\InitCmsBundle\Tests\Fixtures;
+namespace AppBundle\Tests\Fixtures;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -20,7 +20,7 @@ use Networking\InitCmsBundle\Entity\MenuItem;
 
 /**
  * Class LoadMenu
- * @package Application\Networking\InitCmsBundle\Tests\Fixtures
+ * @package AppBundle\Tests\Fixtures
  * @author Yorkie Chadwick <y.chadwick@networking.ch>
  */
 class LoadMenu extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface

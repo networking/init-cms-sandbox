@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Application\Networking\InitCmsBundle\Tests\Fixtures;
+namespace AppBundle\Tests\Fixtures;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
@@ -18,7 +18,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 /**
  * Class LoadPageSnapshots
- * @package Application\Networking\InitCmsBundle\Tests\Fixtures
+ * @package AppBundle\Tests\Fixtures
  *
  * @author sonja brodersen <s.brodersen@networking.ch>
  * @author Yorkie Chadwick <y.chadwick@networking.ch>

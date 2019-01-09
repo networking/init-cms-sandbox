@@ -1,8 +1,8 @@
 <?php
 
-namespace Application\Networking\InitCmsBundle\Tests\Functional\Controller;
+namespace AppBundle\Tests\Functional\Controller;
 
-use Application\Networking\InitCmsBundle\Lib\WebTestCase;
+use AppBundle\Lib\WebTestCase;
 
 class FrontendControllerTest extends WebTestCase
 {
