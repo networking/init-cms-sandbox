@@ -1,6 +1,6 @@
 parameters:
     database_driver:   pdo_sqlite
-    database_host:     localhost
+    database_host:     127.0.0.1
     database_port:     ~
     database_name:     symfony
     database_user:     root
