@@ -1,0 +1,59 @@
+{#
+
+This file is part of the Networking package.
+
+(c) net working AG <info@networking.ch>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+{% from '@NetworkingInitCms/GalleryView/macro.html.twig' import lightbox, carousel %}
+
+{% if text is defined %}
+    {{ text | raw }}
+{% endif %}
+
+{% if galleryView is defined %}
+    {# create a lightbox view #}
+    {% if galleryView.galleryType == 'lightbox' %}
+        {{ lightbox(galleryView.mediaGallery, null, null, 'medium') }}
+    {% elseif galleryView.galleryType == 'carousel' %}
+        {{ carousel(galleryView.mediaGallery, 'centerCarousel', null, 'big', '300px') }}
+    {% else %}
+        <ul>
+            {% for media in mediaItems %}
+                <li>
+                    {% media media.media, gallery.defaultFormat %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endif %}
+
+{% if downloadContent is defined and downloadContent.download|length > 0 %}
+    <article class="row clearfix print_media">
+        <div class="col-md-3">{{ downloadContent.getText()|raw }}</div>
+        <div class="col-md-3 thumbs">
+            {% for download in downloadContent.download %}
+                <div class="img_link {{ loop.index == 1 ? 'active': '' }}"
+                     data-target="#download_content_{{ downloadContent.id }}_{{ download.media.id }}">
+                    {% media download.media, 'small' with {'width': 70, height: 100} %}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-6">
+            {% for download in downloadContent.download %}
+                <div id="download_content_{{ downloadContent.id }}_{{ download.media.id }}" class="slide"
+                     style="display: {{ loop.index == 1 ? 'block': 'none' }};">
+                    {% media download.media, 'reference' with { 'class': 'img-responsive' } %}
+                    <div class="caption"><ul class="linklist"><li><a class="download" href="{{ path('sonata_media_download', {'id': download.file.id, 'format': 'reference'}) }}">{{ download.file.name }}</a> </li></ul></div>
+                </div>
+            {% endfor %}
+        </div>
+    </article>
+{% endif %}
+
+ {% if form_page_content is defined %}
+     {{ render(controller('NetworkingFormGeneratorBundle:FrontendForm:renderForm', {'form': form_page_content})) }}
+ {% endif %}

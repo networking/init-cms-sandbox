@@ -1,2 +1,0 @@
-networking_form_generator:
-    from_email: '%admin_email%'

@@ -1,0 +1,70 @@
+{#
+
+This file is part of the Networking package.
+
+(c) net working AG <info@networking.ch>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ page.metaTitle }}{% endblock %}
+
+{% block content %}
+    <div class="span12">
+        {% if page.layoutBlock('header') is not empty %}
+            <div class="jumbotron">
+                   <div class="row">
+                       {% set headerBlockCount = page.layoutBlock('header')|length %}
+
+                       {% for layoutBlock in page.layoutBlock('header') %}
+                          <div class="span{{ 12/headerBlockCount }}">
+                              {{ render_initcms_block('AppBundle:Content:hero_block.html.twig', layoutBlock) }}
+                          </div>
+                      {% endfor %}
+                   </div>
+                <div class="clearfix"></div>
+            </div>
+        {% endif %}
+        <div class="row">
+
+                <div class="col-md-6">
+                    <div class="middle">
+                        {% for layoutBlock in page.layoutBlock('left') %}
+                            {{ render_initcms_block('AppBundle:Content:cms_block.html.twig', layoutBlock) }}
+                        {% endfor %}
+
+                        {% if form_page_content is defined %}
+                            {{ render(controller('NetworkingFormGeneratorBundle:FrontendForm:renderForm', {'form': form_page_content})) }}
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    {% block content_sidebar %}
+                        <div class="middle">
+                            {% for layoutBlock in page.layoutBlock('right') %}
+                                {{ render_initcms_block('AppBundle:Content:cms_block.html.twig', layoutBlock) }}
+                            {% endfor %}
+                            {#{% render "NetworkingNewsBundle:News:recentArticles" with {'max': 3} %}#}
+                        </div>
+                    {% endblock content_sidebar %}
+                </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+{% block foot_script %}
+    {{ parent() }}
+
+    <script type="text/javascript">
+        (function ($) {
+            $('.carousel').carousel();
+        })(jQuery);
+    </script>
+{% endblock %}

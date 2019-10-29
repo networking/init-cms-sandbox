@@ -1,0 +1,62 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+    Networking\InitCmsBundle\Menu\FrontendMenuBuilder:
+        autowire: true
+        arguments:
+            $allowLocaleCookie: '%networking_init_cms.allow_locale_cookie%'
+
+    # Create the left main menu and right main menu for the frontend
+    sandbox_init_cms.menu.frontend_main_menu_left:
+        class: Knp\Menu\MenuItem
+        factory: 'Networking\InitCmsBundle\Menu\FrontendMenuBuilder:createMainMenu'
+        arguments: [menu_name: 'Main menu', 'nav nav-tabs nav-main' ]
+        tags:
+            - { name: knp_menu.menu, alias: mainMenu }
+
+    sandbox_init_cms.menu.frontend_main_menu_language:
+        class: Knp\Menu\MenuItem
+        factory: 'Networking\InitCmsBundle\Menu\FrontendMenuBuilder:createFrontendLangMenu'
+        arguments: [ '@request_stack', '%networking_init_cms.page.languages%', 'nav nav-pills pull-right' ]
+        tags:
+            - { name: knp_menu.menu, alias: langMenu }
+
+
+    # Create the side menu for the frontend
+    sandbox_init_cms.menu.frontend_sub_menu:
+        class: Knp\Menu\MenuItem
+        factory: 'Networking\InitCmsBundle\Menu\FrontendMenuBuilder:createSubnavMenu'
+        arguments: [ 'Main menu', 'nav nav-pills']
+        tags:
+            - { name: knp_menu.menu, alias: subMenu }
+
+    sandbox_init_cms.menu.frontend_footer_menu:
+        class: Knp\Menu\MenuItem
+        factory: 'Networking\InitCmsBundle\Menu\FrontendMenuBuilder:createFooterMenu'
+        arguments: ['Footer menu', 'nav nav-pills']
+        tags:
+            - { name: knp_menu.menu, alias: footerMenu }

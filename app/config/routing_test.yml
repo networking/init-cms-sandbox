@@ -1,7 +1,0 @@
-NetworkingInitCmsBundle:
-    resource: "@NetworkingInitCmsBundle/Resources/config/routing/routing.yml"
-    prefix:   /
-
-networking_form_generator:
-    resource: "@NetworkingFormGeneratorBundle/Resources/config/routing.yml"
-    prefix:   /

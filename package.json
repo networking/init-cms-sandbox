@@ -34,6 +34,8 @@
     "uglify-js": "^3.0.13"
   },
   "devDependencies": {
-    "gulp-watch": "^4.3.11"
+    "@symfony/webpack-encore": "^0.28.0",
+    "gulp-watch": "^4.3.11",
+    "webpack-notifier": "^1.6.0"
   }
 }

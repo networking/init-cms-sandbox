@@ -1,0 +1,2 @@
+networking_form_generator:
+    from_email: '%env(ADMIN_EMAIL)%'

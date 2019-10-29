@@ -1,0 +1,10 @@
+doctrine:
+  dbal:
+    driver:       pdo_sqlite
+    path:         "%kernel.cache_dir%/symfony.db"
+    host:         localhost
+    dbname:       symfony
+    user:         root
+    password:     ~
+    charset:      UTF8
+    memory:       true

@@ -1,0 +1,4 @@
+swiftmailer:
+  delivery_address: '%env(ADMIN_EMAIL)%'
+  spool:
+    type: file
