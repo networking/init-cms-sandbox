@@ -9,6 +9,43 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
+    .copyFiles({
+        from: './assets/img',
+
+        // optional target path, relative to the output dir
+        to: 'img/[path][name].[ext]',
+
+        // if versioning is enabled, add the file hash too
+        //to: 'img/[path][name].[hash:8].[ext]',
+
+        // only copy files matching this pattern
+        pattern: /\.(gif|png|jpg|jpeg|svg)$/
+    })
+
+    .copyFiles({
+        from: './assets/js',
+
+        // optional target path, relative to the output dir
+        to: 'js/[path][name].[ext]',
+
+        // if versioning is enabled, add the file hash too
+        //to: 'js/[path][name].[hash:8].[ext]',
+
+        // only copy files matching this pattern
+        pattern: /\.(js)$/
+    })
+    .copyFiles({
+        from: './assets/css',
+
+        // optional target path, relative to the output dir
+        to: 'css/[path][name].[ext]',
+
+        // if versioning is enabled, add the file hash too
+        //to: 'js/[path][name].[hash:8].[ext]',
+
+        // only copy files matching this pattern
+        pattern: /\.(css)$/
+    })
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
@@ -54,7 +91,7 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
@@ -64,7 +101,7 @@ Encore
     //.enableIntegrityHashes(Encore.isProduction())
 
     // uncomment if you're having problems with a jQuery plugin
-    //.autoProvidejQuery()
+    .autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
     //.enableReactPreset()

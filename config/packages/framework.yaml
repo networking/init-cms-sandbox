@@ -1,33 +1,35 @@
-services:
-    Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler:
-        public:    false
-        arguments:
-            - 'mysql:dbname=%env(DATABASE_NAME)%; host=localhost; port=3306'
-            - { db_username: "%env(DATABASE_USER)%", db_password: "%env(DATABASE_PASSWORD)%" }
-            -
+#services:
+#    Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler:
+#        public:    false
+#        arguments:
+#            - 'mysql:dbname=%env(DATABASE_NAME)%; host=localhost; port=3306'
+#            - { db_username: "%env(DATABASE_USER)%", db_password: "%env(DATABASE_PASSWORD)%" }
+
 framework:
     secret: '%env(APP_SECRET)%'
-    trusted_hosts: ~
+    #csrf_protection: true
+    #http_method_override: true
     validation: { enable_annotations: true }
     session:
-        handler_id: session.handler.native_file
-        save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
+        handler_id: null
+        cookie_secure: auto
+        cookie_samesite: lax
     #esi:             ~
     translator:      { fallback: "%env(LOCALE)%"}
     form:            true
     csrf_protection: ~
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
-        default_locale:  "%env(LOCALE)%"
-#    session:
-#        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
-#        handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
-#        cookie_domain: ~
-#        name: 'APP_SESS'
-#        gc_probability: 3
-#        gc_divisor: 4
-#        gc_maxlifetime: 14400
-#        cookie_secure: auto
-#        cookie_samesite: lax
+    default_locale:  "%env(LOCALE)%"
+    #    session:
+    #        # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
+    #        handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
+    #        cookie_domain: ~
+    #        name: 'APP_SESS'
+    #        gc_probability: 3
+    #        gc_divisor: 4
+    #        gc_maxlifetime: 14400
+    #        cookie_secure: auto
+    #        cookie_samesite: lax
 
     #esi: true
     #fragments: true

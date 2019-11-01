@@ -13,21 +13,19 @@ file that was distributed with this source code.
 <!DOCTYPE html>
 
 {% block html_tag %}
-<html>
+<html lang="{{ app.request.locale|slice(0,2) }}">
 {% endblock html_tag %}
 
 {% block head %}
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         {% block head_style %}
-            {# Override this block to add your own files! #}
-            <link href="{{ asset('bundles/app/css/style.css') }}" type="text/css" rel="stylesheet" media="screen"/>
-            <link href="{{ asset('bundles/app/vendor/featherlight/src/featherlight.css') }}" type="text/css" rel="stylesheet" media="screen"/>
-            <link href="{{ asset('bundles/app/vendor/featherlight/src/featherlight.gallery.css') }}" type="text/css" rel="stylesheet" media="screen"/>
+            {{ encore_entry_link_tags('app') }}
         {% endblock head_style %}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
         {% block head_script %}
             {# Overwrite this block to add your own js here, to get them generated into final files #}
@@ -41,7 +39,7 @@ file that was distributed with this source code.
 {% endblock head %}
 
 {% block body_tag %}
-<body data-spy="scroll">
+<body >
 {% endblock body_tag %}
 
 {# From here the body starts #}
@@ -57,7 +55,7 @@ file that was distributed with this source code.
             {#<input type="search" name="search">#}
         {#</form>#}
         {% endblock %}
-        {% block navbar %}{% endblock navbar %}
+        {% block navbar %}{% include 'menu/navbar.html.twig' %}{% endblock navbar %}
 
         {% block header %}
         {% endblock header %}
@@ -79,18 +77,20 @@ file that was distributed with this source code.
             {% endblock flashes %}
 
             {% block content_row %}
-                <div class="row">
                     {% block content %}
                         {% block content_sidebar %}
                         {% endblock content_sidebar %}
                     {% endblock content %}
                     {% block fos_user_content %}
                     {% endblock fos_user_content %}
-                </div>
             {% endblock content_row %}
         </div>
         <footer>
             {% block footer %}
+                <hr />
+                <div class="footer">
+                    {{ knp_menu_render(knp_menu_get('footerMenu')) }}
+                </div>
             {% endblock footer %}
         </footer>
     </div> <!-- /container -->
@@ -100,9 +100,11 @@ file that was distributed with this source code.
     To speed up page loads save a copy of jQuery in your project and override this block to include the correct path
     Otherwise the regeneration is done on every load in dev more with use_controller: true
      #}
-    <script type="text/javascript" src="{{ asset('bundles/app/js/app.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/app/vendor/featherlight/src/featherlight.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('bundles/app/vendor/featherlight/src/featherlight.gallery.js') }}"></script>
+{#    <script type="text/javascript" src="{{ asset('bundles/app/js/app.js') }}"></script>#}
+{#    <script type="text/javascript" src="{{ asset('bundles/app/vendor/featherlight/src/featherlight.js') }}"></script>#}
+{#    <script type="text/javascript" src="{{ asset('bundles/app/vendor/featherlight/src/featherlight.gallery.js') }}"></script>#}
+
+    {{ encore_entry_script_tags('app') }}
 {% endblock foot_script %}
 {% endblock body %}
 </body>

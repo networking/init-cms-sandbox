@@ -1,3 +1,0 @@
-networking_init_cms:
-  resource: "@NetworkingInitCmsBundle/Resources/config/routing/routing.yml"
-  prefix:   /

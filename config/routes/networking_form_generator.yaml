@@ -1,0 +1,3 @@
+networking_form_generator:
+  resource: "@NetworkingFormGeneratorBundle/Resources/config/routing.yaml"
+  prefix:   /

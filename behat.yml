@@ -1,8 +1,0 @@
-default:
-    extensions:
-        Behat\Symfony2Extension: ~
-        Behat\MinkExtension:
-            base_url: http://sandbox.dev
-            symfony2: ~
-            goutte: ~
-            selenium2: ~

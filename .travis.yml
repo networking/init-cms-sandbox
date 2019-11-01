@@ -10,7 +10,10 @@ cache:
     - $HOME/.composer/cache/files
 
 php:
-  - 7.1
+  - 7.2
+
+before_script:
+  - curl -sSfL -o ~/.phpenv/versions/7.2/bin/phpunit https://phar.phpunit.de/phpunit-7.phar
 
 before_install:
   - phpenv config-rm xdebug.ini
@@ -22,10 +25,9 @@ before_install:
 # Create database, schema and fixtures
 install:
   - composer install --no-interaction --prefer-dist
-  - cp app/config/parameters.yml.test app/config/parameters.yml
   - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:schema:create --env=test
-  - php bin/console doctrine:fixtures:load --fixtures="src/AppBundle/Tests/Fixtures" -n --env=test
+  - php bin/console doctrine:fixtures:load --fixtures="tests/Fixtures" -n --env=test
 
 
 script: phpunit  --verbose -c app/phpunit.xml

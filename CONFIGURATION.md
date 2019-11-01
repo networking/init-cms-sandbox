@@ -69,17 +69,17 @@ The parameters fo the template include:
 ```
 templates:
     'sandbox_one_column':
-        template: "ApplicationNetworkingInitCmsBundle:Default:one_column.html.twig"
+        template: "page/one_column.html.twig"
         name: "Single Column"
-        icon: "bundles/applicationnetworkinginitcms/img/template_header_one_column.png"
+        icon: "build/img/template_header_one_column.png"
         controller: MyBundle::index # default NetworkingInitCmsBundle:FrontendPage:index
         zones:
             - { name: header, span:12, max_content_items: 1, restricted_types: Networking\InitCmsBundle\Entity\Gallery }
             - { name: main_content, span:12}
     'sandbox_two_column':
-        template: "ApplicationNetworkingInitCmsBundle:Default:two_column.html.twig"
+        template: "page/two_column.html.twig"
         name: "Two Column"
-        icon: "bundles/applicationnetworkinginitcms/img/template_header_two_column.png"
+        icon: "build/img/template_header_two_column.png"
         zones:
             - { name: header , span:12}
             - { name: left , span:6}
