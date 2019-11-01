@@ -15,10 +15,9 @@ php:
 
 before_install:
   - phpenv config-add travis.php.ini
-  - php -i | grep memory_limit
-  - if [[ $COVERAGE != true ]]; then phpenv config-rm xdebug.ini || true; fi
-  - if ! [ -z "$STABILITY" ]; then composer config minimum-stability ${STABILITY}; fi;
-  - if ! [ -v "$DEPENDENCIES" ]; then composer require --no-update ${DEPENDENCIES}; fi;
+  - phpenv config-rm xdebug.ini
+#  - if ! [ -z "$STABILITY" ]; then composer config minimum-stability ${STABILITY}; fi;
+#  - if ! [ -v "$DEPENDENCIES" ]; then composer require --no-update ${DEPENDENCIES}; fi;
 
 
 
@@ -26,8 +25,7 @@ before_install:
 # Create database, schema and fixtures
 install:
   # To be removed when this issue will be resolved: https://github.com/composer/composer/issues/5355
-  - if [[ "$COMPOSER_FLAGS" == *"--prefer-lowest"* ]]; then composer update --prefer-dist --no-interaction --prefer-stable --quiet; fi
-  - composer update --prefer-dist --no-interaction
+  - composer install --prefer-dist --no-interaction
   - ./vendor/bin/simple-phpunit install
   - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:schema:create --env=test
