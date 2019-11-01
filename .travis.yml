@@ -6,7 +6,9 @@ sudo: false
 
 # Cache composer packages so "composer install" is faster
 cache:
+  yarn: true
   directories:
+    - node_modules
     - $HOME/.composer/cache/files
     - $HOME/symfony-bridge/.phpunit
 
@@ -25,11 +27,13 @@ before_install:
 # Create database, schema and fixtures
 install:
   # To be removed when this issue will be resolved: https://github.com/composer/composer/issues/5355
-  - composer install --prefer-dist --no-interaction
+  - composer update --prefer-dist --no-interaction
   - ./vendor/bin/simple-phpunit install
   - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:schema:create --env=test
   - php bin/console doctrine:fixtures:load --fixtures="tests/Fixtures" -n --env=test
+  - yarn install
+  - yarn encore dev
 
 
 env:
