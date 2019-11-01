@@ -45,16 +45,16 @@ networking_init_cms:
     # Default template settings to get you started
     templates:
         'app_single_column':
-            template: "@NetworkingInitCms/sandbox/page/one_column.html.twig"
+            template: "page/one_column.html.twig"
             name: "Single Column"
-            icon: "bundles/networkinginitcms/img/template_header_one_column.png"
+            icon: "build/img/template_header_one_column.png"
             zones:
                 - { name: header, class: 'col-md-12' }
                 - { name: main_content, class: 'col-md-12'}
         'app_two_column':
-            template: "@NetworkingInitCms/sandbox/two_column.html.twig"
+            template: "page/two_column.html.twig"
             name: "Two Column"
-            icon: "bundles/networkinginitcms/img/template_header_two_column.png"
+            icon: "build/img/template_header_two_column.png"
             zones:
                 - { name: header , class: 'col-md-12'}
                 - { name: left , class: 'col-md-3'}
