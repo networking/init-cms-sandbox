@@ -6,7 +6,7 @@ doctrine:
         default_connection: default
         connections:
             default:
-                driver: '%env(DATABASE_DRIVER)%'
+                driver: 'pdo_mysql'
                 server_version: '5.7'
                 host:     '%env(DATABASE_HOST)%'
                 port:     '%env(DATABASE_PORT)%'
