@@ -75,7 +75,6 @@ class BackendControllerTest extends WebTestCase
         $client = static::createClient();
         $crawler = $client->request('GET', '/admin/login');
 
-        var_dump($client->getResponse());
         // try login with correct user
         $form = $crawler->filter('form')->form();
         // set some values
