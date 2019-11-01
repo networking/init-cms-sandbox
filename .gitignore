@@ -9,7 +9,7 @@ nbproject
 
 
 # Assets and user uploads
-/public/uploads/
+/public/upload/
 /public/sitemap*.xml
 /public/css/*
 /public/js/*

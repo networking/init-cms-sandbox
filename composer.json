@@ -9,7 +9,6 @@
     "ext-ctype": "*",
     "ext-iconv": "*",
     "ext-json": "*",
-    "networking/elasticsearch-bundle": "4.x-dev",
     "networking/form-generator-bundle": "^4.0",
     "networking/init-cms-bundle": "^4.0",
     "symfony/dotenv": "4.3.*",
