@@ -23,7 +23,7 @@ use Symfony\Component\Console\Output\StreamOutput;
 abstract class WebTestCase extends BaseWebTestCase
 {
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->backupDatabase();
     }
