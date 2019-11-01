@@ -10,13 +10,10 @@
 
 namespace Tests\Fixtures;
 
-use Entity\User;
+use App\Entity\User;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use FOS\UserBundle\Util\UserManipulator;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Class LoadUsers
