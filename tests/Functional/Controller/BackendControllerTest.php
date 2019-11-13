@@ -92,7 +92,7 @@ class BackendControllerTest extends WebTestCase
         $key = array_keys($form->getPhpValues());
 
         // set some values
-        $form[$key[0].'[locale]']->select('de_DE');
+        $form[$key[0].'[locale]']->select('de');
         // submit the form
         $crawler = $client->submit($form);
         // logout

@@ -1,6 +1,6 @@
 lexik_translation:
     fallback_locale:  '%env(LOCALE)%'      # (required) default locale to use
-    managed_locales: [ '%env(LOCALE)%'] # !IMPORTANT: Change to strings and not environment variables
+    managed_locales: [ 'en', 'de'] # !IMPORTANT: Change to strings and not environment variables
     resources_registration:
         type:                 all  # all | files | database
         managed_locales_only: false # set to true to only include managed_locales
