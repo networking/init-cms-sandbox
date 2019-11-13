@@ -256,5 +256,4 @@ It comes pre-configured with the following bundles:
 [15]: http://jmsyst.com/bundles/JMSDiExtraBundle/1.0
 [16]: http://symfony.com/doc/2.5/bundles/SensioGeneratorBundle/index.html
 [17]: https://github.com/symfony/symfony#installation
-[18]: https://github.com/ibrows/IbrowsSonataTranslationBundle
-[19]: https://github.com/ibrows/IbrowsSonataAdminAnnotationBundle
+

@@ -10,7 +10,7 @@
     "ext-iconv": "*",
     "ext-json": "*",
     "networking/form-generator-bundle": "^4.0",
-    "networking/init-cms-bundle": "^4.0",
+    "networking/init-cms-bundle": "^4.1",
     "symfony/dotenv": "4.3.*",
     "symfony/flex": "^1.4"
   },
