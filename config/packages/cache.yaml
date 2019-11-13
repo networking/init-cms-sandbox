@@ -16,4 +16,5 @@ framework:
 
         # Namespaced pools use the above "app" backend by default
         pools:
-            page.cache: cache.app
+            page.cache:
+                adapter: cache.app
