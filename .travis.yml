@@ -47,3 +47,4 @@ env:
 
 script:
   - composer validate --strict --no-check-lock
+  - ./vendor/bin/simple-phpunit -v

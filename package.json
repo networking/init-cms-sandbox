@@ -35,5 +35,7 @@
     "sass-loader": "^7.0.1",
     "webpack-notifier": "^1.6.0"
   },
-  "resolutions": { "svgo": "1.3.0" }
+  "resolutions": {
+    "svgo": "1.3.0"
+  }
 }
