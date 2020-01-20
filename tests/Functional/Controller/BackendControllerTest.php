@@ -9,6 +9,7 @@
  */
 namespace Tests\Functional\Controller;
 
+use Symfony\Component\Form\Form;
 use Tests\Lib\WebTestCase;
 
 /**
@@ -38,31 +39,39 @@ class BackendControllerTest extends WebTestCase
 
         // try login with unknown user
         $form = $crawler->filter('form')->form();
+
+        $values = [];
         // set some values
-        $form['_username'] = 'foo1';
-        $form['_password'] = 'bar1';
+        $values['_username'] = 'foo1';
+        $values['_password'] = 'bar1';
+
+
         // submit the form
-        $crawler = $client->submit($form);
+        $crawler = $client->submit($form, $values);
 
         $this->assertTrue($client->getResponse()->isRedirect('http://localhost/admin/login'), 'redirect to login page');
         $crawler = $client->followRedirect();
         $this->assertTrue($crawler->filter('div .alert:contains("Invalid credentials")')->count() == 1);
+
+
     }
 
     public function testLogin()
     {
         $this->restoreDatabase();
         $client = static::createClient();
+        $client->insulate(true);
         $crawler = $client->request('GET', '/admin/login', array('admin/_locale' => 'en'));
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
 
         // try login with correct user
         $form = $crawler->filter('form')->form();
+        $values = [];
         // set some values
-        $form['_username'] = 'foo';
-        $form['_password'] = 'bar';
+        $values['_username'] = 'foo';
+        $values['_password'] = 'bar';
         // submit the form
-        $crawler = $client->submit($form);
+        $crawler = $client->submit($form, $values);
         $this->assertTrue($client->getResponse()->isRedirect('http://localhost/admin/dashboard'), 'redirect to dashboard');
         $crawler = $client->followRedirect();
         $this->assertTrue($crawler->filter('html:contains("Dashboard")')->count() > 0, 'dashboard');
@@ -73,6 +82,7 @@ class BackendControllerTest extends WebTestCase
     {
         $this->restoreDatabase();
         $client = static::createClient();
+        $client->insulate(true);
         $crawler = $client->request('GET', '/admin/login');
 
         // try login with correct user
@@ -121,6 +131,7 @@ class BackendControllerTest extends WebTestCase
     {
         $this->restoreDatabase();
         $client = static::createClient();
+        $client->insulate(true);
         $crawler = $client->request('GET', '/admin/login');
         // try login with correct user
         $form = $crawler->filter('form')->form();
