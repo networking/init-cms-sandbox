@@ -34,6 +34,7 @@ class BackendControllerTest extends WebTestCase
     {
         $this->restoreDatabase();
         $client = static::createClient();
+        $client->insulate(true);
         $crawler = $client->request('GET', '/admin/login', array('admin/_locale' => 'en'));
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'no further redirect');
 

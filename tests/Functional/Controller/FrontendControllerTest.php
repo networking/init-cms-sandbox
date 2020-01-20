@@ -14,7 +14,7 @@ class FrontendControllerTest extends WebTestCase
     public function testLanguageSwitchToGerman()
     {
         $client = static::createClient();
-
+        $client->insulate(true);
         $crawler = $client->request('GET', '/');
 
         $this->assertTrue($crawler->filter('a:contains("Deutsch")')->count() == 1, 'there is a link for deutsch');
@@ -41,7 +41,7 @@ class FrontendControllerTest extends WebTestCase
     public function testLanguageSwitchToEnglish()
     {
         $client = static::createClient();
-
+        $client->insulate(true);
         $crawler = $client->request('GET', '/');
 
         $this->assertTrue($crawler->filter('a:contains("English")')->count() == 1, 'there is a link for english');
