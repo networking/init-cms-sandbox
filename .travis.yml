@@ -10,7 +10,7 @@ cache:
   directories:
     - node_modules
     - $HOME/.composer/cache/files
-    - $HOME/symfony-bridge/.phpunit
+    - ./bin/.phpunit
 
 php:
   - 7.2
@@ -28,7 +28,7 @@ before_install:
 install:
   # To be removed when this issue will be resolved: https://github.com/composer/composer/issues/5355
   - composer update --prefer-dist --no-interaction
-  - ./vendor/bin/simple-phpunit install
+  - ./bin/phpunit install
   - php bin/console doctrine:database:create --env=test
   - php bin/console doctrine:schema:create --env=test
   - php bin/console doctrine:fixtures:load --fixtures="tests/Fixtures" -n --env=test
@@ -38,7 +38,7 @@ install:
 
 env:
   global:
-    - SYMFONY_PHPUNIT_DIR="$HOME/symfony-bridge/.phpunit"
+    - SYMFONY_PHPUNIT_DIR=./bin/.phpunit
     - STABILITY="dev"
     - SYMFONY_DEPRECATIONS_HELPER="weak"
     - APP_ENV=test
@@ -46,5 +46,5 @@ env:
 
 
 script:
+  - ./bin/phpunit
   - composer validate --strict --no-check-lock
-  - ./vendor/bin/simple-phpunit -v
