@@ -13,9 +13,10 @@ class MenuBuilder extends BaseMenuBuilder
 
     /**
      * @param $menuName
+     * @param bool $rootClass
      * @param int $startDepth
      * @param bool $showOnlyCurrentChildren
-     * @return ItemInterface|KnpMenuItem
+     * @return ItemInterface
      */
     public function buildMenu($menuName, $rootClass = false, $startDepth = 1, $showOnlyCurrentChildren = false)
     {
@@ -74,25 +75,25 @@ class MenuBuilder extends BaseMenuBuilder
     }
 
     /**
-     * @param KnpMenuItem $menu
+     * @param ItemInterface $item
      * @param MenuItem $node
      * @param $startDepth
      * @return bool|ItemInterface
      */
-    public function addNodeToMenu(KnpMenuItem $menu, MenuItem $node, $startDepth)
+    public function addNodeToMenu(ItemInterface $item, MenuItem $node, $startDepth)
     {
         if ($node->getLvl() < $startDepth) {
             return false;
         }
 
         if ($node->getLvl() > $startDepth) {
-            $menu = $this->getParentMenu($menu, $node);
+            $item = $this->getParentMenu($item, $node);
         }
 
-        if (is_object($menu)) {
+        if (is_object($item)) {
             $knpMenuNode = $this->createFromMenuItem($node);
             if (!is_null($knpMenuNode)) {
-                $menu->addChild($knpMenuNode);
+                $item->addChild($knpMenuNode);
                 $knpMenuNode->setLinkAttribute('class', $node->getLinkClass().' nav-link');
                 $knpMenuNode->setExtra('translation_domain', false);
                 if ($node->getVisibility() != MenuItem::VISIBILITY_PUBLIC && !$this->isLoggedIn) {

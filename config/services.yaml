@@ -33,14 +33,14 @@ services:
     # Create the left main menu and right main menu for the frontend
     app.menu.frontend_main_menu_left:
         class: Knp\Menu\MenuItem
-        factory: 'App\Menu\MenuBuilder:buildMenu'
+        factory: ['@App\Menu\MenuBuilder', 'buildMenu']
         arguments: [menu_name: 'Main menu', 'nav nav-tabs' ]
         tags:
             - { name: knp_menu.menu, alias: mainMenu }
 
     app.menu.frontend_main_menu_language:
         class: Knp\Menu\MenuItem
-        factory: 'App\Menu\MenuBuilder:createLangMenu'
+        factory: ['@App\Menu\MenuBuilder', 'createLangMenu']
         arguments: [ '@request_stack', '%networking_init_cms.page.languages%', 'nav nav-pills' ]
         tags:
             - { name: knp_menu.menu, alias: langMenu }
@@ -49,14 +49,14 @@ services:
     # Create the side menu for the frontend
     app.menu.frontend_sub_menu:
         class: Knp\Menu\MenuItem
-        factory: 'App\Menu\MenuBuilder:buildMenu'
+        factory: ['@App\Menu\MenuBuilder', 'buildMenu']
         arguments: [ 'Main menu', 'nav nav-pills', 2, true]
         tags:
             - { name: knp_menu.menu, alias: subMenu }
 
     app.menu.frontend_footer_menu:
         class: Knp\Menu\MenuItem
-        factory: 'App\Menu\MenuBuilder:buildMenu'
+        factory: ['@App\Menu\MenuBuilder', 'buildMenu']
         arguments: ['Footer menu', 'nav nav-pills']
         tags:
             - { name: knp_menu.menu, alias: footerMenu }
