@@ -25,7 +25,7 @@
   "homepage": "https://github.com/networking/init-cms-bundle#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.0",
     "uglify-js": "^3.0.13"
   },
