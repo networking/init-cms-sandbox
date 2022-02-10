@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@symfony/webpack-encore": "^0.28.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^7.0.1",
     "webpack-notifier": "^1.6.0"
   },
